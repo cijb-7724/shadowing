@@ -6,7 +6,7 @@
   <title>練習用動画 一覧</title>
   <link rel="stylesheet" href="./assets/style.css" />
   <style>
-    /* ページの体裁を整えるためのCSS（既存のassets/style.cssが読み込まれている前提） */
+    /* （既存のスタイルは省略） */
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -56,26 +56,41 @@
     
     <script>
         const videoList = [
-            { id: '71eUes30gwc', file: 'shadowing_This%20Black%20Hole%20Could%20be%20Bigger%20Than%20The%20Universe.html', title: 'Black Holes' },
-            { id: 'h6fcK_fRYaI', file: 'shadowing_The%20Egg%20-%20A%20Short%20Story.html', title: 'The Egg' },
-            // 新しい動画を追加する際は、ここに { id: '新しい動画ID', file: '生成したHTMLファイル名.html', title: '動画のタイトル' }, の形式で追加してください。
-            // 動画IDはURLの v= の後ろにある11桁の英数字です。
+            // ファイル名からタイトルを抽出できるように、ファイル名の命名規則を厳密に守ってください。
+            { id: 'h6fcK_fRYaI', file: 'shadowing_The%20Egg%20-%20A%20Short%20Story.html' },
+            { id: '71eUes30gwc', file: 'shadowing_This%20Black%20Hole%20Could%20be%20Bigger%20Than%20The%20Universe.html' },
+            // 新しい動画を追加する際は、ここに { id: '動画ID', file: 'ファイル名.html' }, の形式で追加してください。
         ];
 
         const mainElement = document.querySelector('main.grid');
         
+        // ファイル名からタイトルを抽出するヘルパー関数
+        function extractTitleFromFile(fileName) {
+            // 'shadowing_' と '.html' を取り除き、エンコードされた文字（%20など）をスペースに変換
+            let title = fileName.replace('shadowing_', '').replace('.html', '');
+            title = decodeURIComponent(title);
+            // ' - '（ハイフンとスペース）があれば、最初の部分をタイトルとして使用（または全て表示）
+            if (title.includes(' - ')) {
+                 return title.split(' - ')[0].trim();
+            }
+            // タイトルが長すぎる場合は、ファイル名全体を表示
+            return title;
+        }
+
         // リストに基づいてカードを生成する
         videoList.forEach(video => {
+            const displayTitle = extractTitleFromFile(video.file);
+
             const cardHtml = `
                 <a class="card" href="./videos/${video.file}">
                     <figure class="thumb">
                         <img 
                             src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" 
-                            alt="${video.title} thumbnail" 
+                            alt="${displayTitle} thumbnail" 
                             loading="lazy" 
                         />
                     </figure>
-                    <h2>${video.title}</h2>
+                    <h2>${displayTitle}</h2>
                 </a>
             `;
             mainElement.insertAdjacentHTML('beforeend', cardHtml);
