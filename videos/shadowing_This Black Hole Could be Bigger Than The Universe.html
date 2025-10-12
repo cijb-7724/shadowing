@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シャドーイング学習シート - 最終完成版</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 1.5em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        /* YouTubeプレーヤーのコンテナスタイル */
+        .video-container {
+            position: relative;
+            width: 100%;
+            /* 16:9のアスペクト比を維持するためのPadding */
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .sentence-block {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .english-sentence {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #212529;
+        }
+        .timestamp {
+            color: #dc3545; /* 再生ボタンであることを強調 */
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .timestamp:hover {
+            text-decoration: underline;
+        }
+        .japanese-container {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            cursor: pointer;
+            padding-top: 5px;
+        }
+        .translation {
+            margin-top: 0;
+            font-style: italic;
+        }
+        .vocab-list {
+            display: block;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007bff;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+    <script>
+        // YouTube APIの読み込み
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            console.log("YouTube Player is Ready!");
+        }
+
+        // タイムスタンプの秒数に変換 (HH:MM:SS形式にも対応)
+        function getSeconds(timeStr) {
+            const parts = timeStr.replace(/[\[\]]/g, '').split(':').map(Number);
+            let seconds = 0;
+            if (parts.length === 3) { // HH:MM:SS
+                seconds = parts[0] * 3600 + parts[1] * 60 + parts[2];
+            } else if (parts.length === 2) { // MM:SS
+                seconds = parts[0] * 60 + parts[1];
+            }
+            return seconds;
+        }
+
+        // 埋め込みプレーヤーの再生操作
+        window.playAtTime = function(timeStr) {
+            if (player && player.seekTo) {
+                const seconds = getSeconds(timeStr);
+                player.seekTo(seconds, true);
+                player.playVideo();
+            } else {
+                alert("YouTubeプレーヤーが読み込まれていません。少し待ってからお試しください。");
+            }
+        };
+
+        // 日本語訳の表示/非表示を切り替える関数
+        window.toggleTranslation = function(element) {
+            const translation = element.querySelector('.translation-content');
+            translation.classList.toggle('hidden');
+            
+            // タップ時のテキストを切り替え
+            const currentText = element.querySelector('.translation');
+            if (translation.classList.contains('hidden')) {
+                currentText.textContent = '日本語訳を見るにはタップしてください';
+            } else {
+                currentText.textContent = '日本語訳を隠すにはタップしてください';
+            }
+        };
+        
+        // 動画データ (タイムスタンプ修正済み)
+        const data = [
+            // ----------------------------------------------------
+            // ここから動画データ (時刻修正済み)
+            // ----------------------------------------------------
+            { time: '[00:00]', en: 'We proudly present to you the Kurzgesagt guide to curiosity.', jp: '私たちは、皆さんにKurzgesagtの「好奇心へのガイド」を誇りを持ってご紹介します。', vocab: 'proudly (誇りを持って), present to (～に紹介する), curiosity (好奇心)' },
+            { time: '[00:05]', en: 'Join us on an interactive adventure across 160 thrilling pages that will change your perspective on the world forever.', jp: '160ページにわたるスリリングなインタラクティブな冒険に私たちと一緒に参加してください。それは世界に対するあなたの視点を永遠に変えるでしょう。', vocab: 'interactive (双方向の), thrilling (スリル満点の), perspective (視点)' },
+            { time: '[00:14]', en: 'Available now on the Kurzgesagt shop.', jp: 'Kurzgesagtショップで今すぐ手に入ります。', vocab: 'available (入手可能である)' },
+            { time: '[00:17]', en: 'You might be inside a black hole that\'s inside a black hole that\'s inside a black hole.', jp: 'あなたは、ブラックホールの中のブラックホールの中のブラックホールの中にいるかもしれません。', vocab: 'black hole (ブラックホール)' },
+            { time: '[00:24]', en: 'Everything in existence could be black holes all the way down.', jp: '存在する全てが、ずっと下までブラックホールである可能性があります。', vocab: 'in existence (存在している)' },
+            { time: '[00:28]', en: 'It turns out black holes are much weirder than you think and they break the universe much more than is usually explained, destroying time and space.', jp: 'ブラックホールはあなたが思っているよりもずっと奇妙で、通常説明されているよりもはるかに宇宙を破壊し、時間と空間を破壊することがわかっています。', vocab: 'turn out (判明する), weirder (より奇妙な), destroy (破壊する)' },
+            { time: '[00:35]', en: 'And they may actually create infinite universes in the process.', jp: 'そして、その過程で実際に無限の宇宙を作り出しているかもしれません。', vocab: 'infinite (無限の), in the process (その過程で)' },
+            { time: '[00:41]', en: 'But before we can get to that let\'s first build a black hole out of air.', jp: 'しかし、その話に入る前に、まず空気からブラックホールを作ってみましょう。', vocab: 'build a black hole out of air (空気からブラックホールを作る)' },
+            { time: '[00:47]', en: 'Everything can become a black hole if you squeeze it to a critical limit.', jp: 'ある臨界点まで圧縮すれば、全てがブラックホールになることができます。', vocab: 'squeeze to (～まで圧縮する), critical limit (臨界点)' },
+            { time: '[00:53]', en: 'You\'d need to squeeze Earth down to the size of a coin for it to turn into a black hole.', jp: '地球をブラックホールに変えるには、コインのサイズまで圧縮する必要があります。', vocab: 'squeeze down to (～のサイズまで圧縮する)' },
+            { time: '[00:59]', en: 'The sun needs to be squeezed down to the size of a small City to become a black hole.', jp: '太陽は、ブラックホールになるために小さな都市のサイズまで圧縮される必要があります。', vocab: '' },
+            { time: '[01:04]', en: 'And if a lot of mass is concentrated in a really tiny space, you get something super dense.', jp: 'そして、大量の質量が本当に小さな空間に集中すると、超高密度のものが生まれます。', vocab: 'mass (質量), concentrated (集中した), super dense (超高密度の)' },
+            { time: '[01:10]', en: 'This is usually how black holes are explained: stuff becomes super dense and collapses into a black hole.', jp: 'これが、通常ブラックホールが説明される方法です：物質が超高密度になり、ブラックホールに崩壊します。', vocab: 'collapses into (～に崩壊する)' },
+            { time: '[01:18]', en: 'But actually, you don\'t need any ultra dense stuff to make them.', jp: 'しかし実際には、それらを作るのに超高密度の物質は必要ありません。', vocab: 'ultra dense (超高密度の)' },
+            { time: '[01:21]', en: 'We\'re ignoring some maths here, but all you really need to know is one thing: the larger black holes get, the less dense they are.', jp: 'ここでは一部の数学的な話を無視しますが、本当に知っておく必要があるのは一つだけです：ブラックホールが大きくなるほど、密度は低くなります。', vocab: 'ignoring (無視する), less dense (低密度の)' },
+            { time: '[01:28]', en: 'So really large black holes, they kind of thin.', jp: 'つまり、本当に大きなブラックホールは、ある意味「薄い」のです。', vocab: 'kind of thin (ある意味薄い)' },
+            { time: '[01:31]', en: 'A sun Mass black hole is only about 6 km wide and has a density of about one Himalayan range per cubic meter.', jp: '太陽の質量を持つブラックホールは、幅がわずか約6kmで、密度は1立方メートルあたりヒマラヤ山脈1つ分です。', vocab: 'sun Mass (太陽質量), density (密度), cubic meter (立方メートル)' },
+            { time: '[01:40]', en: 'The super massive black hole at the center of the Milky Way has a massive 4 Million Suns, a diameter of 24 billion km and a density of six blue whales per cubic meter.', jp: '天の川銀河の中心にある超大質量ブラックホールは、太陽の400万倍の質量、直径240億kmで、密度は1立方メートルあたりシロナガスクジラ6頭分です。', vocab: 'super massive black hole (超大質量ブラックホール), Milky Way (天の川銀河), diameter (直径)' },
+            { time: '[01:50]', en: 'The ultramassive black hole Iris 21100-4156 has a mass of 3.8 billion Suns and is as wide as a solar system.', jp: 'そして、超々大質量ブラックホールであるIris 21100-4156は、太陽の38億倍の質量があり、太陽系と同じくらいの幅があります。', vocab: 'ultramassive black hole (超々大質量ブラックホール), solar system (太陽系)' },
+            { time: '[02:01]', en: 'But because it\'s so large, it is only as dense as air.', jp: 'しかし、非常に大きいため、密度は空気と同じくらいしかありません。', vocab: 'as dense as air (空気と同じくらいの密度)' },
+            { time: '[02:05]', en: 'This means, at least in theory, that if you take a gigantic balloon and fill it with unilli of tons of air, the moment it gets to the size of a solar system, an event horizon suddenly forms and it turns into a super massive black hole without violence or squeezing.', jp: 'これは、少なくとも理論上は、巨大な風船に何兆トンもの空気を詰めて、それが太陽系ほどのサイズになった瞬間、事象の地平線が突然形成され、暴力的な圧縮なしに超大質量ブラックホールに変わることを意味します。', vocab: 'gigantic (巨大な), unilli of tons (兆トン単位の), event horizon (事象の地平線), without violence or squeezing (暴力や圧縮なしに)' },
+            { time: '[02:23]', en: 'So now let\'s think big: what do we need to make a black hole the size of the universe?', jp: 'では、大きく考えてみましょう：宇宙サイズのブラックホールを作るには何が必要でしょうか？', vocab: '' },
+            { time: '[02:30]', en: 'A universe sized black hole.', jp: '宇宙サイズのブラックホールです。', vocab: '' },
+            { time: '[02:33]', en: 'The chunk of the universe that we can see from Earth is a sphere with a radius of 45 billion light years, filled with hundreds of billions of galaxies, lots of gas, and a bunch of other things.', jp: '地球から見ることのできる宇宙の塊は、半径450億光年の球体で、何千億もの銀河、大量のガス、そしてその他の多くのもので満たされています。', vocab: 'chunk (塊), radius (半径), light years (光年), bunch of other things (その他の多くもの)' },
+            { time: '[02:44]', en: 'If you add them up, it has the mass of about a million billion billion Suns, which sounds a lot, but on average the universe is not very dense.', jp: 'これらを合計すると、太陽の約$10^{24}$倍の質量になります。これは非常に多いように聞こえますが、平均的に見て、宇宙の密度はそれほど高くありません。', vocab: 'add them up (合計する), on average (平均して)' },
+            { time: '[02:54]', en: 'If we break up all the galaxies, stars, gas and energy and spread them equally inside the volume of the universe, we get an average density of about 5 hydrogen atoms per cubic meter.', jp: '全ての銀河、星、ガス、エネルギーを分解し、宇宙の体積全体に均等に広げた場合、平均密度は1立方メートルあたり水素原子約5個になります。', vocab: 'break up (分解する), spread them equally (均等に広げる), hydrogen atoms (水素原子)' },
+            { time: '[03:05]', en: 'You can imagine this as the sort of ultra thin Cosmic air that makes up the universe.', jp: 'これは、宇宙を構成する超薄い宇宙の空気のようなものだと想像できます。', vocab: 'ultra thin (超薄い), Cosmic air (宇宙の空気), makes up (構成する)' },
+            { time: '[03:11]', en: 'What would happen if we take a balloon as big as the observable universe and fill it with Cosmic air?', jp: '観測可能な宇宙と同じくらい大きな風船を取り、それに宇宙の空気を詰めたらどうなるでしょうか？', vocab: 'observable universe (観測可能な宇宙)' },
+            { time: '[03:17]', en: 'Well, it turns out that all the mass in the observable universe is more than enough to create a black hole.', jp: 'なんと、観測可能な宇宙にある全ての質量は、ブラックホールを作るのに十分すぎるほどあることが判明しました。', vocab: 'more than enough (十分すぎるほど)' },
+            { time: '[03:23]', en: 'Actually, it\'s enough to make a black hole 10 times larger than the observable universe.', jp: '実際、観測可能な宇宙の10倍も大きいブラックホールを作るのに十分です。', vocab: '' },
+            { time: '[03:28]', en: 'But that can only mean one thing: we should be living deep inside a truly gargantuan Cosmic sized black hole.', jp: 'しかし、それは一つのことしか意味しません：私たちは真に巨大な宇宙サイズのブラックホールの奥深くに住んでいるに違いないということです。', vocab: 'gargantuan (巨大な), Cosmic sized (宇宙サイズの)' },
+            { time: '[03:36]', en: 'There\'s one catch though: we know that our universe is expanding.', jp: 'ただし、一つ問題があります：私たちの宇宙が膨張していることを私たちは知っています。', vocab: 'one catch (一つの落とし穴), expanding (膨張している)' },
+            { time: '[03:40]', en: 'And an expanding universe is not what you\'d expect to see if you were inside a black hole.', jp: 'そして、膨張する宇宙は、ブラックホールの内部にいる場合に予想されるものではありません。', vocab: '' },
+            { time: '[03:45]', en: 'So our universe can\'t be a black hole, at least not in the naive way we\'ve just described.', jp: 'したがって、私たちの宇宙はブラックホールであるはずがありません。少なくとも、私たちが今説明したような単純な方法では。', vocab: 'naive way (単純な方法)' },
+            { time: '[03:50]', en: 'Except there\'s a wild and mind-bending trick the universe could play on us.', jp: 'ただ、宇宙が私たちに仕掛ける可能性のあるワイルドで、心を曲げるようなトリックがあります。', vocab: 'mind-bending trick (心を曲げるようなトリック), play on us (私たちに仕掛ける)' },
+            { time: '[03:55]', en: 'To find out how, let\'s jump into a black hole and die.', jp: 'それを見つけるために、ブラックホールに飛び込み、死んでみましょう。', vocab: 'jump into (～に飛び込む)' },
+            { time: '[04:00]', en: 'A whole universe born inside a black hole.', jp: 'ブラックホールの内側で生まれる一つの宇宙。', vocab: '' },
+            { time: '[04:04]', en: 'We usually imagine black holes as spheres with a singularity at their center, a point where all their mass is concentrated so much that our math breaks down.', jp: '私たちは通常、ブラックホールを、その質量の全てが集中し、私たちの数学が破綻する特異点が中心にある球体だと想像します。', vocab: 'spheres (球体), singularity (特異点), breaks down (破綻する)' },
+            { time: '[04:14]', en: 'But this is a lie.', jp: 'しかし、これは嘘です。', vocab: '' },
+            { time: '[04:15]', en: 'They are so much weirder.', jp: 'それらはそれよりもはるかに奇妙です。', vocab: '' },
+            { time: '[04:18]', en: 'From the outside, a black hole looks like a normal black sphere, but the inside is where things stop making sense.', jp: '外側から見ると、ブラックホールは通常の黒い球体に見えますが、内側では物事が意味をなさなくなります。', vocab: 'normal black sphere (通常の黒い球体), stop making sense (意味をなさなくなる)' },
+            { time: '[04:26]', en: 'Black holes warp the universe so much that at the Event Horizon, space and time switch their roles.', jp: 'ブラックホールは宇宙を非常に歪ませ、事象の地平線では空間と時間がその役割を入れ替えます。', vocab: 'warp (歪ませる), switch their roles (役割を入れ替える)' },
+            { time: '[04:32]', en: 'Inside a normal sphere, space is finite but time goes on forever.', jp: '通常の球体の内部では、空間は有限ですが、時間は永遠に続きます。', vocab: 'finite (有限の)' },
+            { time: '[04:37]', en: 'But inside a black hole it\'s the other way around: space goes on forever, but time is finite.', jp: 'しかし、ブラックホールの内部では逆になります：空間は永遠に続きますが、時間は有限です。', vocab: 'the other way around (逆)' },
+            { time: '[04:44]', en: 'So once inside, you see an infinite Universe with no center.', jp: 'そのため、一度中に入ると、中心のない無限の宇宙を見ることになります。', vocab: 'no center (中心がない)' },
+            { time: '[04:48]', en: 'The geometry is too complicated, so we\'re simplifying, but basically you could walk forever in one direction, or walk in another direction and arrive at the same place again.', jp: '幾何学は複雑すぎるため単純化していますが、基本的に、ある方向に永遠に歩き続けることもできますし、別の方向に歩いて再び同じ場所に戻ってくることもできます。', vocab: 'geometry (幾何学), simplifying (単純化する), arrive at (～に到着する)' },
+            { time: '[04:59]', en: 'But not in that.', jp: 'しかし、そうではありません。', vocab: '' },
+            { time: '[05:00]', en: 'Inside a black hole, time is finite and it\'s now running out.', jp: 'ブラックホールの内部では、時間は有限であり、刻々と尽きようとしています。', vocab: 'running out (尽きようとしている)' },
+            { time: '[05:04]', en: 'So after a while, you start to notice that space itself is slowly changing.', jp: 'そのため、しばらくすると、空間そのものがゆっくりと変化していることに気づき始めます。', vocab: '' },
+            { time: '[05:08]', en: 'In one direction, space is being stretched, while in all other directions, space is shrinking.', jp: 'ある一方向では空間が引き伸ばされ、他の全ての方向では空間が縮んでいます。', vocab: 'stretched (引き伸ばされる), shrinking (縮んでいる)' },
+            { time: '[05:13]', en: 'The whole universe is being squeezed, kind of turning into a collapsing spaghetti.', jp: '宇宙全体が押しつぶされ、一種の崩壊するスパゲッティに変わっていくのです。', vocab: 'squeezed (押しつぶされる), collapsing spaghetti (崩壊するスパゲッティ)' },
+            { time: '[05:18]', en: 'Sooner or later, the whole black hole Universe collapses into itself.', jp: '遅かれ早かれ、ブラックホール宇宙全体が自己崩壊します。', vocab: 'sooner or later (遅かれ早かれ), collapses into itself (自己崩壊する)' },
+            { time: '[05:22]', en: 'All of space, every single part of it, is turning into a singularity.', jp: '空間のあらゆる部分、その全てが特異点に変わりつつあります。', vocab: 'every single part (あらゆる部分)' },
+            { time: '[05:27]', en: 'So the singularity of a black hole is not at its center or in any direction at all.', jp: 'したがって、ブラックホールの特異点は、その中心にあるわけでも、特定の方向にあるわけでもありません。', vocab: '' },
+            { time: '[05:32]', en: 'It\'s in the future of whatever falls inside.', jp: 'それは、内部に落ちてきたものの未来に起こる出来事なのです。', vocab: 'whatever falls inside (内部に落ちてくるもの)' },
+            { time: '[05:35]', en: 'We made a whole video about this if you want to learn more.', jp: 'もっと知りたい場合は、これについて私たちは全体のビデオを作成しました。', vocab: '' },
+            { time: '[05:39]', en: 'So the singularity is not a place where you can go.', jp: 'つまり、特異点は行くことができる場所ではありません。', vocab: '' },
+            { time: '[05:41]', en: 'It\'s an event in time that happens once.', jp: 'それは、時間の中の出来事であり、一度だけ起こります。', vocab: '' },
+            { time: '[05:45]', en: 'Once it happens, you and everything else that fell inside the black hole will be mercilessly crushed into an infinitely small region with infinite gravity and infinite energy.', jp: 'それが起こると、あなたとブラックホールに落ちた他の全ては、無限に小さな領域に、無限の重力と無限のエネルギーで無慈悲に押しつぶされます。', vocab: 'mercilessly crushed (無慈悲に押しつぶされる), infinitely small region (無限に小さな領域), infinite gravity (無限の重力)' },
+            { time: '[05:55]', en: 'Time, space, none of it matters anymore; both kind of stop existing in ways that we would recognize.', jp: '時間も空間も、もう何も意味をなしません。どちらも、私たちが認識できる形では、ある意味存在しなくなります。', vocab: 'none of it matters (何も意味をなさない), recognize (認識する)' },
+            { time: '[06:01]', en: 'And then, is this the end?', jp: 'そして、これが終わりなのでしょうか？', vocab: '' },
+            { time: '[06:03]', en: 'Well, maybe not.', jp: 'さあ、そうではないかもしれません。', vocab: '' },
+            { time: '[06:06]', en: 'This collapse of the black whole universe into a singularity looks like one of the scenarios for the end of our universe: the Big Crunch.', jp: 'ブラックホール宇宙が特異点に崩壊するこの様子は、私たちの宇宙の終焉シナリオの一つである「ビッグクランチ」に似ています。', vocab: 'Big Crunch (ビッグクランチ)' },
+            { time: '[06:13]', en: 'Where long after the big bang, the whole universe collapses into a singularity again.', jp: 'そこでは、ビッグバンからずっと後に、宇宙全体が再び特異点に崩壊します。', vocab: '' },
+            { time: '[06:17]', en: 'But if there\'s a big crunch, there might be a big bounce.', jp: 'しかし、ビッグクランチがあるなら、ビッグバウンスがあるかもしれません。', vocab: 'Big Bounce (ビッグバウンス)' },
+            { time: '[06:21]', en: 'Like a rubber ball that you\'ve squeezed too much and that suddenly rebounds, space might expand again.', jp: 'まるで、押しつぶしすぎたゴムボールが突然跳ね返るように、空間が再び膨張するかもしれません。', vocab: 'squeezed too much (押しつぶしすぎる), rebounds (跳ね返る), expand again (再び膨張する)' },
+            { time: '[06:28]', en: 'So a new universe could be born inside a black hole.', jp: 'つまり、ブラックホールの内部で新しい宇宙が生まれる可能性があるのです。', vocab: '' },
+            { time: '[06:31]', en: 'The funny thing about this scenario is that nothing has changed in the slightest outside the black hole.', jp: 'このシナリオの面白い点は、ブラックホールの外側では何一つ変わっていないことです。', vocab: 'funny thing (面白い点), in the slightest (少しも)' },
+            { time: '[06:36]', en: 'Watching from the outside, it\'s still a black sphere of nothingness.', jp: '外から見ていると、それは相変わらず何もない黒い球体です。', vocab: 'nothingness (無)' },
+            { time: '[06:40]', en: 'And yet, on the inside, a new universe has been born.', jp: 'それなのに、内側では新しい宇宙が生まれているのです。', vocab: 'and yet (それにもかかわらず)' },
+            { time: '[06:44]', en: 'So maybe our universe was born like this, and we are all actually inside a black hole.', jp: 'ひょっとすると、私たちの宇宙もこのようにして生まれたのかもしれず、私たちは皆、実際にはブラックホールの内部にいるのかもしれません。', vocab: '' },
+            { time: '[06:50]', en: 'But if our universe can also create black holes, they might give birth to new universes.', jp: 'しかし、私たちの宇宙もブラックホールを作ることができるなら、それらのブラックホールが新しい宇宙を生み出すかもしれません。', vocab: 'give birth to (～を生み出す)' },
+            { time: '[06:56]', en: 'Is our black hole Universe also just part of a universe further up that\'s also black hole inside another universe?', jp: '私たちのブラックホール宇宙も、さらに上にある別の宇宙の一部であり、その別の宇宙の中のブラックホールなのでしょうか？', vocab: 'further up (さらに上に)' },
+            { time: '[07:03]', en: 'Is there an end to it?', jp: 'それに終わりはあるのでしょうか？', vocab: '' },
+            { time: '[07:05]', en: 'Is there one original universe?', jp: '一つのオリジナルの宇宙が存在するのでしょうか？', vocab: 'original universe (オリジナルの宇宙)' },
+            { time: '[07:07]', en: 'Is the cosmos black holes inside black holes inside black holes: infinite black hole universes?', jp: '宇宙は、ブラックホールの内側のブラックホールの内側のブラックホールの内側にある、無限のブラックホール宇宙なのでしょうか？', vocab: 'cosmos (宇宙)' },
+            { time: '[07:16]', en: 'If the universe creates black holes that create universes that then create new black holes that create new universes, this Cosmic self-reproduction would be subject to Natural Selection.', jp: 'もし宇宙が、宇宙を生み出すブラックホールを作り、その宇宙がさらに新しいブラックホールを作り、それが新しい宇宙を生み出すなら、この宇宙的な自己生殖は自然淘汰の対象となるでしょう。', vocab: 'self-reproduction (自己生殖), subject to (～の対象となる), Natural Selection (自然淘汰)' },
+            { time: '[07:27]', en: 'A big bang is a chaotic and messy event, so it\'s possible that the new daughter universes would not always be fully identical to their moms.', jp: 'ビッグバンは混沌としていて乱雑な出来事なので、新しい娘宇宙が常に母親宇宙と完全に同一ではない可能性があります。', vocab: 'chaotic (混沌とした), messy event (乱雑な出来事), daughter universes (娘宇宙), fully identical to (～と完全に同一の)' },
+            { time: '[07:35]', en: 'Sometimes physics may be slightly different, with some fundamental values higher or lower.', jp: '時として、物理法則がわずかに異なり、いくつかの基本的な値が高くなったり低くなったりするかもしれません。', vocab: 'slightly different (わずかに異なる), fundamental values (基本的な値)' },
+            { time: '[07:40]', en: 'And so some universes might be able to create loads of stars, planets, and black holes; others might not.', jp: 'そのため、一部の宇宙は多くの星、惑星、ブラックホールを作ることができるかもしれませんが、他の宇宙はそうでないかもしれません。', vocab: 'loads of (多くの)' },
+            { time: '[07:47]', en: 'Maybe creating a uniform Cosmic soup where no stars, planets, and black holes form.', jp: '星、惑星、ブラックホールが形成されない均一な宇宙のスープを作るかもしれません。', vocab: 'uniform (均一な), Cosmic soup (宇宙のスープ)' },
+            { time: '[07:53]', en: 'But if all universes are born inside black holes, in the long run all universe lines that don\'t create loads of black holes would die out.', jp: 'しかし、もし全ての宇宙がブラックホールの内部で生まれるなら、長期的には多くのブラックホールを作らない全ての宇宙の系統は消滅するでしょう。', vocab: 'in the long run (長期的には), die out (消滅する)' },
+            { time: '[08:01]', en: 'The universes with the conditions for loads of black holes would become the most common and spawn the most daughter universes.', jp: '多くのブラックホールを作る条件を持つ宇宙が最も一般的になり、最も多くの娘宇宙を生み出すでしょう。', vocab: 'most common (最も一般的), spawn (生み出す)' },
+            { time: '[08:07]', en: 'Survival of the fittest, but with universes instead of organisms.', jp: '適者生存、ただし生物ではなく宇宙での話です。', vocab: 'survival of the fittest (適者生存), organisms (生物)' },
+            { time: '[08:11]', en: 'Our observable universe alone has created at least $10^{17}$ black holes so far.', jp: '私たちの観測可能な宇宙だけでも、これまでに少なくとも$10^{17}$個のブラックホールを生み出してきました。', vocab: '' },
+            { time: '[08:17]', en: 'So maybe our universe has the physics and laws it has because it was born after a long process of cosmological selection that favored the production of tons of black holes.', jp: 'したがって、私たちの宇宙が持つ物理法則は、大量のブラックホールの生成を優遇するという長い宇宙論的淘汰の過程を経て生まれたのかもしれません。', vocab: 'cosmological selection (宇宙論的淘汰), favored (優遇した), production (生成)' },
+            { time: '[08:27]', en: 'And that would have a lovely side effect: if universes are optimized to create as many new black hole universes as possible, they\'re optimized to create loads of galaxies and stars, and thereby also by accident the conditions for life to emerge.', jp: 'そして、それには素晴らしい副次的な効果があります：もし宇宙が可能な限り多くの新しいブラックホール宇宙を作るように最適化されているなら、それは大量の銀河と星を作り出すように最適化されていることになり、結果として偶然にも生命の条件も作り出すことになります。', vocab: 'lovely side effect (素晴らしい副次的な効果), optimized to (～に最適化されている), by accident (偶然にも), emerge (出現する)' },
+            { time: '[08:43]', en: 'So universes that are the best at creating new universes are also the best at creating life.', jp: 'つまり、新しい宇宙を作るのが最も得意な宇宙は、生命を生み出すのも最も得意なのです。', vocab: '' },
+            { time: '[08:49]', en: 'If this scenario is true, who knows how many bazillions of black hole universes might be out there, all with stars and planets, potentially home to others like us.', jp: 'もしこのシナリオが真実なら、星や惑星を持ち、私たちのような存在が住んでいる可能性のあるブラックホール宇宙が、一体どれほど無数に存在するのでしょうか？', vocab: 'bazillions (無数の), potentially home to (～が住んでいる可能性のある)' },
+            { time: '[09:00]', en: 'So is our universe like this?', jp: 'では、私たちの宇宙はこのようなものなのでしょうか？', vocab: '' },
+            { time: '[09:03]', en: 'The truth is, we don\'t know.', jp: '真実は、私たちには分かりません。', vocab: '' },
+            { time: '[09:05]', en: 'While these ideas are based on real science and work on paper, they\'re speculative and not testable.', jp: 'これらのアイデアは実際の科学に基づいており、理論上は成り立っていますが、推測的であり、検証不可能です。', vocab: 'speculative (推測的な), not testable (検証不可能な)' },
+            { time: '[09:11]', en: 'Also, the cyclic universes don\'t actually explain why the universe exists in the first place or why it is the way it is.', jp: 'また、循環する宇宙論は、そもそも宇宙がなぜ存在するのか、あるいはなぜ今のような形なのかを実際には説明していません。', vocab: 'cyclic universes (循環する宇宙)' },
+            { time: '[09:18]', en: 'Instead of providing answers, these are really just new questions in disguise.', jp: 'これらは答えを提供する代わりに、姿を変えた新しい問いにすぎません。', vocab: 'in disguise (姿を変えた)' },
+            { time: '[09:22]', en: 'So keep that in mind before getting too excited.', jp: 'したがって、あまり興奮しすぎる前にそのことを心に留めておいてください。', vocab: 'keep that in mind (心に留めておく)' },
+            { time: '[09:25]', en: 'But isn\'t it just wonderful and heartwarming that we\'re living in a universe where ideas as big as this one are even thinkable?', jp: 'しかし、これほど壮大なアイデアさえも考えることができる宇宙に私たちが住んでいるというのは、本当に素晴らしく、心温まることではないでしょうか？', vocab: 'heartwarming (心温まる), even thinkable (考えることさえ可能)' },
+            { time: '[09:33]', en: 'There might be so much life, and if new universes are created constantly, maybe life will go on forever.', jp: '非常に多くの生命が存在するかもしれません。そして、新しい宇宙が絶えず作られているのなら、生命は永遠に続くかもしれません。', vocab: 'constantly (絶えず), go on forever (永遠に続く)' },
+            { time: '[09:46]', en: 'We\'ve heard rumors of a Chosen One, a special bird who has the power to illuminate the vast darkness of the universe, uncovering the great Mysteries of the world.', jp: '私たちは、選ばれし者、広大な暗闇を照らす力を持つ特別な鳥の噂を聞きました。世界の大きな謎を解き明かす、', vocab: 'Chosen One (選ばれし者), illuminate (照らす), vast darkness (広大な暗闇), uncovering (解き明かす)' },
+            { time: '[09:57]', en: 'This special power is called curiosity, and the special BB could be you.', jp: 'この特別な力は「好奇心（Curiosity）」と呼ばれ、その特別な鳥はあなたかもしれません。', vocab: '' },
+            { time: '[10:03]', en: 'Our guide to curiosity is now available on our shop.', jp: '好奇心への私たちのガイドは、今、私たちのショップで手に入ります。', vocab: '' },
+            { time: '[10:07]', en: 'It\'s an adventure that will help you to think like a Kurzgesagt BB and unlock your curiosity potential.', jp: 'これは、あなたがKurzgesagtバードのように考え、あなたの好奇心の可能性を解き放つのを助ける冒険です。', vocab: 'unlock (解き放つ), potential (可能性)' },
+            { time: '[10:14]', en: 'Join us across 160 thrilling interactive pages designed to awaken your curiosity, changing your perspective on the world forever.', jp: '160ページにわたるスリリングでインタラクティブなページに参加し、あなたの好奇心を呼び覚まし、世界に対するあなたの視点を永遠に変えるように設計されています。', vocab: 'awaken (呼び覚ます)' },
+            { time: '[10:23]', en: 'But to be prepared, we will send you on Epic quests to find incredible creatures, challenge you to build unprecedented structures, ask you to cook up something surprising, and solve riddles to unveil Hidden Truths about the world.', jp: 'しかし、準備のために、私たちはあなたを壮大な探求に送り出し、信じられないほどの生き物を見つけさせ、前例のない構造物を建てることに挑戦させ、驚くような料理を作るように頼み、世界についての隠された真実を明らかにするための謎を解かせます。', vocab: 'prepared (準備ができた), Epic quests (壮大な探求), incredible creatures (信じられないほどの生き物), unprecedented structures (前例のない構造物), cook up something surprising (驚くような料理を作る), unveil (明らかにする), Hidden Truths (隠された真実), riddles (謎)' },
+            { time: '[10:40]', en: 'But don\'t worry, the BBs will be with you every step of the way, and you can also bring a friend.', jp: 'しかし、心配しないでください。バードたちがあなたの一歩一歩を共にします。そして、友達を連れてくることもできます。', vocab: 'every step of the way (一歩一歩), bring a friend (友達を連れてくる)' },
+            { time: '[10:45]', en: 'The 18 curiosity quests were developed right here at the Kurzgesagt headquarters after hundreds and hundreds of hours of research and lots of trial and error.', jp: 'この18の好奇心の探求は、ここKurzgesagt本社で、何百、何百時間もの研究と、多くの試行錯誤を経て開発されました。', vocab: 'headquarters (本社), trial and error (試行錯誤)' },
+            { time: '[10:54]', en: 'We created the ultimate curiosity Adventure.', jp: '私たちは究極の好奇心アドベンチャーを作成しました。', vocab: 'ultimate (究極の)' },
+            { time: '[10:57]', en: 'It was the most fun we ever had making a product and we\'re so excited to finally share this experience with you.', jp: 'これは、私たちが製品を作る上でこれまでに経験した中で最も楽しいことでした。そして、この体験を皆様と共有できることを大変嬉しく思っています。', vocab: 'excited to share (共有できることに興奮している)' },
+            { time: '[11:03]', en: 'So head over to the Kurzgesagt shop and find out if you are the chosen BB.', jp: 'さあ、Kurzgesagtショップに向かい、あなたが選ばれし鳥であるかどうかを見つけてください。', vocab: 'head over to (～に向かう)' },
+            { time: '[11:08]', en: 'Every Kurzgesagt product you buy directly funds another moment we get to spend working on our videos, and you get a special piece of Kurzgesagt in return.', jp: 'あなたが購入する全てのKurzgesagt製品は、私たちがビデオ制作に費やすことができる次の瞬間に直接資金を提供してくれます。そして、あなたは見返りにKurzgesagtの特別なピースを手に入れます。', vocab: 'directly funds (直接資金を提供する), in return (見返りに)' },
+            { time: '[11:18]', en: 'Thank you so much for being a part of our story and making this channel possible.', jp: '私たちの物語の一部となっていただき、このチャンネルを可能にしてくださって、本当にありがとうございます。', vocab: 'being a part of (～の一部である)' },
+            // ----------------------------------------------------
+            // ここまで動画データ
+            // ----------------------------------------------------
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shadowing-container');
+            
+            // プレーヤーの埋め込み
+            const videoContainer = document.getElementById('video-placeholder');
+            videoContainer.innerHTML = `
+                <iframe id="youtube-player" src="https://www.youtube.com/embed/71eUes30gwc?enablejsapi=1&origin=null&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            `;
+
+            data.forEach(item => {
+                const block = document.createElement('div');
+                block.className = 'sentence-block';
+
+                block.innerHTML = `
+                    <p class="english-sentence">
+                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
+                    </p>
+                    <div class="japanese-container" onclick="toggleTranslation(this)">
+                        <p class="translation">日本語訳を見るにはタップしてください</p>
+                        <div class="translation-content hidden">
+                            <p class="translation">${item.jp}</p>
+                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(block);
+            });
+            
+            // YouTube Iframe Player APIスクリプトの動的ロード
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+    </script>
+</head>
+<body>
+    <h1>シャドーイング学習シート（埋め込みプレーヤー版）</h1>
+    <p>動画: This Black Hole Could be Bigger Than The Universe</p>
+    <p>💡 操作: 文の [MM:SS] をタップすると、上の埋め込みプレーヤーでその位置から再生が始まります。日本語訳はタップで表示/非表示を切り替えられます。</p>
+    
+    <div class="video-container" id="video-placeholder">
+    </div>
+    
+    <div id="shadowing-container">
+        </div>
+</body>
+</html>
