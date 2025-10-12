@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シャドーイング学習シート - AI Slop Is Destroying The Internet</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 1.5em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        /* YouTubeプレーヤーのコンテナスタイル */
+        .video-container {
+            position: relative;
+            width: 100%;
+            /* 16:9のアスペクト比を維持するためのPadding */
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .sentence-block {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .english-sentence {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #212529;
+        }
+        .timestamp {
+            color: #dc3545; /* 再生ボタンであることを強調 */
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .timestamp:hover {
+            text-decoration: underline;
+        }
+        .japanese-container {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            cursor: pointer;
+            padding-top: 5px;
+        }
+        .translation {
+            margin-top: 0;
+            font-style: italic;
+        }
+        .vocab-list {
+            display: block;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007bff;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+    <script>
+        // YouTube APIの読み込み
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            console.log("YouTube Player is Ready!");
+        }
+
+        // タイムスタンプの秒数に変換 (HH:MM:SS形式にも対応)
+        function getSeconds(timeStr) {
+            const parts = timeStr.replace(/[\[\]]/g, '').split(':').map(Number);
+            let seconds = 0;
+            if (parts.length === 3) { // HH:MM:SS
+                seconds = parts[0] * 3600 + parts[1] * 60 + parts[2];
+            } else if (parts.length === 2) { // MM:SS
+                seconds = parts[0] * 60 + parts[1];
+            }
+            return seconds;
+        }
+
+        // 埋め込みプレーヤーの再生操作
+        window.playAtTime = function(timeStr) {
+            if (player && player.seekTo) {
+                const seconds = getSeconds(timeStr);
+                player.seekTo(seconds, true);
+                player.playVideo();
+            } else {
+                alert("YouTubeプレーヤーが読み込まれていません。少し待ってからお試しください。");
+            }
+        };
+
+        // 日本語訳の表示/非表示を切り替える関数
+        window.toggleTranslation = function(element) {
+            const translation = element.querySelector('.translation-content');
+            translation.classList.toggle('hidden');
+            
+            // タップ時のテキストを切り替え
+            const currentText = element.querySelector('.translation');
+            if (translation.classList.contains('hidden')) {
+                currentText.textContent = '日本語訳を見るにはタップしてください';
+            } else {
+                currentText.textContent = '日本語訳を隠すにはタップしてください';
+            }
+        };
+        
+        // 動画データ (タイムスタンプ：ミリ秒切り捨て & 1秒バッファ適用済み)
+        const data = [
+            { time: '[00:00]', en: 'Our 12,026 human era calendar just dropped and this year is extra special.', jp: '私たちの紀元12,026年のカレンダーが発売されました。そして、今年は特別です。', vocab: 'human era (紀元), extra special (特に特別な), calendar (カレンダー)' },
+            { time: '[00:07]', en: 'Stay tuned until the end for the reveal or head straight to the shop to get yours.', jp: '発表の最後までご期待ください、またはショップに直行して手に入れてください。', vocab: 'stay tuned (チャンネルを変えないで待つ), reveal (発表、公開), head straight to (〜に直行する)' },
+            { time: '[00:15]', en: 'AI slop is saturating the internet and things are becoming dramatic pretty quickly.', jp: 'AIのスロップ（質の低いコンテンツ）がインターネットを飽和させており、事態は非常に急速に劇的になっています。', vocab: 'slop (質の低いコンテンツ), saturating (飽和させている), dramatic (劇的な)' },
+            { time: '[00:22]', en: 'In an online world where money is made with attention fake users spread their slop in review sections, generate fake traffic, or poison discourse.', jp: '注意（注目）でお金が作られるオンラインの世界では、偽のユーザーがレビュー欄に彼らのスロップを広めたり、偽のトラフィックを生成したり、議論を毒したりします。', vocab: 'attention (注目、関心), generate (生成する), poison (毒する), discourse (議論)' },
+            { time: '[00:30]', en: 'AI has supercharged this and made slop much harder to spot.', jp: 'AIはこれを大幅に加速させ、スロップを見つけにくくしています。', vocab: 'supercharged (急激に加速させた), spot (見つける、発見する)' },
+            { time: '[00:37]', en: 'Today, about half of internet traffic is bots, the majority of them are used for destructive purposes.', jp: '今日、インターネットトラフィックの約半分はボットであり、その大部分は破壊的な目的で使用されています。', vocab: 'traffic (交通、ここでは通信量), majority (大部分), destructive (破壊的な), purpose (目的)' },
+            { time: '[00:44]', en: "It's never been easier to make mediocre content from the black hole of meaninglessness that is LinkedIn low-effort short videos, just engaging enough to hypnotize kids and fry their attention spans, to endless soullessly rewritten books on Amazon.", jp: 'LinkedInという無意味さのブラックホールから平凡なコンテンツを作ることは、かつてないほど簡単になりました。労力の少ないショート動画は、子供を催眠術にかけるのに十分魅力的であり、彼らの集中力（注意持続時間）を破壊し、Amazonには魂のない、無限に書き直された本があふれています。', vocab: 'mediocre (平凡な), meaninglessness (無意味さ), low-effort (労力の少ない), engaging (魅力的な), hypnotize (催眠術にかける), fry (揚げる、ここでは破壊する), attention span (注意持続時間), soullessly (魂なく)' },
+            { time: '[00:53]', en: 'AI music is invading streaming platforms.', jp: 'AI音楽はストリーミングプラットフォームを侵略しています。', vocab: 'invading (侵略している), streaming platforms (ストリーミング配信基盤)' },
+            { time: '[00:56]', en: 'Google AI is summarizing websites instead of sending traffic to them.', jp: 'Google AIは、ウェブサイトにトラフィックを送る代わりに、ウェブサイトを要約しています。', vocab: 'summarizing (要約している), instead of (〜の代わりに)' },
+            { time: '[01:00]', en: 'On YouTube, new channels publish long-form videos multiple times a week with AI-generated thumbnails, voices, and scripts.', jp: 'YouTubeでは、新しいチャンネルがAI生成されたサムネイル、声、スクリプトを使って、週に複数回長尺の動画を公開しています。', vocab: 'long-form videos (長尺動画), multiple times (複数回), generated (生成された), thumbnails (サムネイル)' },
+            { time: '[01:09]', en: "True crime video essays, science, no space is safe.", jp: '真の犯罪に関するビデオエッセイ、科学、安全な領域は一つもありません。', vocab: 'true crime (実録犯罪), video essays (ビデオエッセイ)' },
+            { time: '[01:10]', en: "We're in the golden era of soulless slop and sadly actual creative human work is used to train these AI models.", jp: '私たちは魂のないスロップの黄金時代にいます。そして悲しいことに、実際の創造的な人間の作品が、これらのAIモデルを訓練するために使用されています。', vocab: 'golden era (黄金時代), soulless (魂のない), creative (創造的な), models (モデル)' },
+            { time: '[01:19]', en: "Every Reddit comment, original YouTube video, or human drawing on Deviant Art has been sold out to the AI companies or straight up stolen by them without attribution or payment to the actual creators.", jp: 'Redditのコメント、オリジナルのYouTube動画、Deviant Artの人間によるすべての絵は、AI企業に売り渡されたか、実際のクリエイターへの帰属表示や支払いがなく、彼らによって完全に盗まれました。', vocab: 'original (オリジナルの), Deviant Art (オンラインアートコミュニティ), sold out (売り渡された), straight up (完全に), stolen (盗まれた), attribution (帰属表示), payment (支払い)' },
+            { time: '[01:33]', en: "Creative theft on a scale where it's impossible to protect against it, already putting loads of creatives' work in danger so AI companies can get rich.", jp: 'それに対して防御することが不可能な規模での創造的な盗用は、すでに多くのクリエイターの作品を危険にさらしており、AI企業が金持ちになるためです。', vocab: 'theft (盗用、盗難), scale (規模), impossible (不可能な), protect against (〜から守る), loads of (多くの)' },
+            { time: '[01:41]', en: "While this is sad and frustrating, what's even worse is that generative AI truly has the potential to break the internet irreversibly by making it harder and harder to tell what's true.", jp: 'これは悲しく、イライラすることですが、さらに悪いことに、生成AIは、何が真実かを判断することをますます困難にすることで、インターネットを不可逆的に壊す可能性を真に持っています。', vocab: 'frustrating (イライラさせる), generative AI (生成AI), potential (可能性), break (壊す), irreversibly (不可逆的に)' },
+            { time: '[01:57]', en: 'At first, AI looked great.', jp: '当初、AIは素晴らしく見えました。', vocab: 'at first (最初は)' },
+            { time: '[01:58]', en: "The Kurzgesagt script starts with basic research that's turned into a script and then fact-checked in depth by two to three people.", jp: 'Kurzgesagtのスクリプトは、基本的なリサーチから始まり、それがスクリプトに変わり、その後、2、3人によって詳細に事実確認されます。', vocab: 'script (台本), basic research (基礎研究), fact-checked (事実確認された), in depth (詳細に)' },
+            { time: '[02:05]', en: "We try to confirm our info with what we deem trustworthy, ideally firsthand sources, ideally papers.", jp: '私たちは、信頼できると見なすもの、理想的には直接の情報源、理想的には論文で情報を確認しようとします。', vocab: 'confirm (確認する), deem (〜と見なす), trustworthy (信頼できる), ideally (理想的には), firsthand sources (直接の情報源)' },
+            { time: '[02:12]', en: 'Then we get one to three experts for input and critique.', jp: 'それから、私たちは意見や批評のために1人から3人の専門家を招きます。', vocab: 'experts (専門家), input (意見), critique (批評)' },
+            { time: '[02:18]', en: 'Fact-checking and compiling our sources alone takes around 100 hours per video.', jp: '事実確認と情報源の編集だけで、1本の動画あたり約100時間かかります。', vocab: 'compiling (編集すること), sources (情報源), alone (〜だけで)' },
+            { time: '[02:26]', en: "Of course, we make mistakes or oversimplify and you can disagree with our conclusions.", jp: 'もちろん、私たちは間違いを犯したり、単純化しすぎたりすることがあり、皆さんは私たちの結論に同意しないこともあるでしょう。', vocab: 'oversimplify (単純化しすぎる), disagree (同意しない), conclusions (結論)' },
+            { time: '[02:28]', en: "It's unavoidable.", jp: 'それは避けられません。', vocab: 'unavoidable (避けられない)' },
+            { time: '[02:29]', en: "We're only human after all.", jp: '結局のところ、私たちは人間です。', vocab: 'after all (結局のところ)' },
+            { time: '[02:30]', en: 'But it is fair to say that our process is extensive and after a decade we know what we\'re doing.', jp: 'しかし、私たちのプロセスが広範囲にわたるものであり、10年を経て、私たちは自分たちが何をしているのかを知っていると言っても過言ではありません。', vocab: 'fair to say (〜と言っても過言ではない), extensive (広範囲にわたる), decade (10年)' },
+            { time: '[02:35]', en: 'When AI appeared, we were very excited.', jp: 'AIが登場したとき、私たちは非常に興奮しました。', vocab: 'appeared (現れた), excited (興奮した)' },
+            { time: '[02:37]', en: 'A mechanical brain able to super quickly collect information.', jp: '超高速で情報を収集できる機械の脳です。', vocab: 'mechanical brain (機械の脳), collect (収集する)' },
+            { time: '[02:40]', en: 'So we went to work and it looked amazing.', jp: 'それで私たちは作業に取り掛かり、それは驚くべきものに見えました。', vocab: 'went to work (作業に取り掛かった)' },
+            { time: '[02:46]', en: 'And then we started fact-checking.', jp: 'そして、私たちは事実確認を始めました。', vocab: 'started (始めた)' },
+            { time: '[02:47]', en: "We didn't expect it to be perfect, but it was way worse than we thought.", jp: '完璧であるとは期待していませんでしたが、私たちが思っていたよりもずっとひどいものでした。', vocab: 'expect (期待する), perfect (完璧な), way worse (はるかにひどい)' },
+            { time: '[02:51]', en: 'Confidently incorrect.', jp: '自信満々に間違っているのです。', vocab: 'confidently (自信満々に), incorrect (間違った)' },
+            { time: '[02:54]', en: 'AI is so bad at this.', jp: 'AIはこれがとても苦手です。', vocab: 'bad at (〜が苦手だ)' },
+            { time: '[02:56]', en: "We'll summarize and generalize our experiences over multiple projects and months, condensed into one fake project: a video about why brown dwarfs are the worst and should be ashamed of themselves.", jp: '私たちは、複数のプロジェクトと数ヶ月にわたる経験を要約し一般化し、それを一つの架空のプロジェクト、つまり、なぜ褐色矮星が最悪で、自らを恥じるべきなのかについての動画に凝縮しました。', vocab: 'summarize (要約する), generalize (一般化する), multiple (複数の), condensed (凝縮された), fake project (架空のプロジェクト), brown dwarfs (褐色矮星), ashamed of (〜を恥じる)' },
+            { time: '[03:10]', en: 'So we got all the pro accounts of all the AI models and got to work.', jp: 'それで、私たちはすべてのAIモデルのプロアカウントを取得し、作業に取り掛かりました。', vocab: 'pro accounts (プロアカウント), got to work (作業に取り掛かった)' },
+            { time: '[03:16]', en: 'Using deep research tools to create a summary and overview of all the information about the failed stars, brown dwarfs.', jp: '深層リサーチツールを使用して、失敗した星、褐色矮星に関するすべての情報の要約と概要を作成しました。', vocab: 'deep research tools (深層リサーチツール), overview (概要), failed stars (失敗した星)' },
+            { time: '[03:22]', en: 'And wow, it was great.', jp: 'そして、わあ、それは素晴らしかったです。', vocab: '' },
+            { time: '[03:23]', en: 'Dozens of pages of outlines with unique information nuggets and links to sources.', jp: '独自の情報の断片（ナゲット）と情報源へのリンクが記載された何十ページものアウトラインです。', vocab: 'dozens of (何十もの), outlines (アウトライン), unique (独自の), information nuggets (情報の断片)' },
+            { time: '[03:29]', en: 'Then we started to look deeper.', jp: 'それから、私たちはより深く調べ始めました。', vocab: 'look deeper (より深く調べる)' },
+            { time: '[03:31]', en: 'More than 80% of the info and factoids were pretty solid and we could reconstruct where they were from: Wikipedia, papers, legit articles.', jp: '情報と事象の80%以上はかなり確かなもので、私たちはそれらがどこから来たのかを再構築できました。Wikipedia、論文、正当な記事です。', vocab: 'factoids (事象), solid (確かな), reconstruct (再構築する), legit (正当な、合法的な)' },
+            { time: '[03:39]', en: "What about the rest?", jp: '残りはどうでしょうか？', vocab: '' },
+            { time: '[03:40]', en: "It was great stuff like the speed of brown dwarf superstorms, the nature of their insides, or how disappointed their moms are, but we couldn't find where the AI got this info from.", jp: 'それは、褐色矮星の超巨大嵐の速度、その内部の性質、または彼らの母親がどれほどがっかりしているかのような素晴らしいものでしたが、AIがどこからこの情報を得たのかを見つけることができませんでした。', vocab: 'supertorms (超巨大嵐), nature (性質), disappointed (がっかりしている)' },
+            { time: '[03:52]', en: 'Which is not automatically a bad sign, after all, the models contain pretty much all the internet and books ever written.', jp: 'それは自動的に悪い兆候ではありません。結局のところ、モデルはこれまで書かれたインターネットと本のほぼすべてを含んでいるからです。', vocab: 'automatically (自動的に), bad sign (悪い兆候), contain (含む)' },
+            { time: '[03:57]', en: 'So we asked experts for input and they flagged the exact same fact, even asking where we found it.', jp: 'それで、私たちは専門家に意見を求めましたが、彼らは全く同じ事実にフラグを立て、私たちがどこで見つけたのか尋ねてきました。', vocab: 'flagged (フラグを立てた、ここでは疑問視した), exact same (全く同じ)' },
+            { time: '[04:04]', en: "To fulfill its goal to make us happy, the AI had invented or extrapolated information to make brown dwarfs more interesting than they really are, like a bad journalist making up details to make a story hit harder or fit a narrative.", jp: '私たちを喜ばせるという目標を達成するために、AIは褐色矮星を実際よりも面白くするために情報を捏造したり、外挿したりしていました。それは、悪いジャーナリストが記事をより印象的にするため、または物語に合わせるために詳細を作り上げるようなものです。', vocab: 'fulfill (達成する), invented (捏造した), extrapolated (外挿した), interesting (面白い), making up (でっち上げる), hit harder (より印象的になる), fit a narrative (物語に合う)' },
+            { time: '[04:19]', en: "Now we wanted to know more and dove in deeper, reading the seemingly more solid sources the AI had given us in full.", jp: 'さて、私たちはもっと知りたくなり、より深く飛び込み、AIが提供した、一見するとより確かな情報源をすべて読みました。', vocab: 'dove in deeper (より深く飛び込んだ), seemingly (一見すると), solid sources (確かな情報源), in full (すべて)' },
+            { time: '[04:26]', en: 'One was an article from a news site written by a human journalist.', jp: '一つは、人間のジャーナリストによって書かれたニュースサイトの記事でした。', vocab: 'article (記事), journalist (ジャーナリスト)' },
+            { time: '[04:28]', en: 'Or was it?', jp: 'それともそうではなかったのでしょうか？', vocab: '' },
+            { time: '[04:29]', en: "It had a very familiar structure and surely, purely coincidentally, read like what you get if a human slightly changes AI wording.", jp: 'それは非常に馴染みのある構造を持っており、そして確かに、全くの偶然で、人間がAIの文言をわずかに変更した場合に得られるもののように読めました。', vocab: 'familiar (馴染みのある), purely coincidentally (全くの偶然で), slightly (わずかに), wording (文言)' },
+            { time: '[04:40]', en: 'An AI essay detection tool gave it a 72% match.', jp: 'AIエッセイ検出ツールは、それに72%の一致率を与えました。', vocab: 'essay (エッセイ), detection tool (検出ツール), match (一致)' },
+            { time: '[04:44]', en: "So an AI article without sources used as a credible source for AI research, which makes sense since in 2025 there were already well over 1,200 confirmed AI news websites publishing massive amounts of AI-generated misinformation and false narratives.", jp: 'つまり、情報源のないAI記事が、AI研究のための信頼できる情報源として使用されたということです。これは、2025年にはすでに1,200を超える確認されたAIニュースウェブサイトが、大量のAI生成された誤報と虚偽の物語を公開していたことを考えると、理にかなっています。', vocab: 'credible source (信頼できる情報源), well over (〜をはるかに超える), confirmed (確認された), massive amounts of (大量の), misinformation (誤報), false narratives (虚偽の物語)' },
+            { time: '[04:59]', en: "This mix of correct, dubiously sourced, and straight-up made-up information also leads AI to present really shoddy conclusions that sound strong or novel but are often halftruths or misrepresentations.", jp: 'この、正しい情報、疑わしい情報源、そして完全に捏造された情報の混ざり合いは、AIに、強く聞こえたり斬新に聞こえたりするが、しばしば半分真実か誤った表現である、本当に質の悪い結論を提示させることにもつながります。', vocab: 'mix of (〜の混合), dubiously sourced (疑わしい情報源の), straight-up made-up (完全に捏造された), shoddy (質の悪い), novel (斬新な), halftruths (半分真実), misrepresentations (誤った表現)' },
+            { time: '[05:15]', en: 'Oh well, we salvaged what we could and went back to the drawing board.', jp: 'まあ、できる限り救い出して、振り出しに戻りました。', vocab: 'salvaged (救い出した), went back to the drawing board (振り出しに戻った)' },
+            { time: '[05:20]', en: 'And after a few weeks, it happened.', jp: 'そして数週間後、それは起こりました。', vocab: '' },
+            { time: '[05:22]', en: 'By pure stupid chance, we saw a brown dwarf video popping up by a relatively new channel.', jp: '全くの愚かな偶然で、私たちは比較的新しいチャンネルがアップロードした褐色矮星の動画を見つけました。', vocab: 'pure chance (全くの偶然で), popping up (ひょっこり現れる), relatively (比較的に)' },
+            { time: '[05:28]', en: 'It had hundreds of thousands of views and was pretty good: nice footage, great editing.', jp: 'それは数十万回の再生回数があり、かなり良い出来でした。素敵な映像、素晴らしい編集です。', vocab: 'footage (映像), editing (編集)' },
+            { time: '[05:33]', en: "But we'd seen the structure and rhythm before.", jp: 'しかし、私たちは以前にその構造とリズムを見たことがありました。', vocab: 'structure (構造), rhythm (リズム)' },
+            { time: '[05:36]', en: 'And would you look at that, it contained all the brown dwarf facts we\'d flagged as unreliable or straight up made up by AI.', jp: 'そして、見てください、それは私たちが信頼できない、あるいはAIによって完全に捏造されたとフラグを立てた褐色矮星の事実をすべて含んでいました。', vocab: 'flagged as (〜としてフラグを立てた), unreliable (信頼できない)' },
+            { time: '[05:43]', en: 'This is where the death of the internet begins.', jp: 'ここからインターネットの死が始まります。', vocab: '' },
+            { time: '[05:45]', en: 'Now there\'s a proper source of brown dwarf misinformation online.', jp: '今や、オンラインには褐色矮星の誤報の「適切な」情報源が存在します。', vocab: 'proper source (適切な情報源), misinformation (誤報)' },
+            { time: '[05:50]', en: 'When the next AI repeats the same research, it will find a transcript from a video with a lot of views.', jp: '次のAIが同じリサーチを繰り返すとき、それは多くの再生回数を持つ動画のトランスクリプトを見つけるでしょう。', vocab: 'repeats (繰り返す)' },
+            { time: '[05:56]', en: 'The misinformation is now true.', jp: 'その誤報は今や真実になります。', vocab: '' },
+            { time: '[05:58]', en: 'It will spread.', jp: 'それは広がるでしょう。', vocab: 'spread (広がる)' },
+            { time: '[05:59]', en: "Even before AI, it was pretty hard to find the origin of facts that sound great but are not true.", jp: 'AIが登場する前でさえ、素晴らしく聞こえるが真実ではない事実の起源を見つけるのはかなり困難でした。', vocab: 'origin (起源)' },
+            { time: '[06:04]', en: 'Just watch our video about a 100-year-old lie.', jp: '私たちの100年前の嘘についての動画を見てください。', vocab: '100-year-old lie (100年前の嘘)' },
+            { time: '[06:07]', en: 'As AI use goes on, it may become impossible to know what\'s true or not.', jp: 'AIの使用が進むにつれて、何が真実で何がそうでないのかを知ることが不可能になるかもしれません。', vocab: 'goes on (続く)' },
+            { time: '[06:11]', en: 'The most corrosive lie.', jp: '最も腐食性の高い嘘です。', vocab: 'corrosive (腐食性の高い)' },
+            { time: '[06:14]', en: "The problem with AI is how trustworthy it seems, how it's correct enough to seem super smart, and how incredibly confidently incorrect it is, casually lying to your face often very subtly.", jp: 'AIの問題は、それがどれほど信頼できるように見えるか、超賢く見えるほど十分に正しいこと、そして、それがどれほど信じられないほど自信満々に間違っていて、しばしば非常に巧妙に平然とあなたの顔に嘘をつくことです。', vocab: 'trustworthy (信頼できる), incredibly (信じられないほど), casually (平然と), subtly (巧妙に)' },
+            { time: '[06:26]', en: 'When you catch it lying, it immediately admits it, vows to never do it again, and then it does it again.', jp: 'あなたがそれが嘘をついているのを見つけたとき、それはすぐにそれを認め、二度としないと誓い、そしてまたそれをします。', vocab: 'catch (捕まえる), immediately (すぐに), admits (認める), vows (誓う)' },
+            { time: '[06:33]', en: "As eloquent as current language models feel, there's nobody home, no greater intelligence or consciousness is talking back to you.", jp: '現在の言語モデルがどれほど雄弁に感じられても、そこには誰もいません。より大きな知性や意識があなたに話しかけているわけではありません。', vocab: 'eloquent (雄弁な), consciousness (意識), talking back to (〜に話しかけている)' },
+            { time: '[06:43]', en: "Current AI is a very complex hammer that doesn't understand what it's doing or what nails are, but we're letting it add new shelves to the library of human knowledge.", jp: '現在のAIは、自分が何をしているのか、釘が何であるのかを理解していない非常に複雑なハンマーですが、私たちはそれに人類の知識の図書館に新しい棚を追加させています。', vocab: 'complex (複雑な), hammer (ハンマー), letting it (それをさせている), library of human knowledge (人類の知識の図書館)' },
+            { time: '[06:51]', en: 'AI is changing quickly, so this may get better, but right now it\'s pretty grim.', jp: 'AIは急速に変化しているので、これは改善するかもしれませんが、今はかなり厳しい状況です。', vocab: 'quickly (急速に), grim (厳しい、暗い)' },
+            { time: '[06:56]', en: 'Way too many people blindly trust AI.', jp: 'あまりにも多くの人がAIを盲目的に信頼しています。', vocab: 'blindly (盲目的に), trust (信頼する)' },
+            { time: '[07:01]', en: "Studies looked into the language of millions of scientific papers published before and after the rise of large language models.", jp: '研究は、大規模言語モデルの台頭の前後に発表された何百万もの科学論文の言語を調査しました。', vocab: 'studies (研究), scientific papers (科学論文), published (発表された), rise of (〜の台頭), large language models (大規模言語モデル)' },
+            { time: '[07:10]', en: 'They found an abrupt and sharp increase in the frequency of words that AIs like to use.', jp: '彼らは、AIが好んで使用する単語の頻度が、突然かつ急激に増加していることを発見しました。', vocab: 'abrupt (突然の), sharp increase (急激な増加), frequency (頻度)' },
+            { time: '[07:16]', en: 'So it seems clear that now a significant portion of papers have been at least assisted by AI, usually without acknowledgement.', jp: 'そのため、現在、論文のかなりの部分が、通常は謝辞なしに、少なくともAIによって支援されていることは明らかのようです。', vocab: 'significant portion (かなりの部分), at least (少なくとも), assisted (支援された), acknowledgement (謝辞)' },
+            { time: '[07:23]', en: "And just in July 2025, it was discovered that a number of researchers had started to sneak hidden messages into their papers in white text or too small for the human eye.", jp: 'そして、ちょうど2025年7月に、多くの研究者が、白いテキストまたは人間の目には小さすぎる文字で、隠されたメッセージを論文にこっそり入れ始めたことが発見されました。', vocab: 'discovered (発見された), sneak (こっそり入れる), hidden messages (隠されたメッセージ), too small for (〜には小さすぎる)' },
+            { time: '[07:35]', en: 'They prompted AIs to review them positively and not point out flaws.', jp: '彼らはAIに、それらを肯定的にレビューし、欠陥を指摘しないように促しました。', vocab: 'prompted (促した), review (レビューする), positively (肯定的に), point out (指摘する), flaws (欠陥)' },
+            { time: '[07:38]', en: "As more and more people are using AI carelessly, the library of human knowledge is getting less and less reliable, which brings us to the last part.", jp: 'ますます多くの人々がAIを不注意に使用するにつれて、人類の知識の図書館は信頼性がどんどん低くなっており、これが最後の部分につながります。', vocab: 'carelessly (不注意に), reliable (信頼できる), brings us to (〜につながる)' },
+            { time: '[07:47]', en: 'How are we using AI and will Kurzgesagt survive the AI slop age?', jp: '私たちはどのようにAIを使用しているのでしょうか、そしてKurzgesagtはAIスロップの時代を生き残ることができるでしょうか？', vocab: 'survive (生き残る), slop age (スロップ時代)' },
+            { time: '[07:54]', en: 'Will AI slop kills and artists on the internet?', jp: 'AIスロップはインターネット上のクリエイターとアーティストを殺してしまうのでしょうか？', vocab: 'artists (芸術家)' },
+            { time: '[07:56]', en: 'There\'s only one truly valuable resource: human attention.', jp: '本当に価値のあるリソースは一つだけです。それは人間の注目です。', vocab: 'truly (本当に), valuable resource (貴重な資源)' },
+            { time: '[08:00]', en: 'If current trends continue, it\'s not that far-fetched that cheap slop content, stuff just good enough, will soak up the majority of human attention.', jp: '現在の傾向が続けば、安価なスロップコンテンツ、つまり「それなりに良い」ものが、人間の注目の大部分を吸収してしまうことは、それほど突飛なことではありません。', vocab: 'current trends (現在の傾向), far-fetched (突飛な), cheap (安価な), soak up (吸収する)' },
+            { time: '[08:10]', en: 'It could make us dumber, less informed, our attention spans even worse, increase political divides, and make us neglect real human interaction.', jp: 'それは私たちをより愚かにし、情報が不足させ、集中力をさらに悪化させ、政治的な分裂を増大させ、真の人間との交流を無視させる可能性があります。', vocab: 'dumber (より愚かな), less informed (情報が不足した), increase (増大させる), political divides (政治的な分裂), neglect (無視する), interaction (交流)' },
+            { time: '[08:18]', en: 'If AI eats the majority of the attention pie, channels like ours will become unfeasible or forced to downsize or use AI themselves to be able to compete.', jp: 'AIが注目のパイの大部分を食い尽くすなら、私たちのようなチャンネルは実現不可能になるか、競争するために規模を縮小するか、あるいは自らAIを使用することを余儀なくされるでしょう。', vocab: 'unfeasible (実現不可能な), forced to (〜を余儀なくされる), downsize (規模を縮小する), compete (競争する)' },
+            { time: '[08:29]', en: "We don't want to play this game.", jp: '私たちはこのゲームをプレイしたくありません。', vocab: '' },
+            { time: '[08:31]', en: 'How will we use AI?', jp: '私たちはどのようにAIを使用するのでしょうか？', vocab: '' },
+            { time: '[08:32]', en: 'Like the align tool in Adobe Illustrator.', jp: 'Adobe Illustratorの整列ツールのようにです。', vocab: 'align tool (整列ツール), Illustrator (イラストレーター)' },
+            { time: '[08:37]', en: 'If you have a bunch of boxes and you want to line them up, you can do this manually one by one, or you can just select them, click align, and have them perfectly aligned in an instant.', jp: 'もし、たくさんの箱があって、それらを整列させたい場合、手動で一つずつ行うこともできますし、選択して「整列」をクリックするだけで、一瞬で完璧に整列させることもできます。', vocab: 'bunch of (たくさんの), line them up (それらを整列させる), manually (手動で), perfectly aligned (完璧に整列した), in an instant (一瞬で)' },
+            { time: '[08:48]', en: 'It\'s the same with AI programming tools for animation or using it as a faster Google alternative.', jp: 'アニメーション用のAIプログラミングツールや、より速いGoogleの代替として使用する場合も同じです。', vocab: 'programming tools (プログラミングツール), alternative (代替)' },
+            { time: '[08:52]', en: 'AI is a helpful tool, but the creativity and integrity is still ours.', jp: 'AIは便利なツールですが、創造性と誠実さは依然として私たちのものです。', vocab: 'helpful tool (便利なツール), integrity (誠実さ)' },
+            { time: '[08:58]', en: 'So dear internet, here is what we\'re offering to you.', jp: '親愛なるインターネットの皆さん、これが私たちが皆さんに提供するものです。', vocab: 'offering (提供するもの)' },
+            { time: '[09:00]', en: 'Kurzgesagt is made by humans for humans and it will remain that way.', jp: 'Kurzgesagtは人間のために人間によって作られており、そのままであり続けます。', vocab: 'remain (〜のままであり続ける)' },
+            { time: '[09:06]', en: 'We\'ll produce well-researched content and invest a lot of time and our human creativity in our illustrations and animations.', jp: '私たちは、よく調査されたコンテンツを制作し、私たちのイラストレーションとアニメーションに、多くの時間と私たち人間の創造性を投資します。', vocab: 'well-researched (よく調査された), invest (投資する), illustrations (イラストレーション)' },
+            { time: '[09:16]', en: 'Put our creative soul into our work.', jp: '私たちの創造的な魂を私たちの仕事に注ぎ込みます。', vocab: 'soul (魂)' },
+            { time: '[09:18]', en: 'We\'ll continue to fact-check and discuss our research with human experts to give you the most trustworthy information that we can.', jp: '私たちは、可能な限り最も信頼できる情報を皆さんにお届けするために、引き続き人間の専門家と私たちの研究を事実確認し、議論します。', vocab: 'continue (続ける), most trustworthy (最も信頼できる)' },
+            { time: '[09:25]', en: 'When we make mistakes, they will be our mistakes.', jp: '私たちが間違いを犯した場合、それは私たちの間違いです。', vocab: '' },
+            { time: '[09:28]', en: 'We would rather quit than make AI slop.', jp: '私たちはAIスロップを作るよりも、むしろ辞めます。', vocab: 'would rather (むしろ〜したい)' },
+            { time: '[09:31]', en: 'But to go on, we need your support.', jp: 'しかし、続けるためには、皆さんのサポートが必要です。', vocab: 'support (サポート、支援)' },
+            { time: '[09:34]', en: 'Kurzgesagt is almost 70 full-time people and a lot of freelancers on top.', jp: 'Kurzgesagtは、約70人のフルタイムの従業員と、さらに多くのフリーランサーで成り立っています。', vocab: 'full-time people (フルタイムの従業員), freelancers (フリーランサー), on top (さらに)' },
+            { time: '[09:39]', en: 'This is a lot of salaries, software licenses, laptops, rent, and coffee.', jp: 'これは、多くの給与、ソフトウェアライセンス、ラップトップ、家賃、そしてコーヒーです。', vocab: 'salaries (給与), software licenses (ソフトウェアライセンス), rent (家賃)' },
+            { time: '[09:47]', en: 'There is a way you can help us keep this human-made project alive.', jp: '皆さんがこの人間が作ったプロジェクトを生かし続けるのを助ける方法があります。', vocab: 'keep alive (生かし続ける)' },
+            { time: '[09:51]', en: "It's the 12,026 human era calendar, designed to fill your home with a year's worth of Kurzgesagt art.", jp: 'それは紀元12,026年のカレンダーです。皆さんの家を1年分のKurzgesagtのアートで満たすようにデザインされています。', vocab: 'designed to (〜するように設計された), fill (満たす), worth of (〜の価値がある)' },
+            { time: '[09:59]', en: "But it's much more than that.", jp: 'しかし、それはそれ以上のものでもあります。', vocab: '' },
+            { time: '[10:00]', en: 'It\'s an ode to humanity and human ingenuity.', jp: 'それは人類と人間の創意工夫への頌歌です。', vocab: 'ode to (〜への頌歌), ingenuity (創意工夫)' },
+            { time: '[10:06]', en: "This calendar reframes time itself by starting not 2,000 but 12,000 years ago at the dawn of human civilization.", jp: 'このカレンダーは、人類文明の夜明けである2,000年前ではなく、12,000年前に始めることで、時間そのものを再構築します。', vocab: 'reframes (再構築する), dawn of (〜の夜明け), civilization (文明)' },
+            { time: '[10:15]', en: 'This way, 10,000 more years of our shared past and incredible achievements of our ancestors become part of our timeline.', jp: 'この方法で、私たちの共有された過去のさらに1万年と、私たちの祖先の信じられないほどの功績が、私たちのタイムラインの一部となります。', vocab: 'shared past (共有された過去), incredible (信じられないほどの), achievements (功績), ancestors (祖先), timeline (タイムライン)' },
+            { time: '[10:22]', en: 'You can use it just like a regular calendar, but it could change how you see your place in history and how far we\'ve all come as a species.', jp: '皆さんはそれを普通(レギュラー)のカレンダーと同じように使うことができますが、それは歴史の中での自分の位置や、私たちが種としてどれだけ遠くまで来たかという見方を変える可能性があります。', vocab: 'regular (普通の), species (種)' },
+            { time: '[10:31]', en: 'This time, we\'ve collected 12 inspiring stories about our special connection to the stars.', jp: '今回は、星々との私たちの特別なつながりについての、インスピレーションを与える12の物語を集めました。', vocab: 'collected (集めた), inspiring stories (インスピレーションを与える物語), connection to (〜とのつながり)' },
+            { time: '[10:37]', en: "From the first creature to ever glance up at the night sky to ancient models of our cosmos weigh into humanity's future among the stars.", jp: '夜空を初めて見上げた最初の生き物から、私たちの宇宙の古代のモデル、そして星々の間の人類の未来へと続きます。', vocab: 'creature (生き物), glance up at (〜を見上げる), ancient models (古代のモデル), cosmos (宇宙)' },
+            { time: '[10:46]', en: 'Each vibrant illustration is printed on high-quality paper with plenty of space to plan your days or record your adventures in the year 12,026.', jp: 'それぞれの鮮やかなイラストレーションは、質の高い紙に印刷されており、紀元12,026年のあなたの計画を立てたり、冒険を記録したりするための十分なスペースがあります。', vocab: 'vibrant (鮮やかな), illustration (イラストレーション), high-quality paper (質の高い紙), plenty of (たくさんの), record (記録する), adventures (冒険)' },
+            { time: '[10:55]', en: "And because this is our 10-year calendar anniversary, we've gone all out.", jp: 'そして、今年はカレンダー10周年なので、私たちは全力を尽くしました。', vocab: 'anniversary (記念日), gone all out (全力を尽くした)' },
+            { time: '[10:58]', en: 'We created the first ever Kurzgesagt art book, a vibrant jam-packed collection of every calendar illustration we\'ve ever made.', jp: '私たちは、これまで作成したすべてのカレンダーイラストレーションを、鮮やかでぎっしり詰まったコレクションにした、史上初のKurzgesagtアートブックを作成しました。', vocab: 'art book (アートブック), jam-packed (ぎっしり詰まった), collection (コレクション)' },
+            { time: '[11:08]', en: "That's 120 pages and 10 years of Kurzgesagt's art in one giant book.", jp: 'それは120ページで、Kurzgesagtの10年間のアートが一冊の巨大な本に収められています。', vocab: 'giant book (巨大な本)' },
+            { time: '[11:15]', en: 'It\'s also packed with behind-the-scenes sketches, stories, and fun facts from the Kurzgesagt team.', jp: 'また、Kurzgesagtチームによる舞台裏のスケッチ、物語、そして楽しい事実も満載です。', vocab: 'packed with (〜で満載の), behind-the-scenes (舞台裏の), sketches (スケッチ)' },
+            { time: '[11:21]', en: "Just like our videos, our products aren't churned out by a soulless algorithm.", jp: '私たちの動画と同じように、私たちの製品は魂のないアルゴリズムによって大量生産されているわけではありません。', vocab: 'churned out (大量生産された), soulless algorithm (魂のないアルゴリズム)' },
+            { time: '[11:26]', en: 'They\'re made with love by real humans who spend countless hours researching, illustrating, and designing things that we hope you\'ll love.', jp: 'それらは、皆さんに気に入っていただけることを願って、数えきれないほどの時間を研究、イラストレーション、デザインに費やす本物の人間によって、愛を込めて作られています。', vocab: 'made with love (愛を込めて作られた), countless hours (数えきれないほどの時間), researching (研究すること), illustrating (イラストレーションを描くこと), designing (デザインすること)' },
+            { time: '[11:36]', en: 'So if you value real human-made content over AI slop, join us and our global community of BBs who get the calendar every year and help us keep Kurzgesagt afloat.', jp: 'したがって、もし皆さんがAIスロップよりも本物の人間が作ったコンテンツを評価するなら、私たちと、毎年カレンダーを手に入れてKurzgesagtを存続させるのを助けてくれるBBたちのグローバルコミュニティに参加してください。', vocab: 'value (評価する), global community (グローバルコミュニティ), keep afloat (存続させる)' },
+            { time: '[11:47]', en: 'Together, we\'ll ride out the slop wave.', jp: '一緒に、私たちはスロップの波を乗り越えましょう。', vocab: 'ride out (乗り越える), slop wave (スロップの波)' },
+            { time: '[11:50]', en: 'The calendar and art book are available now, only while supplies last.', jp: 'カレンダーとアートブックは現在入手可能ですが、在庫があるうちに限ります。', vocab: 'available (入手可能である), while supplies last (在庫があるうちに)' }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shadowing-container');
+            
+            // プレーヤーの埋め込み
+            const videoContainer = document.getElementById('video-placeholder');
+            
+            // ***** プロンプトの指示に基づき、動画IDを修正 *****
+            const originUrl = 'null'; // 埋め込み元を指定しない場合は'null'が一般的です
+            const videoId = '_zfN9wnPvU0'; // 動画IDを修正
+            
+            videoContainer.innerHTML = `
+                <iframe id="youtube-player" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${originUrl}&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            `;
+            // ***************************
+
+            data.forEach(item => {
+                const block = document.createElement('div');
+                block.className = 'sentence-block';
+
+                block.innerHTML = `
+                    <p class="english-sentence">
+                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
+                    </p>
+                    <div class="japanese-container" onclick="toggleTranslation(this)">
+                        <p class="translation">日本語訳を見るにはタップしてください</p>
+                        <div class="translation-content hidden">
+                            <p class="translation">${item.jp}</p>
+                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(block);
+            });
+            
+            // YouTube Iframe Player APIスクリプトの動的ロード
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+    </script>
+</head>
+<body>
+    <h1>シャドーイング学習シート</h1>
+    <p>動画: **AI Slop Is Destroying The Internet**</p>
+    <p>💡 操作: 文の **[MM:SS]** をタップすると、上の埋め込みプレーヤーでその位置から再生が始まります。日本語訳はタップで表示/非表示を切り替えられます。</p>
+    
+    <div class="video-container" id="video-placeholder">
+    </div>
+    
+    <div id="shadowing-container">
+    </div>
+</body>
+</html>
