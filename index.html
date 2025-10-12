@@ -3,8 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>動画紹介 一覧</title>
+  <title>練習用動画 一覧</title>
   <link rel="stylesheet" href="./assets/style.css" />
+  <style>
+    /* ページの体裁を整えるためのCSS（既存のassets/style.cssが読み込まれている前提） */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .card {
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+    }
+    .card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .thumb {
+        margin: 0;
+        line-height: 0;
+    }
+    .thumb img {
+        width: 100%;
+        height: auto;
+    }
+    .card h2 {
+        padding: 10px;
+        font-size: 1.1em;
+        margin: 0;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+  </style>
 </head>
 <body>
   <header class="wrap">
@@ -13,23 +53,35 @@
   </header>
 
   <main class="grid wrap">
-    <!-- 例: The Egg -->
-    <a class="card" href="./videos/shadowing_The Egg - A Short Story.html">
-      <figure class="thumb">
-        <img src="https://img.youtube.com/vi/h6fcK_fRYaI/hqdefault.jpg" alt="The Egg thumbnail" loading="lazy" />
-      </figure>
-      <h2>The Egg</h2>
-    </a>
+    
+    <script>
+        const videoList = [
+            { id: 'h6fcK_fRYaI', file: 'shadowing_The%20Egg%20-%20A%20Short%20Story.html', title: 'The Egg' },
+            { id: 'qsN1LglrX9s', file: 'shadowing_This%20Black%20Hole%20Could%20be%20Bigger%20Than%20The%20Universe.html', title: 'Black Holes' },
+            // 新しい動画を追加する際は、ここに { id: '新しい動画ID', file: '生成したHTMLファイル名.html', title: '動画のタイトル' }, の形式で追加してください。
+            // 動画IDはURLの v= の後ろにある11桁の英数字です。
+        ];
 
-    <!-- 例: Are We Living in a Black Hole?（仮） -->
-    <a class="card" href="./videos/shadowing_This Black Hole Could be Bigger Than The Universe.html">
-      <figure class="thumb">
-        <img src="https://img.youtube.com/vi/qsN1LglrX9s/hqdefault.jpg" alt="Black Hole thumbnail" loading="lazy" />
-      </figure>
-      <h2>Black Holes</h2>
-    </a>
-
-    <!-- 新しい動画を増やすときは ↑ をコピペして増やすだけ -->
+        const mainElement = document.querySelector('main.grid');
+        
+        // リストに基づいてカードを生成する
+        videoList.forEach(video => {
+            const cardHtml = `
+                <a class="card" href="./videos/${video.file}">
+                    <figure class="thumb">
+                        <img 
+                            src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" 
+                            alt="${video.title} thumbnail" 
+                            loading="lazy" 
+                        />
+                    </figure>
+                    <h2>${video.title}</h2>
+                </a>
+            `;
+            mainElement.insertAdjacentHTML('beforeend', cardHtml);
+        });
+    </script>
+    
   </main>
 
   <footer class="wrap">
