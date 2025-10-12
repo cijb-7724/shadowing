@@ -263,40 +263,6 @@
             
             // プレーヤーの埋め込み
             const videoContainer = document.getElementById('video-placeholder');
-            videoContainer.innerHTML = `
-                <iframe id="youtube-player" src="https://www.youtube.com/embed/71eUes30gwc?enablejsapi=1&origin=null&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            `;
-
-            data.forEach(item => {
-                const block = document.createElement('div');
-                block.className = 'sentence-block';
-
-                block.innerHTML = `
-                    <p class="english-sentence">
-                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
-                    </p>
-                    <div class="japanese-container" onclick="toggleTranslation(this)">
-                        <p class="translation">日本語訳を見るにはタップしてください</p>
-                        <div class="translation-content hidden">
-                            <p class="translation">${item.jp}</p>
-                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
-                        </div>
-                    </div>
-                `;
-                container.appendChild(block);
-            });
-            
-            // YouTube Iframe Player APIスクリプトの動的ロード
-            const tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            const firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        });
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('shadowing-container');
-            
-            // プレーヤーの埋め込み
-            const videoContainer = document.getElementById('video-placeholder');
             
             // ***** ここが修正箇所です *****
             const originUrl = 'https://cijb-7724.github.io'; // GitHub Pagesのドメイン

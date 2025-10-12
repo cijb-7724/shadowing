@@ -267,8 +267,8 @@
             const videoContainer = document.getElementById('video-placeholder');
             
             // ***** プロンプトの指示に基づき、動画IDを修正 *****
-            const originUrl = 'null'; // 埋め込み元を指定しない場合は'null'が一般的です
-            const videoId = '_zfN9wnPvU0'; // 動画IDを修正
+            const originUrl = 'https://cijb-7724.github.io'; // GitHub Pagesのドメイン
+            const videoId = '_zfN9wnPvU0'; // 動画ID
             
             videoContainer.innerHTML = `
                 <iframe id="youtube-player" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${originUrl}&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
