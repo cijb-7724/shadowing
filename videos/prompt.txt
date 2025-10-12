@@ -1,0 +1,263 @@
+[重要] 以下のYouTube URLを使用して、シャドーイング学習シート用のHTMLコードを生成してください。UI/機能は以前の作成物（「The Egg - A Short Story」の最終完成版）と完全に同一とします。
+https://www.youtube.com/watch?v=_zfN9wnPvU0
+
+**【厳守事項：タイムスタンプと文字起こしの処理】**
+1.  **レコード単位の原則**:
+    * 出力データは、動画内の**英文を正確に一文ずつ区切り**、その**一文ごとに一つのレコード（行）**を作成してください。
+2.  **タイムスタンプ処理（シャドーイング最適化）**:
+    * タイムスタンプは、**実際に音声を聞いた上で**、文頭からしっかり聞き取れるよう、音声の**話し出しの開始時刻**を特定してください。
+    * 特定した音声開始時刻のミリ秒単位を**必ず切り捨て**て整数秒とします。
+    * その整数秒から、シャドーイングのための**1秒のバッファ（遡り）を適用**し、最終的な再生開始秒として`[MM:SS]`形式で設定します。
+3.  **語彙リスト**:
+    * 想定学習者は**日本の中学3年生**とし、そのレベルで**初めて登場すると思われる英単語・熟語のみ**を抽出・選定し、語彙リストに含めます。
+
+**【データ構造とUIの指定】**
+生成するHTMLコードは、以下のJavaScriptデータ配列の構造に完全に準拠し、HTML/CSS/JavaScriptの残りの構造は**以下の構造と完全に同じ**にしてください。
+ただし，動画URLやvideo_idは具体例としてHTML内に含まれていますが，プロンプトの最初に示したURLに則って，適宜修正してください．
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シャドーイング学習シート - 動画タイトル</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 1.5em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        /* YouTubeプレーヤーのコンテナスタイル */
+        .video-container {
+            position: relative;
+            width: 100%;
+            /* 16:9のアスペクト比を維持するためのPadding */
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .sentence-block {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .english-sentence {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #212529;
+        }
+        .timestamp {
+            color: #dc3545; /* 再生ボタンであることを強調 */
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .timestamp:hover {
+            text-decoration: underline;
+        }
+        .japanese-container {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            cursor: pointer;
+            padding-top: 5px;
+        }
+        .translation {
+            margin-top: 0;
+            font-style: italic;
+        }
+        .vocab-list {
+            display: block;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007bff;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+    <script>
+        // YouTube APIの読み込み
+        let player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            console.log("YouTube Player is Ready!");
+        }
+
+        // タイムスタンプの秒数に変換 (HH:MM:SS形式にも対応)
+        function getSeconds(timeStr) {
+            const parts = timeStr.replace(/[\[\]]/g, '').split(':').map(Number);
+            let seconds = 0;
+            if (parts.length === 3) { // HH:MM:SS
+                seconds = parts[0] * 3600 + parts[1] * 60 + parts[2];
+            } else if (parts.length === 2) { // MM:SS
+                seconds = parts[0] * 60 + parts[1];
+            }
+            return seconds;
+        }
+
+        // 埋め込みプレーヤーの再生操作
+        window.playAtTime = function(timeStr) {
+            if (player && player.seekTo) {
+                const seconds = getSeconds(timeStr);
+                player.seekTo(seconds, true);
+                player.playVideo();
+            } else {
+                alert("YouTubeプレーヤーが読み込まれていません。少し待ってからお試しください。");
+            }
+        };
+
+        // 日本語訳の表示/非表示を切り替える関数
+        window.toggleTranslation = function(element) {
+            const translation = element.querySelector('.translation-content');
+            translation.classList.toggle('hidden');
+            
+            // タップ時のテキストを切り替え
+            const currentText = element.querySelector('.translation');
+            if (translation.classList.contains('hidden')) {
+                currentText.textContent = '日本語訳を見るにはタップしてください';
+            } else {
+                currentText.textContent = '日本語訳を隠すにはタップしてください';
+            }
+        };
+        
+        // 動画データ (タイムスタンプ：ミリ秒切り捨て & 1秒バッファ適用済み)
+        const data = [
+            // ----------------------------------------------------
+            // ここから動画データ
+            // 文章はあくまで例示．動画から抽出する．
+            // ----------------------------------------------------
+            { time: '[00:00]', en: 'We proudly present to you the Kurzgesagt guide to curiosity.', jp: '私たちは、皆さんにKurzgesagtの「好奇心へのガイド」を誇りを持ってご紹介します。', vocab: 'proudly (誇りを持って), present to (～に紹介する), curiosity (好奇心)' },
+            { time: '[00:05]', en: 'Join us on an interactive adventure across 160 thrilling pages that will change your perspective on the world forever.', jp: '160ページにわたるスリリングなインタラクティブな冒険に私たちと一緒に参加してください。それは世界に対するあなたの視点を永遠に変えるでしょう。', vocab: 'interactive (双方向の), thrilling (スリル満点の), perspective (視点)' },
+            { time: '[00:14]', en: 'Available now on the Kurzgesagt shop.', jp: 'Kurzgesagtショップで今すぐ手に入ります。', vocab: 'available (入手可能である)' },
+            ...
+            { time: '[11:03]', en: 'So head over to the Kurzgesagt shop and find out if you are the chosen BB.', jp: 'さあ、Kurzgesagtショップに向かい、あなたが選ばれし鳥であるかどうかを見つけてください。', vocab: 'head over to (～に向かう)' },
+            { time: '[11:08]', en: 'Every Kurzgesagt product you buy directly funds another moment we get to spend working on our videos, and you get a special piece of Kurzgesagt in return.', jp: 'あなたが購入する全てのKurzgesagt製品は、私たちがビデオ制作に費やすことができる次の瞬間に直接資金を提供してくれます。そして、あなたは見返りにKurzgesagtの特別なピースを手に入れます。', vocab: 'directly funds (直接資金を提供する), in return (見返りに)' },
+            { time: '[11:18]', en: 'Thank you so much for being a part of our story and making this channel possible.', jp: '私たちの物語の一部となっていただき、このチャンネルを可能にしてくださって、本当にありがとうございます。', vocab: 'being a part of (～の一部である)' },
+            // ----------------------------------------------------
+            // ここまで動画データ
+            // ----------------------------------------------------
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shadowing-container');
+            
+            // プレーヤーの埋め込み
+            const videoContainer = document.getElementById('video-placeholder');
+            videoContainer.innerHTML = `
+                <iframe id="youtube-player" src="https://www.youtube.com/embed/71eUes30gwc?enablejsapi=1&origin=null&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            `;
+
+            data.forEach(item => {
+                const block = document.createElement('div');
+                block.className = 'sentence-block';
+
+                block.innerHTML = `
+                    <p class="english-sentence">
+                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
+                    </p>
+                    <div class="japanese-container" onclick="toggleTranslation(this)">
+                        <p class="translation">日本語訳を見るにはタップしてください</p>
+                        <div class="translation-content hidden">
+                            <p class="translation">${item.jp}</p>
+                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(block);
+            });
+            
+            // YouTube Iframe Player APIスクリプトの動的ロード
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shadowing-container');
+            
+            // プレーヤーの埋め込み
+            const videoContainer = document.getElementById('video-placeholder');
+            
+            // ***** ここが修正箇所です *****
+            const originUrl = 'https://cijb-7724.github.io'; // GitHub Pagesのドメイン
+            const videoId = '71eUes30gwc'; // 動画ID
+            
+            videoContainer.innerHTML = `
+                <iframe id="youtube-player" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${originUrl}&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            `;
+            // ***************************
+
+            data.forEach(item => {
+                const block = document.createElement('div');
+                block.className = 'sentence-block';
+
+                block.innerHTML = `
+                    <p class="english-sentence">
+                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
+                    </p>
+                    <div class="japanese-container" onclick="toggleTranslation(this)">
+                        <p class="translation">日本語訳を見るにはタップしてください</p>
+                        <div class="translation-content hidden">
+                            <p class="translation">${item.jp}</p>
+                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(block);
+            });
+            
+            // YouTube Iframe Player APIスクリプトの動的ロード
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+    </script>
+</head>
+<body>
+    <h1>シャドーイング学習シート</h1>
+    <p>動画: This Black Hole Could be Bigger Than The Universe</p>
+    <p>💡 操作: 文の [MM:SS] をタップすると、上の埋め込みプレーヤーでその位置から再生が始まります。日本語訳はタップで表示/非表示を切り替えられます。</p>
+    
+    <div class="video-container" id="video-placeholder">
+    </div>
+    
+    <div id="shadowing-container">
+        </div>
+</body>
+</html>
