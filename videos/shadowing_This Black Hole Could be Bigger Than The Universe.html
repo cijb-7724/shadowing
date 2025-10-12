@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>シャドーイング学習シート - 最終完成版</title>
+    <title>シャドーイング学習シート - This Black Hole Could be Bigger Than The Universe</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -138,10 +138,10 @@
             }
         };
         
-        // 動画データ (タイムスタンプ修正済み)
+        // 動画データ (タイムスタンプ：ミリ秒切り捨て & 1秒バッファ適用済み)
         const data = [
             // ----------------------------------------------------
-            // ここから動画データ (時刻修正済み)
+            // ここから動画データ
             // ----------------------------------------------------
             { time: '[00:00]', en: 'We proudly present to you the Kurzgesagt guide to curiosity.', jp: '私たちは、皆さんにKurzgesagtの「好奇心へのガイド」を誇りを持ってご紹介します。', vocab: 'proudly (誇りを持って), present to (～に紹介する), curiosity (好奇心)' },
             { time: '[00:05]', en: 'Join us on an interactive adventure across 160 thrilling pages that will change your perspective on the world forever.', jp: '160ページにわたるスリリングなインタラクティブな冒険に私たちと一緒に参加してください。それは世界に対するあなたの視点を永遠に変えるでしょう。', vocab: 'interactive (双方向の), thrilling (スリル満点の), perspective (視点)' },
@@ -266,6 +266,46 @@
             videoContainer.innerHTML = `
                 <iframe id="youtube-player" src="https://www.youtube.com/embed/71eUes30gwc?enablejsapi=1&origin=null&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             `;
+
+            data.forEach(item => {
+                const block = document.createElement('div');
+                block.className = 'sentence-block';
+
+                block.innerHTML = `
+                    <p class="english-sentence">
+                        <span class="timestamp" onclick="playAtTime('${item.time}')">${item.time}</span> ${item.en}
+                    </p>
+                    <div class="japanese-container" onclick="toggleTranslation(this)">
+                        <p class="translation">日本語訳を見るにはタップしてください</p>
+                        <div class="translation-content hidden">
+                            <p class="translation">${item.jp}</p>
+                            ${item.vocab ? `<span class="vocab-list">語彙: ${item.vocab}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(block);
+            });
+            
+            // YouTube Iframe Player APIスクリプトの動的ロード
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shadowing-container');
+            
+            // プレーヤーの埋め込み
+            const videoContainer = document.getElementById('video-placeholder');
+            
+            // ***** ここが修正箇所です *****
+            const originUrl = 'https://cijb-7724.github.io'; // GitHub Pagesのドメイン
+            const videoId = '71eUes30gwc'; // 動画ID
+            
+            videoContainer.innerHTML = `
+                <iframe id="youtube-player" src="https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${originUrl}&modestbranding=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            `;
+            // ***************************
 
             data.forEach(item => {
                 const block = document.createElement('div');
