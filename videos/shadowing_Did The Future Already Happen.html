@@ -95,15 +95,13 @@
         }
         
         function onPlayerReady(event) {
-            console.log("YouTube Player is Ready!");
+            console.log("YouTube Player Ready");
         }
 
         function getSeconds(timeStr) {
             const parts = timeStr.replace(/[\[\]]/g, '').split(':').map(Number);
             let seconds = 0;
-            if (parts.length === 3) {
-                seconds = parts[0] * 3600 + parts[1] * 60 + parts[2];
-            } else if (parts.length === 2) {
+            if (parts.length === 2) {
                 seconds = parts[0] * 60 + parts[1];
             }
             return seconds;
@@ -114,8 +112,6 @@
                 const seconds = getSeconds(timeStr);
                 player.seekTo(seconds, true);
                 player.playVideo();
-            } else {
-                alert("YouTubeプレーヤーが読み込まれていません。");
             }
         };
 
@@ -123,91 +119,56 @@
             const translation = element.querySelector('.translation-content');
             translation.classList.toggle('hidden');
             const currentText = element.querySelector('.translation');
-            if (translation.classList.contains('hidden')) {
-                currentText.textContent = '日本語訳を見るにはタップしてください';
-            } else {
-                currentText.textContent = '日本語訳を隠すにはタップしてください';
-            }
+            currentText.textContent = translation.classList.contains('hidden') ? 
+                '日本語訳を見るにはタップしてください' : '日本語訳を隠すにはタップしてください';
         };
         
-        // 動画データ（全編網羅・高校レベル以上の語彙抽出）
         const data = [
-            { time: '[00:01]', en: 'Do your past, present and future all exist right now?', jp: 'あなたの過去、現在、そして未来はすべて、今この瞬間に存在しているのでしょうか？', vocab: 'exist (存在する)' },
-            { time: '[00:10]', en: 'Are you watching this video being born and lying on your deathbed at this very moment?', jp: '今この瞬間、あなたは動画を視聴しながら、同時に誕生し、死の床に伏しているのでしょうか？', vocab: 'deathbed (臨終の床)' },
-            { time: '[00:18]', en: 'Surprisingly, the answer could be yes.', jp: '驚くべきことに、その答えは「イエス」かもしれません。', vocab: 'surprisingly (驚くべきことに)' },
-            { time: '[00:20]', en: 'But how can that be? What does that even mean?', jp: 'しかし、どうしてそんなことがあり得るのでしょう？一体どういう意味なのでしょうか？', vocab: '' },
-            { time: '[00:25]', en: 'How does time work? The Block Universe.', jp: '時間はどのように機能しているのか？「ブロック宇宙論」です。', vocab: 'Block Universe (ブロック宇宙)' },
-            { time: '[00:28]', en: 'Imagine the universe like a child painting pictures on paper.', jp: '宇宙を、紙に絵を描く子供のように想像してみてください。', vocab: 'imagine (想像する)' },
-            { time: '[00:30]', en: 'Each picture shows everything that\'s happening in the universe in a single moment.', jp: '一枚一枚の絵は、ある一瞬の宇宙で起きているすべての出来事を示しています。', vocab: 'single moment (単一の瞬間)' },
-            { time: '[00:35]', en: 'With each new moment all kinds of things occur everywhere.', jp: '新しい瞬間が訪れるたびに、あらゆる場所でさまざまなことが起こります。', vocab: 'occur (起こる)' },
-            { time: '[00:36]', en: 'People are born and die. Galactic Civilizations expand.', jp: '人が生まれ、死んでいく。銀河文明が拡大する。', vocab: 'galactic (銀河の), civilization (文明), expand (拡大する)' },
-            { time: '[00:40]', en: 'You miss the bus and our universe kid makes a new picture that replaces the old one.', jp: 'あなたがバスを逃すと、宇宙の子供は古い絵を置き換える新しい絵を描きます。', vocab: 'replace (〜に取って代わる)' },
-            { time: '[00:50]', en: 'In this way you get something like a movie.', jp: 'このようにして、映画のようなものが出来上がります。', vocab: '' },
-            { time: '[00:52]', en: 'Only the moment we\'re in right now is real.', jp: '私たちが今いるこの瞬間だけが現実なのです。', vocab: '' },
-            { time: '[00:55]', en: 'The past is what happened before now—it\'s gone.', jp: '過去は今の前に起こったことであり、もう消え去っています。', vocab: '' },
-            { time: '[00:58]', en: 'The future is still to come and hasn\'t been drawn yet.', jp: '未来はこれから来るもので、まだ描かれていません。', vocab: '' },
-            { time: '[01:05]', en: 'The past is far behind us, the future doesn\'t exist.', jp: '過去は遥か後ろにあり、未来は存在しません。', vocab: 'exist (存在する)' },
-            { time: '[01:10]', en: 'But what if time is something else?', jp: 'しかし、もし時間が別の何かだとしたらどうでしょう？', vocab: '' },
-            { time: '[01:15]', en: 'What if the universe kid has already finished all its drawings and stacks them on top of each other?', jp: 'もし宇宙の子供がすでにすべての絵を描き終えていて、それらを積み重ねているとしたら？', vocab: 'stack (積み重ねる)' },
-            { time: '[01:21]', en: 'This way we get a block—a block of time that contains the whole history of the universe.', jp: 'こうして、宇宙の全歴史を含む時間の塊、つまり「ブロック」ができあがります。', vocab: 'contain (〜を含む), history (歴史)' },
-            { time: '[01:28]', en: 'In this stack of moments the past, the present and the future are equally real and exist at the same time.', jp: 'この瞬間の積み重ねの中では、過去、現在、未来は等しく現実であり、同時に存在しています。', vocab: 'equally (等しく)' },
-            { time: '[01:36]', en: 'This feels wrong.', jp: 'これは直感に反するように感じられます。', vocab: '' },
-            { time: '[01:40]', en: 'The only things that we perceive as real are those things happening now.', jp: '私たちが現実だと認識しているのは、今起きていることだけです。', vocab: 'perceive (〜を認識する)' },
-            { time: '[01:44]', en: 'The problem is that according to the theory of relativity they kind of have to be.', jp: '問題は、相対性理論によれば、過去も未来も現実でなければならないという点です。', vocab: 'according to (〜によれば), theory of relativity (相対性理論)' },
-            { time: '[01:50]', en: 'Relativity says that time and space are not separated but one connected space-time.', jp: '相対性理論は、時間と空間は分離しておらず、接続された一つの「時空」であると説いています。', vocab: 'separate (分離する), connected (接続された), space-time (時空)' },
-            { time: '[01:58]', en: 'When you move through space, you\'re also moving through the block.', jp: 'あなたが空間を移動するとき、あなたはこのブロックの中をも移動しているのです。', vocab: '' },
-            { time: '[02:04]', en: 'This means time passes differently for different people depending on how they move.', jp: 'つまり、どのように移動するかに応じて、人によって時間の進み方が異なるということです。', vocab: 'depending on (〜に応じて)' },
-            { time: '[02:11]', en: 'And this also means that what someone perceives as "now" is a certain cut along the block.', jp: 'また、誰かが「今」として認識するものは、ブロックに沿った特定の切り口であることも意味します。', vocab: 'certain (特定の)' },
-            { time: '[02:19]', en: 'So what you think is "Now" is really only your now.', jp: 'したがって、あなたが「今」だと思っているのは、実際には「あなたの今」に過ぎません。', vocab: '' },
-            { time: '[02:24]', en: 'There are many different Nows in the universe and all of them are equally real.', jp: '宇宙には多くの異なる「今」が存在し、そのすべてが等しく現実なのです。', vocab: '' },
-            { time: '[02:30]', en: 'This also means there\'s no Universal past or future.', jp: 'これはまた、普遍的な過去や未来というものは存在しないことも意味します。', vocab: 'universal (普遍的な)' },
-            { time: '[02:37]', en: 'Imagine three alien spaceships a million light years away.', jp: '100万光年離れたところにある3つのエイリアンの宇宙船を想像してください。', vocab: 'light year (光年)' },
-            { time: '[02:45]', en: 'The first one just hovers in space, not moving relative to you.', jp: '1つ目は宇宙に浮遊しており、あなたに対して相対的に動いていません。', vocab: 'hover (空中に停止する), relative to (〜に対して相対的な)' },
-            { time: '[02:54]', en: 'The second spaceship is flying away from us at 30 km a second.', jp: '2つ目の宇宙船は、秒速30キロで私たちから遠ざかっています。', vocab: '' },
-            { time: '[03:04]', en: 'The aliens can talk to your ancestors in 1924.', jp: 'そのエイリアンたちは、1924年に生きるあなたの先祖と話すことができます。', vocab: 'ancestor (先祖)' },
-            { time: '[03:19]', en: 'The third spaceship is flying towards you at 30 km a second.', jp: '3つ目の宇宙船は秒速30キロであなたに向かって飛んできています。', vocab: '' },
-            { time: '[03:28]', en: 'The aliens can talk to your descendants in the year 2,124.', jp: 'そのエイリアンたちは、2124年に生きるあなたの末裔と話すことができます。', vocab: 'descendant (子孫)' },
-            { time: '[03:45]', en: 'Relativity is based on one powerful principle: Cosmic Democracy.', jp: '相対性理論は一つの強力な原則に基づいています：宇宙民主主義です。', vocab: 'principle (原則), democracy (民主主義)' },
-            { time: '[03:51]', en: 'The fact that the point of view of all observers in the universe is equally valid.', jp: '宇宙のすべての観測者の視点は等しく有効であるという事実です。', vocab: 'observer (観測者), valid (有効な)' },
-            { time: '[04:05]', en: 'This means that the distinction between the past, the present and the future is an illusion.', jp: 'これは、過去、現在、未来の区別は幻想であることを意味します。', vocab: 'distinction (区別), illusion (幻想)' },
-            { time: '[04:13]', en: 'The universe is not a bunch of things evolving through time, but a static Block.', jp: '宇宙は時間とともに進化する物事の集まりではなく、静止した「ブロック」なのです。', vocab: 'evolve (進化する), static (静的な)' },
-            { time: '[04:20]', en: 'The past, the present and the future all coexist and are real.', jp: '過去、現在、未来がすべて共存しており、現実なのです。', vocab: 'coexist (共存する)' },
-            { time: '[04:30]', en: 'If the past is not far behind us and the future actually exists, then there is no movie.', jp: 'もし過去が置き去りにされたものではなく、未来が実際に存在するなら、映画のような時間の流れはありません。', vocab: '' },
-            { time: '[04:50]', en: 'The universe just is, like a frozen block of dead Cosmic ice.', jp: '宇宙はただ存在している、凍りついた死んだ宇宙の氷のブロックのようなものです。', vocab: 'frozen (凍った)' },
-            { time: '[05:00]', en: 'If all times coexist and are equally real, then the future has to be already written.', jp: 'すべての時間が共存し等しく現実なら、未来はすでに書かれているに違いありません。', vocab: '' },
-            { time: '[05:13]', en: 'It feels like you can mold your future with your decisions.', jp: '自分の決断で未来を形作れるように感じられますが。', vocab: 'mold (〜を形作る)' },
-            { time: '[05:19]', en: 'But if the future is set in stone, you can\'t decide anything.', jp: 'しかし、もし未来が確定（石に刻まれて）しているなら、何も決めることはできません。', vocab: 'set in stone (確定して、変えられない)' },
-            { time: '[05:27]', en: 'Are your choices an illusion? Maybe your free will is a mirage.', jp: 'あなたの選択は幻想なのでしょうか？自由意志は蜃気楼かもしれません。', vocab: 'free will (自由意志), mirage (蜃気楼)' },
-            { time: '[05:35]', en: 'Except quantum stuff is ruining everything again.', jp: 'ただし、量子論的な事象がまたすべてを台無しにしています。', vocab: 'quantum (量子の), ruin (台無しにする)' },
-            { time: '[05:43]', en: 'Quantum processes can\'t be predicted, not even in principle.', jp: '量子プロセスは、原理的にさえ予測不可能です。', vocab: 'predict (予測する), in principle (原則として)' },
-            { time: '[05:52]', en: 'According to quantum physics, quantum particles are intrinsically random.', jp: '量子物理学によれば、量子粒子は本質的にランダムです。', vocab: 'intrinsically (本質的に), random (無作為な)' },
-            { time: '[06:05]', en: 'No Oracle in the universe will ever be able to tell you with absolute certainty.', jp: '宇宙のどんな預言者も、絶対的な確信を持って教えることはできないでしょう。', vocab: 'oracle (神託、預言者), absolute certainty (絶対的な確信)' },
-            { time: '[06:15]', en: 'Imagine a radioactive element randomly decays and causes a genetic mutation.', jp: '放射性元素がランダムに崩壊し、遺伝子の突然変異を引き起こすと想像してください。', vocab: 'radioactive (放射性の), decay (崩壊する), genetic mutation (遺伝子突然変異)' },
-            { time: '[06:33]', en: 'If quantum stuff is really uncertain, the future can\'t be set in stone.', jp: '量子事象が本当に不確実なら、未来を確定させることはできません。', vocab: 'uncertain (不確実な)' },
-            { time: '[06:48]', en: 'Is this moment the "now"?', jp: 'その瞬間こそが「今」なのでしょうか？', vocab: '' },
-            { time: '[07:03]', en: 'For every individual object, the past, the present and the future are always well-defined.', jp: '個々の物体にとって、過去、現在、未来は常に明確に定義されています。', vocab: 'individual (個々の), well-defined (明確に定義された)' },
-            { time: '[07:28]', en: 'Individual Nows seem to exist. Can we do something with them?', jp: '個別の「今」が存在するようです。それを使って何かできるでしょうか？', vocab: '' },
-            { time: '[07:42]', en: 'Maybe the block is just the past and a thin layer on the surface is the present.', jp: 'おそらくブロックは過去だけで、表面の薄い層が現在なのかもしれません。', vocab: 'layer (層), surface (表面)' },
-            { time: '[07:50]', en: 'That surface is not smooth but bumpy and uneven.', jp: 'その表面は滑らかではなく、でこぼこで不均一です。', vocab: 'smooth (滑らかな), bumpy (でこぼこの), uneven (不均一な)' },
-            { time: '[08:15]', en: 'Instead of a frozen block of time, the block is growing.', jp: '凍りついた時間のブロックではなく、ブロックは成長しているのです。', vocab: '' },
-            { time: '[08:35]', en: 'Let\'s recap. We started with time as a movie.', jp: '要約しましょう。最初は、時間を映画のようなものとして捉えました。', vocab: 'recap (要約する)' },
-            { time: '[08:50]', en: 'Living in a frozen block universe where you don\'t really have free will.', jp: '自由意志を持たない、凍結したブロック宇宙に住んでいる可能性。', vocab: '' },
-            { time: '[09:08]', en: 'Which is correct? What is real?', jp: 'どちらが正しいのでしょう？何が現実なのでしょうか？', vocab: '' },
-            { time: '[09:25]', en: 'Some scientists think that the idea of "now" only makes sense near you.', jp: '一部の科学者は、「今」という概念はあなたの近くでしか意味をなさないと考えています。', vocab: '' },
-            { time: '[09:33]', en: 'Others think that time itself doesn\'t even exist.', jp: 'また別の人は、時間そのものが存在しないと考えています。', vocab: '' },
-            { time: '[09:40]', en: 'Time may be something that emerges from a deeper level of reality.', jp: '時間は、現実のより深いレベルから出現するものかもしれません。', vocab: 'emerge (出現する、現れる), reality (現実)' },
-            { time: '[09:48]', en: 'Just like heat emerges from the motion of individual molecules.', jp: '熱が個々の分子の運動から生じるのと同じように。', vocab: 'molecule (分子)' },
-            { time: '[10:05]', en: 'The concept of time is abstract and elusive.', jp: '時間の概念は抽象的で捉えどころのないものです。', vocab: 'abstract (抽象的な), elusive (捉えどころのない)' },
-            { time: '[10:11]', en: 'Possibly beyond complete human comprehension.', jp: 'おそらく、人類の完全な理解を超えています。', vocab: 'comprehension (理解)' },
-            { time: '[10:25]', en: 'Brilliant has thousands of bite-sized, hands-on lessons.', jp: 'Brilliantには、数千の短く、実践的なレッスンがあります。', vocab: 'bite-sized (一口サイズの、短い), hands-on (実践的な)' },
-            { time: '[10:35]', en: 'A practical guide to interpreting the world.', jp: '世界を解釈するための実践的なガイド。', vocab: 'practical (実践的な), interpret (解釈する)' },
-            { time: '[10:45]', en: 'How past outcomes may not reliably forecast future events.', jp: '過去の結果が必ずしも未来の出来事を確実に予測するわけではないこと。', vocab: 'outcome (結果), reliably (確実に), forecast (予測する)' },
-            { time: '[11:05]', en: 'To take your scientific knowledge to the next level.', jp: 'あなたの科学的知識を次のレベルへと引き上げるために。', vocab: '' },
-            { time: '[11:35]', en: 'Our shop has grown so much over the years.', jp: '私たちのショップは、長年にわたって大きく成長しました。', vocab: '' },
-            { time: '[11:45]', en: 'Move our precious products to a bigger warehouse.', jp: '私たちの貴重な製品を、より大きな倉庫へ移動させる。', vocab: 'precious (貴重な), warehouse (倉庫)' },
-            { time: '[11:58]', en: 'Here you can see how our posters are actually created.', jp: 'ここでは、私たちのポスターが実際にどのように作られているかを見ることができます。', vocab: '' },
-            { time: '[12:05]', en: 'There are some pretty creepy and dangerous things in here as well.', jp: 'ここには、かなり不気味で危険なものもいくつかあります。', vocab: 'creepy (不気味な)' },
-            { time: '[12:15]', en: 'As long as supplies last, so head over to the shop now.', jp: '在庫がある限りですので、今すぐショップへ向かってください。', vocab: 'supply (在庫、供給品)' }
+            { time: "[00:01]", en: "Do your past, present, and future all exist right now?", jp: "あなたの過去、現在、未来はすべて今この瞬間に存在しているのでしょうか？", vocab: "" },
+            { time: "[00:05]", en: "Are you watching this video, being born, and lying on your deathbed at this very moment?", jp: "あなたはこの動画を見ていると同時に、生まれ、そして死の床に伏しているのでしょうか？", vocab: "deathbed (死の床)" },
+            { time: "[00:11]", en: "Surprisingly, the answer could be yes.", jp: "驚くべきことに、その答えは「イエス」かもしれません。", vocab: "surprisingly (驚くべきことに)" },
+            { time: "[00:13]", en: "But how can that be? What does that even mean? How does time work?", jp: "しかし、一体どうしてそんなことがあり得るのでしょうか？それはどういう意味で、時間はどのように機能しているのでしょう？", vocab: "" },
+            { time: "[00:19]", en: "The Block Universe.", jp: "ブロック宇宙論。", vocab: "" },
+            { time: "[00:21]", en: "Imagine the universe like a child painting pictures on paper.", jp: "宇宙を、紙に絵を描いている子供のように想像してみてください。", vocab: "" },
+            { time: "[00:26]", en: "Each picture shows everything that's happening in the universe in a single moment.", jp: "それぞれの絵には、ある一瞬の宇宙で起きているすべてのことが描かれています。", vocab: "" },
+            { time: "[00:31]", en: "With each new moment, all kinds of things occur everywhere.", jp: "新しい瞬間が訪れるたびに、あらゆる出来事がいたるところで起こります。", vocab: "occur (起こる)" },
+            { time: "[00:35]", en: "People are born and die, galactic civilizations expand, you miss the bus.", jp: "人々が生まれ、死に、銀河文明が拡大し、あなたがバスに乗り遅れる。", vocab: "galactic (銀河の), civilization (文明), expand (拡大する)" },
+            { time: "[00:43]", en: "And our universe kid makes a new picture that replaces the old one.", jp: "そして宇宙の子供は、古い絵を置き換える新しい絵を描きます。", vocab: "replace (〜に取って代わる)" },
+            { time: "[00:46]", en: "In this way, you get something like a movie.", jp: "このようにして、映画のようなものが出来上がります。", vocab: "" },
+            { time: "[00:50]", en: "Only the moment we're in right now is real.", jp: "今この瞬間だけが現実なのです。", vocab: "" },
+            { time: "[00:52]", en: "The past is what happened before now—it's gone.", jp: "過去は今より前に起きたことで、もう過ぎ去ったものです。", vocab: "" },
+            { time: "[00:55]", en: "The future is still to come and hasn't been drawn yet.", jp: "未来はこれから来るもので、まだ描かれていません。", vocab: "" },
+            { time: "[01:00]", en: "This is kind of how time feels, right?", jp: "これが、私たちが感じる時間の感覚ですよね？", vocab: "" },
+            { time: "[01:05]", en: "But what if time is something else?", jp: "しかし、もし時間がそれ以外の何かだとしたらどうでしょう？", vocab: "" },
+            { time: "[01:15]", en: "What if the universe kid has already finished all its drawings and stacks them on top of each other?", jp: "もし宇宙の子供がすでにすべての絵を描き終えていて、それらを積み重ねているとしたら？", vocab: "stack (積み重ねる)" },
+            { time: "[01:21]", en: "This way we get a block—a block of time that contains the whole history of the universe.", jp: "こうして、宇宙の全歴史を含む「時間のブロック」が形成されます。", vocab: "contain (〜を含む)" },
+            { time: "[01:30]", en: "In this stack of moments, the past, the present, and the future are equally real and exist at the same time.", jp: "この瞬間の積み重ねの中では、過去、現在、未来はすべて等しくリアルであり、同時に存在しているのです。", vocab: "equally (等しく)" },
+            { time: "[01:43]", en: "The problem is that according to the theory of relativity, they kind of have to be.", jp: "問題は、相対性理論によれば、それらはそうあらざるを得ないということです。", vocab: "relativity (相対性理論)" },
+            { time: "[01:51]", en: "Relativity says that time and space are not separated but one connected spacetime.", jp: "相対性理論は、時間と空間は分離されたものではなく、つながった一つの「時空」であると説いています。", vocab: "spacetime (時空)" },
+            { time: "[02:00]", en: "When you move through space, you're also moving through the block.", jp: "空間を移動するとき、あなたはこのブロックの中をも移動しているのです。", vocab: "" },
+            { time: "[02:05]", en: "This means time passes differently for different people depending on how they move through space.", jp: "これは、空間をどう移動するかによって、人によって時間の経過が異なることを意味します。", vocab: "depending on (〜によって)" },
+            { time: "[02:20]", en: "So what you think is 'Now' is really only your 'Now'.", jp: "つまり、あなたが「今」だと思っているのは、実はあなただけの「今」に過ぎないのです。", vocab: "" },
+            { time: "[02:30]", en: "There's no universal past or future.", jp: "全宇宙共通の過去や未来というものは存在しません。", vocab: "universal (普遍的な、共通の)" },
+            { time: "[02:40]", en: "Imagine three alien spaceships a million light years away.", jp: "100万光年先にある3つのエイリアンの宇宙船を想像してください。", vocab: "light year (光年)" },
+            { time: "[03:00]", en: "The second spaceship is flying away from us at 30 km a second.", jp: "2番目の宇宙船は、秒速30kmで私たちから遠ざかっています。", vocab: "" },
+            { time: "[03:12]", en: "With the magical internet, the aliens can talk to your ancestors in 1924.", jp: "魔法のインターネットがあれば、エイリアンは1924年にいるあなたの先祖と話すことができます。", vocab: "ancestor (先祖)" },
+            { time: "[03:20]", en: "The third spaceship is flying towards you, talking to your descendants in 2124.", jp: "3番目の宇宙船はあなたに向かって飛んでおり、2124年にいるあなたの末裔と話しています。", vocab: "descendant (子孫)" },
+            { time: "[03:45]", en: "Relativity is based on one powerful principle: Cosmic Democracy.", jp: "相対性理論は、一つの強力な原則「宇宙の民主主義」に基づいています。", vocab: "principle (原則)" },
+            { time: "[04:13]", en: "This means that the distinction between the past, the present, and the future is an illusion.", jp: "これは、過去、現在、未来の区別は幻想であることを意味します。", vocab: "distinction (区別), illusion (幻想)" },
+            { time: "[04:50]", en: "The universe just is, like a frozen block of dead cosmic ice.", jp: "宇宙はただ、凍りついた宇宙の氷のブロックのように存在しているだけなのです。", vocab: "cosmic (宇宙の)" },
+            { time: "[05:10]", en: "If the future is set in stone, you can't decide anything.", jp: "もし未来が確定しているなら、あなたは何一つ決めることはできません。", vocab: "set in stone (確定している)" },
+            { time: "[05:30]", en: "Maybe your free will is a mirage.", jp: "おそらく、あなたの自由意志は蜃気楼（みらーじゅ）のようなものかもしれません。", vocab: "mirage (蜃気楼)" },
+            { time: "[05:40]", en: "Except quantum stuff is ruining everything again.", jp: "ただし、量子の世界がまたすべてを台無しにしています。", vocab: "quantum (量子の), ruin (台無しにする)" },
+            { time: "[05:50]", en: "Quantum particles are intrinsically random.", jp: "量子粒子は本質的にランダムなのです。", vocab: "intrinsically (本質的に)" },
+            { time: "[06:20]", en: "If quantum stuff is really uncertain, the future can't be set in stone.", jp: "量子の世界が本当に不確実なら、未来は確定していないことになります。", vocab: "uncertain (不確実な)" },
+            { time: "[07:40]", en: "Maybe the block is just the past and a thin layer on the surface is the present.", jp: "おそらくブロックは過去だけであり、表面の薄い層が現在なのかもしれません。", vocab: "surface (表面)" },
+            { time: "[08:14]", en: "The border moves upwards, creating new time in the universe.", jp: "境界が上へと移動し、宇宙に新しい時間を生み出していきます。", vocab: "border (境界)" },
+            { time: "[09:10]", en: "To be honest, no one knows.", jp: "正直に言うと、誰にもわからないのです。", vocab: "" },
+            { time: "[09:30]", en: "Some scientists think that time itself doesn't even exist.", jp: "科学者の中には、時間そのものが存在しないと考える人もいます。", vocab: "" },
+            { time: "[09:43]", en: "Time may be something that emerges from a deeper level of reality.", jp: "時間は、現実のより深いレベルから現れる（創発する）ものかもしれません。", vocab: "emerge (現れる)" },
+            { time: "[10:10]", en: "The concept of time is abstract and elusive.", jp: "時間の概念は抽象的で、捉えどころのないものです。", vocab: "abstract (抽象的な), elusive (捉えどころのない)" },
+            { time: "[11:15]", en: "Thank you so much for being a part of our story.", jp: "私たちの物語の一部になってくれて本当にありがとうございます。", vocab: "" },
+            { time: "[12:15]", en: "The birds really appreciate your help.", jp: "鳥たちはあなたの助けに本当に感謝しています。", vocab: "appreciate (感謝する)" }
         ];
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -246,10 +207,9 @@
     </script>
 </head>
 <body>
-    <h1>全編対応シャドーイング学習シート</h1>
+    <h1>シャドーイング学習シート</h1>
     <p>動画: Did The Future Already Happen? - The Paradox of Time</p>
-    <p>💡 操作: 各文の赤いタイムスタンプ [MM:SS] をタップすると、その1秒前から再生を開始します。</p>
-    
+    <p>💡 操作: 文の [MM:SS] をタップすると、その1秒前から再生されます。アポストロフィ（'）を含む文章も正常に動作します。</p>
     <div class="video-container" id="video-placeholder"></div>
     <div id="shadowing-container"></div>
 </body>
