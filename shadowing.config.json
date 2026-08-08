@@ -1,0 +1,18 @@
+{
+  "host": "127.0.0.1",
+  "port": 8000,
+  "playbackBufferSeconds": 1.0,
+  "preferYouTubeCaptions": true,
+  "captionLanguages": "en-orig,en,en-GB",
+  "transcription": {
+    "provider": "faster-whisper",
+    "model": "small.en",
+    "computeType": "int8"
+  },
+  "ollama": {
+    "enabled": true,
+    "url": "http://127.0.0.1:11434",
+    "model": "qwen3:4b",
+    "batchSize": 8
+  }
+}

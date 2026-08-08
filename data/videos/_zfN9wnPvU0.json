@@ -1,0 +1,2996 @@
+{
+  "schemaVersion": 1,
+  "id": "_zfN9wnPvU0",
+  "title": "AI Slop Is Destroying The Internet",
+  "sourceUrl": "https://www.youtube.com/watch?v=_zfN9wnPvU0",
+  "generatedAt": null,
+  "transcriptSource": "legacy-import",
+  "sentences": [
+    {
+      "id": 1,
+      "speechStart": 1,
+      "playFrom": 0,
+      "end": 8,
+      "en": "Our 12,026 human era calendar just dropped and this year is extra special.",
+      "jp": "私たちの紀元12,026年のカレンダーが発売されました。そして、今年は特別です。",
+      "vocab": [
+        {
+          "term": "human era",
+          "meaning": "紀元",
+          "level": ""
+        },
+        {
+          "term": "extra special",
+          "meaning": "特に特別な",
+          "level": ""
+        },
+        {
+          "term": "calendar",
+          "meaning": "カレンダー",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 2,
+      "speechStart": 8,
+      "playFrom": 7,
+      "end": 16,
+      "en": "Stay tuned until the end for the reveal or head straight to the shop to get yours.",
+      "jp": "発表の最後までご期待ください、またはショップに直行して手に入れてください。",
+      "vocab": [
+        {
+          "term": "stay tuned",
+          "meaning": "チャンネルを変えないで待つ",
+          "level": ""
+        },
+        {
+          "term": "reveal",
+          "meaning": "発表、公開",
+          "level": ""
+        },
+        {
+          "term": "head straight to",
+          "meaning": "〜に直行する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 3,
+      "speechStart": 16,
+      "playFrom": 15,
+      "end": 23,
+      "en": "AI slop is saturating the internet and things are becoming dramatic pretty quickly.",
+      "jp": "AIのスロップ（質の低いコンテンツ）がインターネットを飽和させており、事態は非常に急速に劇的になっています。",
+      "vocab": [
+        {
+          "term": "slop",
+          "meaning": "質の低いコンテンツ",
+          "level": ""
+        },
+        {
+          "term": "saturating",
+          "meaning": "飽和させている",
+          "level": ""
+        },
+        {
+          "term": "dramatic",
+          "meaning": "劇的な",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 4,
+      "speechStart": 23,
+      "playFrom": 22,
+      "end": 31,
+      "en": "In an online world where money is made with attention fake users spread their slop in review sections, generate fake traffic, or poison discourse.",
+      "jp": "注意（注目）でお金が作られるオンラインの世界では、偽のユーザーがレビュー欄に彼らのスロップを広めたり、偽のトラフィックを生成したり、議論を毒したりします。",
+      "vocab": [
+        {
+          "term": "attention",
+          "meaning": "注目、関心",
+          "level": ""
+        },
+        {
+          "term": "generate",
+          "meaning": "生成する",
+          "level": ""
+        },
+        {
+          "term": "poison",
+          "meaning": "毒する",
+          "level": ""
+        },
+        {
+          "term": "discourse",
+          "meaning": "議論",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 5,
+      "speechStart": 31,
+      "playFrom": 30,
+      "end": 38,
+      "en": "AI has supercharged this and made slop much harder to spot.",
+      "jp": "AIはこれを大幅に加速させ、スロップを見つけにくくしています。",
+      "vocab": [
+        {
+          "term": "supercharged",
+          "meaning": "急激に加速させた",
+          "level": ""
+        },
+        {
+          "term": "spot",
+          "meaning": "見つける、発見する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 6,
+      "speechStart": 38,
+      "playFrom": 37,
+      "end": 45,
+      "en": "Today, about half of internet traffic is bots, the majority of them are used for destructive purposes.",
+      "jp": "今日、インターネットトラフィックの約半分はボットであり、その大部分は破壊的な目的で使用されています。",
+      "vocab": [
+        {
+          "term": "traffic",
+          "meaning": "交通、ここでは通信量",
+          "level": ""
+        },
+        {
+          "term": "majority",
+          "meaning": "大部分",
+          "level": ""
+        },
+        {
+          "term": "destructive",
+          "meaning": "破壊的な",
+          "level": ""
+        },
+        {
+          "term": "purpose",
+          "meaning": "目的",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 7,
+      "speechStart": 45,
+      "playFrom": 44,
+      "end": 54,
+      "en": "It's never been easier to make mediocre content from the black hole of meaninglessness that is LinkedIn low-effort short videos, just engaging enough to hypnotize kids and fry their attention spans, to endless soullessly rewritten books on Amazon.",
+      "jp": "LinkedInという無意味さのブラックホールから平凡なコンテンツを作ることは、かつてないほど簡単になりました。労力の少ないショート動画は、子供を催眠術にかけるのに十分魅力的であり、彼らの集中力（注意持続時間）を破壊し、Amazonには魂のない、無限に書き直された本があふれています。",
+      "vocab": [
+        {
+          "term": "mediocre",
+          "meaning": "平凡な",
+          "level": ""
+        },
+        {
+          "term": "meaninglessness",
+          "meaning": "無意味さ",
+          "level": ""
+        },
+        {
+          "term": "low-effort",
+          "meaning": "労力の少ない",
+          "level": ""
+        },
+        {
+          "term": "engaging",
+          "meaning": "魅力的な",
+          "level": ""
+        },
+        {
+          "term": "hypnotize",
+          "meaning": "催眠術にかける",
+          "level": ""
+        },
+        {
+          "term": "fry",
+          "meaning": "揚げる、ここでは破壊する",
+          "level": ""
+        },
+        {
+          "term": "attention span",
+          "meaning": "注意持続時間",
+          "level": ""
+        },
+        {
+          "term": "soullessly",
+          "meaning": "魂なく",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 8,
+      "speechStart": 54,
+      "playFrom": 53,
+      "end": 57,
+      "en": "AI music is invading streaming platforms.",
+      "jp": "AI音楽はストリーミングプラットフォームを侵略しています。",
+      "vocab": [
+        {
+          "term": "invading",
+          "meaning": "侵略している",
+          "level": ""
+        },
+        {
+          "term": "streaming platforms",
+          "meaning": "ストリーミング配信基盤",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 9,
+      "speechStart": 57,
+      "playFrom": 56,
+      "end": 61,
+      "en": "Google AI is summarizing websites instead of sending traffic to them.",
+      "jp": "Google AIは、ウェブサイトにトラフィックを送る代わりに、ウェブサイトを要約しています。",
+      "vocab": [
+        {
+          "term": "summarizing",
+          "meaning": "要約している",
+          "level": ""
+        },
+        {
+          "term": "instead of",
+          "meaning": "〜の代わりに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 10,
+      "speechStart": 61,
+      "playFrom": 60,
+      "end": 70,
+      "en": "On YouTube, new channels publish long-form videos multiple times a week with AI-generated thumbnails, voices, and scripts.",
+      "jp": "YouTubeでは、新しいチャンネルがAI生成されたサムネイル、声、スクリプトを使って、週に複数回長尺の動画を公開しています。",
+      "vocab": [
+        {
+          "term": "long-form videos",
+          "meaning": "長尺動画",
+          "level": ""
+        },
+        {
+          "term": "multiple times",
+          "meaning": "複数回",
+          "level": ""
+        },
+        {
+          "term": "generated",
+          "meaning": "生成された",
+          "level": ""
+        },
+        {
+          "term": "thumbnails",
+          "meaning": "サムネイル",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 11,
+      "speechStart": 70,
+      "playFrom": 69,
+      "end": 71,
+      "en": "True crime video essays, science, no space is safe.",
+      "jp": "真の犯罪に関するビデオエッセイ、科学、安全な領域は一つもありません。",
+      "vocab": [
+        {
+          "term": "true crime",
+          "meaning": "実録犯罪",
+          "level": ""
+        },
+        {
+          "term": "video essays",
+          "meaning": "ビデオエッセイ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 12,
+      "speechStart": 71,
+      "playFrom": 70,
+      "end": 80,
+      "en": "We're in the golden era of soulless slop and sadly actual creative human work is used to train these AI models.",
+      "jp": "私たちは魂のないスロップの黄金時代にいます。そして悲しいことに、実際の創造的な人間の作品が、これらのAIモデルを訓練するために使用されています。",
+      "vocab": [
+        {
+          "term": "golden era",
+          "meaning": "黄金時代",
+          "level": ""
+        },
+        {
+          "term": "soulless",
+          "meaning": "魂のない",
+          "level": ""
+        },
+        {
+          "term": "creative",
+          "meaning": "創造的な",
+          "level": ""
+        },
+        {
+          "term": "models",
+          "meaning": "モデル",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 13,
+      "speechStart": 80,
+      "playFrom": 79,
+      "end": 94,
+      "en": "Every Reddit comment, original YouTube video, or human drawing on Deviant Art has been sold out to the AI companies or straight up stolen by them without attribution or payment to the actual creators.",
+      "jp": "Redditのコメント、オリジナルのYouTube動画、Deviant Artの人間によるすべての絵は、AI企業に売り渡されたか、実際のクリエイターへの帰属表示や支払いがなく、彼らによって完全に盗まれました。",
+      "vocab": [
+        {
+          "term": "original",
+          "meaning": "オリジナルの",
+          "level": ""
+        },
+        {
+          "term": "Deviant Art",
+          "meaning": "オンラインアートコミュニティ",
+          "level": ""
+        },
+        {
+          "term": "sold out",
+          "meaning": "売り渡された",
+          "level": ""
+        },
+        {
+          "term": "straight up",
+          "meaning": "完全に",
+          "level": ""
+        },
+        {
+          "term": "stolen",
+          "meaning": "盗まれた",
+          "level": ""
+        },
+        {
+          "term": "attribution",
+          "meaning": "帰属表示",
+          "level": ""
+        },
+        {
+          "term": "payment",
+          "meaning": "支払い",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 14,
+      "speechStart": 94,
+      "playFrom": 93,
+      "end": 102,
+      "en": "Creative theft on a scale where it's impossible to protect against it, already putting loads of creatives' work in danger so AI companies can get rich.",
+      "jp": "それに対して防御することが不可能な規模での創造的な盗用は、すでに多くのクリエイターの作品を危険にさらしており、AI企業が金持ちになるためです。",
+      "vocab": [
+        {
+          "term": "theft",
+          "meaning": "盗用、盗難",
+          "level": ""
+        },
+        {
+          "term": "scale",
+          "meaning": "規模",
+          "level": ""
+        },
+        {
+          "term": "impossible",
+          "meaning": "不可能な",
+          "level": ""
+        },
+        {
+          "term": "protect against",
+          "meaning": "〜から守る",
+          "level": ""
+        },
+        {
+          "term": "loads of",
+          "meaning": "多くの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 15,
+      "speechStart": 102,
+      "playFrom": 101,
+      "end": 118,
+      "en": "While this is sad and frustrating, what's even worse is that generative AI truly has the potential to break the internet irreversibly by making it harder and harder to tell what's true.",
+      "jp": "これは悲しく、イライラすることですが、さらに悪いことに、生成AIは、何が真実かを判断することをますます困難にすることで、インターネットを不可逆的に壊す可能性を真に持っています。",
+      "vocab": [
+        {
+          "term": "frustrating",
+          "meaning": "イライラさせる",
+          "level": ""
+        },
+        {
+          "term": "generative AI",
+          "meaning": "生成AI",
+          "level": ""
+        },
+        {
+          "term": "potential",
+          "meaning": "可能性",
+          "level": ""
+        },
+        {
+          "term": "break",
+          "meaning": "壊す",
+          "level": ""
+        },
+        {
+          "term": "irreversibly",
+          "meaning": "不可逆的に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 16,
+      "speechStart": 118,
+      "playFrom": 117,
+      "end": 119,
+      "en": "At first, AI looked great.",
+      "jp": "当初、AIは素晴らしく見えました。",
+      "vocab": [
+        {
+          "term": "at first",
+          "meaning": "最初は",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 17,
+      "speechStart": 119,
+      "playFrom": 118,
+      "end": 126,
+      "en": "The Kurzgesagt script starts with basic research that's turned into a script and then fact-checked in depth by two to three people.",
+      "jp": "Kurzgesagtのスクリプトは、基本的なリサーチから始まり、それがスクリプトに変わり、その後、2、3人によって詳細に事実確認されます。",
+      "vocab": [
+        {
+          "term": "script",
+          "meaning": "台本",
+          "level": ""
+        },
+        {
+          "term": "basic research",
+          "meaning": "基礎研究",
+          "level": ""
+        },
+        {
+          "term": "fact-checked",
+          "meaning": "事実確認された",
+          "level": ""
+        },
+        {
+          "term": "in depth",
+          "meaning": "詳細に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 18,
+      "speechStart": 126,
+      "playFrom": 125,
+      "end": 133,
+      "en": "We try to confirm our info with what we deem trustworthy, ideally firsthand sources, ideally papers.",
+      "jp": "私たちは、信頼できると見なすもの、理想的には直接の情報源、理想的には論文で情報を確認しようとします。",
+      "vocab": [
+        {
+          "term": "confirm",
+          "meaning": "確認する",
+          "level": ""
+        },
+        {
+          "term": "deem",
+          "meaning": "〜と見なす",
+          "level": ""
+        },
+        {
+          "term": "trustworthy",
+          "meaning": "信頼できる",
+          "level": ""
+        },
+        {
+          "term": "ideally",
+          "meaning": "理想的には",
+          "level": ""
+        },
+        {
+          "term": "firsthand sources",
+          "meaning": "直接の情報源",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 19,
+      "speechStart": 133,
+      "playFrom": 132,
+      "end": 139,
+      "en": "Then we get one to three experts for input and critique.",
+      "jp": "それから、私たちは意見や批評のために1人から3人の専門家を招きます。",
+      "vocab": [
+        {
+          "term": "experts",
+          "meaning": "専門家",
+          "level": ""
+        },
+        {
+          "term": "input",
+          "meaning": "意見",
+          "level": ""
+        },
+        {
+          "term": "critique",
+          "meaning": "批評",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 20,
+      "speechStart": 139,
+      "playFrom": 138,
+      "end": 147,
+      "en": "Fact-checking and compiling our sources alone takes around 100 hours per video.",
+      "jp": "事実確認と情報源の編集だけで、1本の動画あたり約100時間かかります。",
+      "vocab": [
+        {
+          "term": "compiling",
+          "meaning": "編集すること",
+          "level": ""
+        },
+        {
+          "term": "sources",
+          "meaning": "情報源",
+          "level": ""
+        },
+        {
+          "term": "alone",
+          "meaning": "〜だけで",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 21,
+      "speechStart": 147,
+      "playFrom": 146,
+      "end": 149,
+      "en": "Of course, we make mistakes or oversimplify and you can disagree with our conclusions.",
+      "jp": "もちろん、私たちは間違いを犯したり、単純化しすぎたりすることがあり、皆さんは私たちの結論に同意しないこともあるでしょう。",
+      "vocab": [
+        {
+          "term": "oversimplify",
+          "meaning": "単純化しすぎる",
+          "level": ""
+        },
+        {
+          "term": "disagree",
+          "meaning": "同意しない",
+          "level": ""
+        },
+        {
+          "term": "conclusions",
+          "meaning": "結論",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 22,
+      "speechStart": 149,
+      "playFrom": 148,
+      "end": 150,
+      "en": "It's unavoidable.",
+      "jp": "それは避けられません。",
+      "vocab": [
+        {
+          "term": "unavoidable",
+          "meaning": "避けられない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 23,
+      "speechStart": 150,
+      "playFrom": 149,
+      "end": 151,
+      "en": "We're only human after all.",
+      "jp": "結局のところ、私たちは人間です。",
+      "vocab": [
+        {
+          "term": "after all",
+          "meaning": "結局のところ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 24,
+      "speechStart": 151,
+      "playFrom": 150,
+      "end": 156,
+      "en": "But it is fair to say that our process is extensive and after a decade we know what we're doing.",
+      "jp": "しかし、私たちのプロセスが広範囲にわたるものであり、10年を経て、私たちは自分たちが何をしているのかを知っていると言っても過言ではありません。",
+      "vocab": [
+        {
+          "term": "fair to say",
+          "meaning": "〜と言っても過言ではない",
+          "level": ""
+        },
+        {
+          "term": "extensive",
+          "meaning": "広範囲にわたる",
+          "level": ""
+        },
+        {
+          "term": "decade",
+          "meaning": "10年",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 25,
+      "speechStart": 156,
+      "playFrom": 155,
+      "end": 158,
+      "en": "When AI appeared, we were very excited.",
+      "jp": "AIが登場したとき、私たちは非常に興奮しました。",
+      "vocab": [
+        {
+          "term": "appeared",
+          "meaning": "現れた",
+          "level": ""
+        },
+        {
+          "term": "excited",
+          "meaning": "興奮した",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 26,
+      "speechStart": 158,
+      "playFrom": 157,
+      "end": 161,
+      "en": "A mechanical brain able to super quickly collect information.",
+      "jp": "超高速で情報を収集できる機械の脳です。",
+      "vocab": [
+        {
+          "term": "mechanical brain",
+          "meaning": "機械の脳",
+          "level": ""
+        },
+        {
+          "term": "collect",
+          "meaning": "収集する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 27,
+      "speechStart": 161,
+      "playFrom": 160,
+      "end": 167,
+      "en": "So we went to work and it looked amazing.",
+      "jp": "それで私たちは作業に取り掛かり、それは驚くべきものに見えました。",
+      "vocab": [
+        {
+          "term": "went to work",
+          "meaning": "作業に取り掛かった",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 28,
+      "speechStart": 167,
+      "playFrom": 166,
+      "end": 168,
+      "en": "And then we started fact-checking.",
+      "jp": "そして、私たちは事実確認を始めました。",
+      "vocab": [
+        {
+          "term": "started",
+          "meaning": "始めた",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 29,
+      "speechStart": 168,
+      "playFrom": 167,
+      "end": 172,
+      "en": "We didn't expect it to be perfect, but it was way worse than we thought.",
+      "jp": "完璧であるとは期待していませんでしたが、私たちが思っていたよりもずっとひどいものでした。",
+      "vocab": [
+        {
+          "term": "expect",
+          "meaning": "期待する",
+          "level": ""
+        },
+        {
+          "term": "perfect",
+          "meaning": "完璧な",
+          "level": ""
+        },
+        {
+          "term": "way worse",
+          "meaning": "はるかにひどい",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 30,
+      "speechStart": 172,
+      "playFrom": 171,
+      "end": 175,
+      "en": "Confidently incorrect.",
+      "jp": "自信満々に間違っているのです。",
+      "vocab": [
+        {
+          "term": "confidently",
+          "meaning": "自信満々に",
+          "level": ""
+        },
+        {
+          "term": "incorrect",
+          "meaning": "間違った",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 31,
+      "speechStart": 175,
+      "playFrom": 174,
+      "end": 177,
+      "en": "AI is so bad at this.",
+      "jp": "AIはこれがとても苦手です。",
+      "vocab": [
+        {
+          "term": "bad at",
+          "meaning": "〜が苦手だ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 32,
+      "speechStart": 177,
+      "playFrom": 176,
+      "end": 191,
+      "en": "We'll summarize and generalize our experiences over multiple projects and months, condensed into one fake project: a video about why brown dwarfs are the worst and should be ashamed of themselves.",
+      "jp": "私たちは、複数のプロジェクトと数ヶ月にわたる経験を要約し一般化し、それを一つの架空のプロジェクト、つまり、なぜ褐色矮星が最悪で、自らを恥じるべきなのかについての動画に凝縮しました。",
+      "vocab": [
+        {
+          "term": "summarize",
+          "meaning": "要約する",
+          "level": ""
+        },
+        {
+          "term": "generalize",
+          "meaning": "一般化する",
+          "level": ""
+        },
+        {
+          "term": "multiple",
+          "meaning": "複数の",
+          "level": ""
+        },
+        {
+          "term": "condensed",
+          "meaning": "凝縮された",
+          "level": ""
+        },
+        {
+          "term": "fake project",
+          "meaning": "架空のプロジェクト",
+          "level": ""
+        },
+        {
+          "term": "brown dwarfs",
+          "meaning": "褐色矮星",
+          "level": ""
+        },
+        {
+          "term": "ashamed of",
+          "meaning": "〜を恥じる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 33,
+      "speechStart": 191,
+      "playFrom": 190,
+      "end": 197,
+      "en": "So we got all the pro accounts of all the AI models and got to work.",
+      "jp": "それで、私たちはすべてのAIモデルのプロアカウントを取得し、作業に取り掛かりました。",
+      "vocab": [
+        {
+          "term": "pro accounts",
+          "meaning": "プロアカウント",
+          "level": ""
+        },
+        {
+          "term": "got to work",
+          "meaning": "作業に取り掛かった",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 34,
+      "speechStart": 197,
+      "playFrom": 196,
+      "end": 203,
+      "en": "Using deep research tools to create a summary and overview of all the information about the failed stars, brown dwarfs.",
+      "jp": "深層リサーチツールを使用して、失敗した星、褐色矮星に関するすべての情報の要約と概要を作成しました。",
+      "vocab": [
+        {
+          "term": "deep research tools",
+          "meaning": "深層リサーチツール",
+          "level": ""
+        },
+        {
+          "term": "overview",
+          "meaning": "概要",
+          "level": ""
+        },
+        {
+          "term": "failed stars",
+          "meaning": "失敗した星",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 35,
+      "speechStart": 203,
+      "playFrom": 202,
+      "end": 204,
+      "en": "And wow, it was great.",
+      "jp": "そして、わあ、それは素晴らしかったです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 36,
+      "speechStart": 204,
+      "playFrom": 203,
+      "end": 210,
+      "en": "Dozens of pages of outlines with unique information nuggets and links to sources.",
+      "jp": "独自の情報の断片（ナゲット）と情報源へのリンクが記載された何十ページものアウトラインです。",
+      "vocab": [
+        {
+          "term": "dozens of",
+          "meaning": "何十もの",
+          "level": ""
+        },
+        {
+          "term": "outlines",
+          "meaning": "アウトライン",
+          "level": ""
+        },
+        {
+          "term": "unique",
+          "meaning": "独自の",
+          "level": ""
+        },
+        {
+          "term": "information nuggets",
+          "meaning": "情報の断片",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 37,
+      "speechStart": 210,
+      "playFrom": 209,
+      "end": 212,
+      "en": "Then we started to look deeper.",
+      "jp": "それから、私たちはより深く調べ始めました。",
+      "vocab": [
+        {
+          "term": "look deeper",
+          "meaning": "より深く調べる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 38,
+      "speechStart": 212,
+      "playFrom": 211,
+      "end": 220,
+      "en": "More than 80% of the info and factoids were pretty solid and we could reconstruct where they were from: Wikipedia, papers, legit articles.",
+      "jp": "情報と事象の80%以上はかなり確かなもので、私たちはそれらがどこから来たのかを再構築できました。Wikipedia、論文、正当な記事です。",
+      "vocab": [
+        {
+          "term": "factoids",
+          "meaning": "事象",
+          "level": ""
+        },
+        {
+          "term": "solid",
+          "meaning": "確かな",
+          "level": ""
+        },
+        {
+          "term": "reconstruct",
+          "meaning": "再構築する",
+          "level": ""
+        },
+        {
+          "term": "legit",
+          "meaning": "正当な、合法的な",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 39,
+      "speechStart": 220,
+      "playFrom": 219,
+      "end": 221,
+      "en": "What about the rest?",
+      "jp": "残りはどうでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 40,
+      "speechStart": 221,
+      "playFrom": 220,
+      "end": 233,
+      "en": "It was great stuff like the speed of brown dwarf superstorms, the nature of their insides, or how disappointed their moms are, but we couldn't find where the AI got this info from.",
+      "jp": "それは、褐色矮星の超巨大嵐の速度、その内部の性質、または彼らの母親がどれほどがっかりしているかのような素晴らしいものでしたが、AIがどこからこの情報を得たのかを見つけることができませんでした。",
+      "vocab": [
+        {
+          "term": "supertorms",
+          "meaning": "超巨大嵐",
+          "level": ""
+        },
+        {
+          "term": "nature",
+          "meaning": "性質",
+          "level": ""
+        },
+        {
+          "term": "disappointed",
+          "meaning": "がっかりしている",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 41,
+      "speechStart": 233,
+      "playFrom": 232,
+      "end": 238,
+      "en": "Which is not automatically a bad sign, after all, the models contain pretty much all the internet and books ever written.",
+      "jp": "それは自動的に悪い兆候ではありません。結局のところ、モデルはこれまで書かれたインターネットと本のほぼすべてを含んでいるからです。",
+      "vocab": [
+        {
+          "term": "automatically",
+          "meaning": "自動的に",
+          "level": ""
+        },
+        {
+          "term": "bad sign",
+          "meaning": "悪い兆候",
+          "level": ""
+        },
+        {
+          "term": "contain",
+          "meaning": "含む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 42,
+      "speechStart": 238,
+      "playFrom": 237,
+      "end": 245,
+      "en": "So we asked experts for input and they flagged the exact same fact, even asking where we found it.",
+      "jp": "それで、私たちは専門家に意見を求めましたが、彼らは全く同じ事実にフラグを立て、私たちがどこで見つけたのか尋ねてきました。",
+      "vocab": [
+        {
+          "term": "flagged",
+          "meaning": "フラグを立てた、ここでは疑問視した",
+          "level": ""
+        },
+        {
+          "term": "exact same",
+          "meaning": "全く同じ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 43,
+      "speechStart": 245,
+      "playFrom": 244,
+      "end": 260,
+      "en": "To fulfill its goal to make us happy, the AI had invented or extrapolated information to make brown dwarfs more interesting than they really are, like a bad journalist making up details to make a story hit harder or fit a narrative.",
+      "jp": "私たちを喜ばせるという目標を達成するために、AIは褐色矮星を実際よりも面白くするために情報を捏造したり、外挿したりしていました。それは、悪いジャーナリストが記事をより印象的にするため、または物語に合わせるために詳細を作り上げるようなものです。",
+      "vocab": [
+        {
+          "term": "fulfill",
+          "meaning": "達成する",
+          "level": ""
+        },
+        {
+          "term": "invented",
+          "meaning": "捏造した",
+          "level": ""
+        },
+        {
+          "term": "extrapolated",
+          "meaning": "外挿した",
+          "level": ""
+        },
+        {
+          "term": "interesting",
+          "meaning": "面白い",
+          "level": ""
+        },
+        {
+          "term": "making up",
+          "meaning": "でっち上げる",
+          "level": ""
+        },
+        {
+          "term": "hit harder",
+          "meaning": "より印象的になる",
+          "level": ""
+        },
+        {
+          "term": "fit a narrative",
+          "meaning": "物語に合う",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 44,
+      "speechStart": 260,
+      "playFrom": 259,
+      "end": 267,
+      "en": "Now we wanted to know more and dove in deeper, reading the seemingly more solid sources the AI had given us in full.",
+      "jp": "さて、私たちはもっと知りたくなり、より深く飛び込み、AIが提供した、一見するとより確かな情報源をすべて読みました。",
+      "vocab": [
+        {
+          "term": "dove in deeper",
+          "meaning": "より深く飛び込んだ",
+          "level": ""
+        },
+        {
+          "term": "seemingly",
+          "meaning": "一見すると",
+          "level": ""
+        },
+        {
+          "term": "solid sources",
+          "meaning": "確かな情報源",
+          "level": ""
+        },
+        {
+          "term": "in full",
+          "meaning": "すべて",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 45,
+      "speechStart": 267,
+      "playFrom": 266,
+      "end": 269,
+      "en": "One was an article from a news site written by a human journalist.",
+      "jp": "一つは、人間のジャーナリストによって書かれたニュースサイトの記事でした。",
+      "vocab": [
+        {
+          "term": "article",
+          "meaning": "記事",
+          "level": ""
+        },
+        {
+          "term": "journalist",
+          "meaning": "ジャーナリスト",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 46,
+      "speechStart": 269,
+      "playFrom": 268,
+      "end": 270,
+      "en": "Or was it?",
+      "jp": "それともそうではなかったのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 47,
+      "speechStart": 270,
+      "playFrom": 269,
+      "end": 281,
+      "en": "It had a very familiar structure and surely, purely coincidentally, read like what you get if a human slightly changes AI wording.",
+      "jp": "それは非常に馴染みのある構造を持っており、そして確かに、全くの偶然で、人間がAIの文言をわずかに変更した場合に得られるもののように読めました。",
+      "vocab": [
+        {
+          "term": "familiar",
+          "meaning": "馴染みのある",
+          "level": ""
+        },
+        {
+          "term": "purely coincidentally",
+          "meaning": "全くの偶然で",
+          "level": ""
+        },
+        {
+          "term": "slightly",
+          "meaning": "わずかに",
+          "level": ""
+        },
+        {
+          "term": "wording",
+          "meaning": "文言",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 48,
+      "speechStart": 281,
+      "playFrom": 280,
+      "end": 285,
+      "en": "An AI essay detection tool gave it a 72% match.",
+      "jp": "AIエッセイ検出ツールは、それに72%の一致率を与えました。",
+      "vocab": [
+        {
+          "term": "essay",
+          "meaning": "エッセイ",
+          "level": ""
+        },
+        {
+          "term": "detection tool",
+          "meaning": "検出ツール",
+          "level": ""
+        },
+        {
+          "term": "match",
+          "meaning": "一致",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 49,
+      "speechStart": 285,
+      "playFrom": 284,
+      "end": 300,
+      "en": "So an AI article without sources used as a credible source for AI research, which makes sense since in 2025 there were already well over 1,200 confirmed AI news websites publishing massive amounts of AI-generated misinformation and false narratives.",
+      "jp": "つまり、情報源のないAI記事が、AI研究のための信頼できる情報源として使用されたということです。これは、2025年にはすでに1,200を超える確認されたAIニュースウェブサイトが、大量のAI生成された誤報と虚偽の物語を公開していたことを考えると、理にかなっています。",
+      "vocab": [
+        {
+          "term": "credible source",
+          "meaning": "信頼できる情報源",
+          "level": ""
+        },
+        {
+          "term": "well over",
+          "meaning": "〜をはるかに超える",
+          "level": ""
+        },
+        {
+          "term": "confirmed",
+          "meaning": "確認された",
+          "level": ""
+        },
+        {
+          "term": "massive amounts of",
+          "meaning": "大量の",
+          "level": ""
+        },
+        {
+          "term": "misinformation",
+          "meaning": "誤報",
+          "level": ""
+        },
+        {
+          "term": "false narratives",
+          "meaning": "虚偽の物語",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 50,
+      "speechStart": 300,
+      "playFrom": 299,
+      "end": 316,
+      "en": "This mix of correct, dubiously sourced, and straight-up made-up information also leads AI to present really shoddy conclusions that sound strong or novel but are often halftruths or misrepresentations.",
+      "jp": "この、正しい情報、疑わしい情報源、そして完全に捏造された情報の混ざり合いは、AIに、強く聞こえたり斬新に聞こえたりするが、しばしば半分真実か誤った表現である、本当に質の悪い結論を提示させることにもつながります。",
+      "vocab": [
+        {
+          "term": "mix of",
+          "meaning": "〜の混合",
+          "level": ""
+        },
+        {
+          "term": "dubiously sourced",
+          "meaning": "疑わしい情報源の",
+          "level": ""
+        },
+        {
+          "term": "straight-up made-up",
+          "meaning": "完全に捏造された",
+          "level": ""
+        },
+        {
+          "term": "shoddy",
+          "meaning": "質の悪い",
+          "level": ""
+        },
+        {
+          "term": "novel",
+          "meaning": "斬新な",
+          "level": ""
+        },
+        {
+          "term": "halftruths",
+          "meaning": "半分真実",
+          "level": ""
+        },
+        {
+          "term": "misrepresentations",
+          "meaning": "誤った表現",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 51,
+      "speechStart": 316,
+      "playFrom": 315,
+      "end": 321,
+      "en": "Oh well, we salvaged what we could and went back to the drawing board.",
+      "jp": "まあ、できる限り救い出して、振り出しに戻りました。",
+      "vocab": [
+        {
+          "term": "salvaged",
+          "meaning": "救い出した",
+          "level": ""
+        },
+        {
+          "term": "went back to the drawing board",
+          "meaning": "振り出しに戻った",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 52,
+      "speechStart": 321,
+      "playFrom": 320,
+      "end": 323,
+      "en": "And after a few weeks, it happened.",
+      "jp": "そして数週間後、それは起こりました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 53,
+      "speechStart": 323,
+      "playFrom": 322,
+      "end": 329,
+      "en": "By pure stupid chance, we saw a brown dwarf video popping up by a relatively new channel.",
+      "jp": "全くの愚かな偶然で、私たちは比較的新しいチャンネルがアップロードした褐色矮星の動画を見つけました。",
+      "vocab": [
+        {
+          "term": "pure chance",
+          "meaning": "全くの偶然で",
+          "level": ""
+        },
+        {
+          "term": "popping up",
+          "meaning": "ひょっこり現れる",
+          "level": ""
+        },
+        {
+          "term": "relatively",
+          "meaning": "比較的に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 54,
+      "speechStart": 329,
+      "playFrom": 328,
+      "end": 334,
+      "en": "It had hundreds of thousands of views and was pretty good: nice footage, great editing.",
+      "jp": "それは数十万回の再生回数があり、かなり良い出来でした。素敵な映像、素晴らしい編集です。",
+      "vocab": [
+        {
+          "term": "footage",
+          "meaning": "映像",
+          "level": ""
+        },
+        {
+          "term": "editing",
+          "meaning": "編集",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 55,
+      "speechStart": 334,
+      "playFrom": 333,
+      "end": 337,
+      "en": "But we'd seen the structure and rhythm before.",
+      "jp": "しかし、私たちは以前にその構造とリズムを見たことがありました。",
+      "vocab": [
+        {
+          "term": "structure",
+          "meaning": "構造",
+          "level": ""
+        },
+        {
+          "term": "rhythm",
+          "meaning": "リズム",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 56,
+      "speechStart": 337,
+      "playFrom": 336,
+      "end": 344,
+      "en": "And would you look at that, it contained all the brown dwarf facts we'd flagged as unreliable or straight up made up by AI.",
+      "jp": "そして、見てください、それは私たちが信頼できない、あるいはAIによって完全に捏造されたとフラグを立てた褐色矮星の事実をすべて含んでいました。",
+      "vocab": [
+        {
+          "term": "flagged as",
+          "meaning": "〜としてフラグを立てた",
+          "level": ""
+        },
+        {
+          "term": "unreliable",
+          "meaning": "信頼できない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 57,
+      "speechStart": 344,
+      "playFrom": 343,
+      "end": 346,
+      "en": "This is where the death of the internet begins.",
+      "jp": "ここからインターネットの死が始まります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 58,
+      "speechStart": 346,
+      "playFrom": 345,
+      "end": 351,
+      "en": "Now there's a proper source of brown dwarf misinformation online.",
+      "jp": "今や、オンラインには褐色矮星の誤報の「適切な」情報源が存在します。",
+      "vocab": [
+        {
+          "term": "proper source",
+          "meaning": "適切な情報源",
+          "level": ""
+        },
+        {
+          "term": "misinformation",
+          "meaning": "誤報",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 59,
+      "speechStart": 351,
+      "playFrom": 350,
+      "end": 357,
+      "en": "When the next AI repeats the same research, it will find a transcript from a video with a lot of views.",
+      "jp": "次のAIが同じリサーチを繰り返すとき、それは多くの再生回数を持つ動画のトランスクリプトを見つけるでしょう。",
+      "vocab": [
+        {
+          "term": "repeats",
+          "meaning": "繰り返す",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 60,
+      "speechStart": 357,
+      "playFrom": 356,
+      "end": 359,
+      "en": "The misinformation is now true.",
+      "jp": "その誤報は今や真実になります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 61,
+      "speechStart": 359,
+      "playFrom": 358,
+      "end": 360,
+      "en": "It will spread.",
+      "jp": "それは広がるでしょう。",
+      "vocab": [
+        {
+          "term": "spread",
+          "meaning": "広がる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 62,
+      "speechStart": 360,
+      "playFrom": 359,
+      "end": 365,
+      "en": "Even before AI, it was pretty hard to find the origin of facts that sound great but are not true.",
+      "jp": "AIが登場する前でさえ、素晴らしく聞こえるが真実ではない事実の起源を見つけるのはかなり困難でした。",
+      "vocab": [
+        {
+          "term": "origin",
+          "meaning": "起源",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 63,
+      "speechStart": 365,
+      "playFrom": 364,
+      "end": 368,
+      "en": "Just watch our video about a 100-year-old lie.",
+      "jp": "私たちの100年前の嘘についての動画を見てください。",
+      "vocab": [
+        {
+          "term": "100-year-old lie",
+          "meaning": "100年前の嘘",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 64,
+      "speechStart": 368,
+      "playFrom": 367,
+      "end": 372,
+      "en": "As AI use goes on, it may become impossible to know what's true or not.",
+      "jp": "AIの使用が進むにつれて、何が真実で何がそうでないのかを知ることが不可能になるかもしれません。",
+      "vocab": [
+        {
+          "term": "goes on",
+          "meaning": "続く",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 65,
+      "speechStart": 372,
+      "playFrom": 371,
+      "end": 375,
+      "en": "The most corrosive lie.",
+      "jp": "最も腐食性の高い嘘です。",
+      "vocab": [
+        {
+          "term": "corrosive",
+          "meaning": "腐食性の高い",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 66,
+      "speechStart": 375,
+      "playFrom": 374,
+      "end": 387,
+      "en": "The problem with AI is how trustworthy it seems, how it's correct enough to seem super smart, and how incredibly confidently incorrect it is, casually lying to your face often very subtly.",
+      "jp": "AIの問題は、それがどれほど信頼できるように見えるか、超賢く見えるほど十分に正しいこと、そして、それがどれほど信じられないほど自信満々に間違っていて、しばしば非常に巧妙に平然とあなたの顔に嘘をつくことです。",
+      "vocab": [
+        {
+          "term": "trustworthy",
+          "meaning": "信頼できる",
+          "level": ""
+        },
+        {
+          "term": "incredibly",
+          "meaning": "信じられないほど",
+          "level": ""
+        },
+        {
+          "term": "casually",
+          "meaning": "平然と",
+          "level": ""
+        },
+        {
+          "term": "subtly",
+          "meaning": "巧妙に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 67,
+      "speechStart": 387,
+      "playFrom": 386,
+      "end": 394,
+      "en": "When you catch it lying, it immediately admits it, vows to never do it again, and then it does it again.",
+      "jp": "あなたがそれが嘘をついているのを見つけたとき、それはすぐにそれを認め、二度としないと誓い、そしてまたそれをします。",
+      "vocab": [
+        {
+          "term": "catch",
+          "meaning": "捕まえる",
+          "level": ""
+        },
+        {
+          "term": "immediately",
+          "meaning": "すぐに",
+          "level": ""
+        },
+        {
+          "term": "admits",
+          "meaning": "認める",
+          "level": ""
+        },
+        {
+          "term": "vows",
+          "meaning": "誓う",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 68,
+      "speechStart": 394,
+      "playFrom": 393,
+      "end": 404,
+      "en": "As eloquent as current language models feel, there's nobody home, no greater intelligence or consciousness is talking back to you.",
+      "jp": "現在の言語モデルがどれほど雄弁に感じられても、そこには誰もいません。より大きな知性や意識があなたに話しかけているわけではありません。",
+      "vocab": [
+        {
+          "term": "eloquent",
+          "meaning": "雄弁な",
+          "level": ""
+        },
+        {
+          "term": "consciousness",
+          "meaning": "意識",
+          "level": ""
+        },
+        {
+          "term": "talking back to",
+          "meaning": "〜に話しかけている",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 69,
+      "speechStart": 404,
+      "playFrom": 403,
+      "end": 412,
+      "en": "Current AI is a very complex hammer that doesn't understand what it's doing or what nails are, but we're letting it add new shelves to the library of human knowledge.",
+      "jp": "現在のAIは、自分が何をしているのか、釘が何であるのかを理解していない非常に複雑なハンマーですが、私たちはそれに人類の知識の図書館に新しい棚を追加させています。",
+      "vocab": [
+        {
+          "term": "complex",
+          "meaning": "複雑な",
+          "level": ""
+        },
+        {
+          "term": "hammer",
+          "meaning": "ハンマー",
+          "level": ""
+        },
+        {
+          "term": "letting it",
+          "meaning": "それをさせている",
+          "level": ""
+        },
+        {
+          "term": "library of human knowledge",
+          "meaning": "人類の知識の図書館",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 70,
+      "speechStart": 412,
+      "playFrom": 411,
+      "end": 417,
+      "en": "AI is changing quickly, so this may get better, but right now it's pretty grim.",
+      "jp": "AIは急速に変化しているので、これは改善するかもしれませんが、今はかなり厳しい状況です。",
+      "vocab": [
+        {
+          "term": "quickly",
+          "meaning": "急速に",
+          "level": ""
+        },
+        {
+          "term": "grim",
+          "meaning": "厳しい、暗い",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 71,
+      "speechStart": 417,
+      "playFrom": 416,
+      "end": 422,
+      "en": "Way too many people blindly trust AI.",
+      "jp": "あまりにも多くの人がAIを盲目的に信頼しています。",
+      "vocab": [
+        {
+          "term": "blindly",
+          "meaning": "盲目的に",
+          "level": ""
+        },
+        {
+          "term": "trust",
+          "meaning": "信頼する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 72,
+      "speechStart": 422,
+      "playFrom": 421,
+      "end": 431,
+      "en": "Studies looked into the language of millions of scientific papers published before and after the rise of large language models.",
+      "jp": "研究は、大規模言語モデルの台頭の前後に発表された何百万もの科学論文の言語を調査しました。",
+      "vocab": [
+        {
+          "term": "studies",
+          "meaning": "研究",
+          "level": ""
+        },
+        {
+          "term": "scientific papers",
+          "meaning": "科学論文",
+          "level": ""
+        },
+        {
+          "term": "published",
+          "meaning": "発表された",
+          "level": ""
+        },
+        {
+          "term": "rise of",
+          "meaning": "〜の台頭",
+          "level": ""
+        },
+        {
+          "term": "large language models",
+          "meaning": "大規模言語モデル",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 73,
+      "speechStart": 431,
+      "playFrom": 430,
+      "end": 437,
+      "en": "They found an abrupt and sharp increase in the frequency of words that AIs like to use.",
+      "jp": "彼らは、AIが好んで使用する単語の頻度が、突然かつ急激に増加していることを発見しました。",
+      "vocab": [
+        {
+          "term": "abrupt",
+          "meaning": "突然の",
+          "level": ""
+        },
+        {
+          "term": "sharp increase",
+          "meaning": "急激な増加",
+          "level": ""
+        },
+        {
+          "term": "frequency",
+          "meaning": "頻度",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 74,
+      "speechStart": 437,
+      "playFrom": 436,
+      "end": 444,
+      "en": "So it seems clear that now a significant portion of papers have been at least assisted by AI, usually without acknowledgement.",
+      "jp": "そのため、現在、論文のかなりの部分が、通常は謝辞なしに、少なくともAIによって支援されていることは明らかのようです。",
+      "vocab": [
+        {
+          "term": "significant portion",
+          "meaning": "かなりの部分",
+          "level": ""
+        },
+        {
+          "term": "at least",
+          "meaning": "少なくとも",
+          "level": ""
+        },
+        {
+          "term": "assisted",
+          "meaning": "支援された",
+          "level": ""
+        },
+        {
+          "term": "acknowledgement",
+          "meaning": "謝辞",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 75,
+      "speechStart": 444,
+      "playFrom": 443,
+      "end": 456,
+      "en": "And just in July 2025, it was discovered that a number of researchers had started to sneak hidden messages into their papers in white text or too small for the human eye.",
+      "jp": "そして、ちょうど2025年7月に、多くの研究者が、白いテキストまたは人間の目には小さすぎる文字で、隠されたメッセージを論文にこっそり入れ始めたことが発見されました。",
+      "vocab": [
+        {
+          "term": "discovered",
+          "meaning": "発見された",
+          "level": ""
+        },
+        {
+          "term": "sneak",
+          "meaning": "こっそり入れる",
+          "level": ""
+        },
+        {
+          "term": "hidden messages",
+          "meaning": "隠されたメッセージ",
+          "level": ""
+        },
+        {
+          "term": "too small for",
+          "meaning": "〜には小さすぎる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 76,
+      "speechStart": 456,
+      "playFrom": 455,
+      "end": 459,
+      "en": "They prompted AIs to review them positively and not point out flaws.",
+      "jp": "彼らはAIに、それらを肯定的にレビューし、欠陥を指摘しないように促しました。",
+      "vocab": [
+        {
+          "term": "prompted",
+          "meaning": "促した",
+          "level": ""
+        },
+        {
+          "term": "review",
+          "meaning": "レビューする",
+          "level": ""
+        },
+        {
+          "term": "positively",
+          "meaning": "肯定的に",
+          "level": ""
+        },
+        {
+          "term": "point out",
+          "meaning": "指摘する",
+          "level": ""
+        },
+        {
+          "term": "flaws",
+          "meaning": "欠陥",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 77,
+      "speechStart": 459,
+      "playFrom": 458,
+      "end": 468,
+      "en": "As more and more people are using AI carelessly, the library of human knowledge is getting less and less reliable, which brings us to the last part.",
+      "jp": "ますます多くの人々がAIを不注意に使用するにつれて、人類の知識の図書館は信頼性がどんどん低くなっており、これが最後の部分につながります。",
+      "vocab": [
+        {
+          "term": "carelessly",
+          "meaning": "不注意に",
+          "level": ""
+        },
+        {
+          "term": "reliable",
+          "meaning": "信頼できる",
+          "level": ""
+        },
+        {
+          "term": "brings us to",
+          "meaning": "〜につながる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 78,
+      "speechStart": 468,
+      "playFrom": 467,
+      "end": 475,
+      "en": "How are we using AI and will Kurzgesagt survive the AI slop age?",
+      "jp": "私たちはどのようにAIを使用しているのでしょうか、そしてKurzgesagtはAIスロップの時代を生き残ることができるでしょうか？",
+      "vocab": [
+        {
+          "term": "survive",
+          "meaning": "生き残る",
+          "level": ""
+        },
+        {
+          "term": "slop age",
+          "meaning": "スロップ時代",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 79,
+      "speechStart": 475,
+      "playFrom": 474,
+      "end": 477,
+      "en": "Will AI slop kills and artists on the internet?",
+      "jp": "AIスロップはインターネット上のクリエイターとアーティストを殺してしまうのでしょうか？",
+      "vocab": [
+        {
+          "term": "artists",
+          "meaning": "芸術家",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 80,
+      "speechStart": 477,
+      "playFrom": 476,
+      "end": 481,
+      "en": "There's only one truly valuable resource: human attention.",
+      "jp": "本当に価値のあるリソースは一つだけです。それは人間の注目です。",
+      "vocab": [
+        {
+          "term": "truly",
+          "meaning": "本当に",
+          "level": ""
+        },
+        {
+          "term": "valuable resource",
+          "meaning": "貴重な資源",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 81,
+      "speechStart": 481,
+      "playFrom": 480,
+      "end": 491,
+      "en": "If current trends continue, it's not that far-fetched that cheap slop content, stuff just good enough, will soak up the majority of human attention.",
+      "jp": "現在の傾向が続けば、安価なスロップコンテンツ、つまり「それなりに良い」ものが、人間の注目の大部分を吸収してしまうことは、それほど突飛なことではありません。",
+      "vocab": [
+        {
+          "term": "current trends",
+          "meaning": "現在の傾向",
+          "level": ""
+        },
+        {
+          "term": "far-fetched",
+          "meaning": "突飛な",
+          "level": ""
+        },
+        {
+          "term": "cheap",
+          "meaning": "安価な",
+          "level": ""
+        },
+        {
+          "term": "soak up",
+          "meaning": "吸収する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 82,
+      "speechStart": 491,
+      "playFrom": 490,
+      "end": 499,
+      "en": "It could make us dumber, less informed, our attention spans even worse, increase political divides, and make us neglect real human interaction.",
+      "jp": "それは私たちをより愚かにし、情報が不足させ、集中力をさらに悪化させ、政治的な分裂を増大させ、真の人間との交流を無視させる可能性があります。",
+      "vocab": [
+        {
+          "term": "dumber",
+          "meaning": "より愚かな",
+          "level": ""
+        },
+        {
+          "term": "less informed",
+          "meaning": "情報が不足した",
+          "level": ""
+        },
+        {
+          "term": "increase",
+          "meaning": "増大させる",
+          "level": ""
+        },
+        {
+          "term": "political divides",
+          "meaning": "政治的な分裂",
+          "level": ""
+        },
+        {
+          "term": "neglect",
+          "meaning": "無視する",
+          "level": ""
+        },
+        {
+          "term": "interaction",
+          "meaning": "交流",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 83,
+      "speechStart": 499,
+      "playFrom": 498,
+      "end": 510,
+      "en": "If AI eats the majority of the attention pie, channels like ours will become unfeasible or forced to downsize or use AI themselves to be able to compete.",
+      "jp": "AIが注目のパイの大部分を食い尽くすなら、私たちのようなチャンネルは実現不可能になるか、競争するために規模を縮小するか、あるいは自らAIを使用することを余儀なくされるでしょう。",
+      "vocab": [
+        {
+          "term": "unfeasible",
+          "meaning": "実現不可能な",
+          "level": ""
+        },
+        {
+          "term": "forced to",
+          "meaning": "〜を余儀なくされる",
+          "level": ""
+        },
+        {
+          "term": "downsize",
+          "meaning": "規模を縮小する",
+          "level": ""
+        },
+        {
+          "term": "compete",
+          "meaning": "競争する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 84,
+      "speechStart": 510,
+      "playFrom": 509,
+      "end": 512,
+      "en": "We don't want to play this game.",
+      "jp": "私たちはこのゲームをプレイしたくありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 85,
+      "speechStart": 512,
+      "playFrom": 511,
+      "end": 513,
+      "en": "How will we use AI?",
+      "jp": "私たちはどのようにAIを使用するのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 86,
+      "speechStart": 513,
+      "playFrom": 512,
+      "end": 518,
+      "en": "Like the align tool in Adobe Illustrator.",
+      "jp": "Adobe Illustratorの整列ツールのようにです。",
+      "vocab": [
+        {
+          "term": "align tool",
+          "meaning": "整列ツール",
+          "level": ""
+        },
+        {
+          "term": "Illustrator",
+          "meaning": "イラストレーター",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 87,
+      "speechStart": 518,
+      "playFrom": 517,
+      "end": 529,
+      "en": "If you have a bunch of boxes and you want to line them up, you can do this manually one by one, or you can just select them, click align, and have them perfectly aligned in an instant.",
+      "jp": "もし、たくさんの箱があって、それらを整列させたい場合、手動で一つずつ行うこともできますし、選択して「整列」をクリックするだけで、一瞬で完璧に整列させることもできます。",
+      "vocab": [
+        {
+          "term": "bunch of",
+          "meaning": "たくさんの",
+          "level": ""
+        },
+        {
+          "term": "line them up",
+          "meaning": "それらを整列させる",
+          "level": ""
+        },
+        {
+          "term": "manually",
+          "meaning": "手動で",
+          "level": ""
+        },
+        {
+          "term": "perfectly aligned",
+          "meaning": "完璧に整列した",
+          "level": ""
+        },
+        {
+          "term": "in an instant",
+          "meaning": "一瞬で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 88,
+      "speechStart": 529,
+      "playFrom": 528,
+      "end": 533,
+      "en": "It's the same with AI programming tools for animation or using it as a faster Google alternative.",
+      "jp": "アニメーション用のAIプログラミングツールや、より速いGoogleの代替として使用する場合も同じです。",
+      "vocab": [
+        {
+          "term": "programming tools",
+          "meaning": "プログラミングツール",
+          "level": ""
+        },
+        {
+          "term": "alternative",
+          "meaning": "代替",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 89,
+      "speechStart": 533,
+      "playFrom": 532,
+      "end": 539,
+      "en": "AI is a helpful tool, but the creativity and integrity is still ours.",
+      "jp": "AIは便利なツールですが、創造性と誠実さは依然として私たちのものです。",
+      "vocab": [
+        {
+          "term": "helpful tool",
+          "meaning": "便利なツール",
+          "level": ""
+        },
+        {
+          "term": "integrity",
+          "meaning": "誠実さ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 90,
+      "speechStart": 539,
+      "playFrom": 538,
+      "end": 541,
+      "en": "So dear internet, here is what we're offering to you.",
+      "jp": "親愛なるインターネットの皆さん、これが私たちが皆さんに提供するものです。",
+      "vocab": [
+        {
+          "term": "offering",
+          "meaning": "提供するもの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 91,
+      "speechStart": 541,
+      "playFrom": 540,
+      "end": 547,
+      "en": "Kurzgesagt is made by humans for humans and it will remain that way.",
+      "jp": "Kurzgesagtは人間のために人間によって作られており、そのままであり続けます。",
+      "vocab": [
+        {
+          "term": "remain",
+          "meaning": "〜のままであり続ける",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 92,
+      "speechStart": 547,
+      "playFrom": 546,
+      "end": 557,
+      "en": "We'll produce well-researched content and invest a lot of time and our human creativity in our illustrations and animations.",
+      "jp": "私たちは、よく調査されたコンテンツを制作し、私たちのイラストレーションとアニメーションに、多くの時間と私たち人間の創造性を投資します。",
+      "vocab": [
+        {
+          "term": "well-researched",
+          "meaning": "よく調査された",
+          "level": ""
+        },
+        {
+          "term": "invest",
+          "meaning": "投資する",
+          "level": ""
+        },
+        {
+          "term": "illustrations",
+          "meaning": "イラストレーション",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 93,
+      "speechStart": 557,
+      "playFrom": 556,
+      "end": 559,
+      "en": "Put our creative soul into our work.",
+      "jp": "私たちの創造的な魂を私たちの仕事に注ぎ込みます。",
+      "vocab": [
+        {
+          "term": "soul",
+          "meaning": "魂",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 94,
+      "speechStart": 559,
+      "playFrom": 558,
+      "end": 566,
+      "en": "We'll continue to fact-check and discuss our research with human experts to give you the most trustworthy information that we can.",
+      "jp": "私たちは、可能な限り最も信頼できる情報を皆さんにお届けするために、引き続き人間の専門家と私たちの研究を事実確認し、議論します。",
+      "vocab": [
+        {
+          "term": "continue",
+          "meaning": "続ける",
+          "level": ""
+        },
+        {
+          "term": "most trustworthy",
+          "meaning": "最も信頼できる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 95,
+      "speechStart": 566,
+      "playFrom": 565,
+      "end": 569,
+      "en": "When we make mistakes, they will be our mistakes.",
+      "jp": "私たちが間違いを犯した場合、それは私たちの間違いです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 96,
+      "speechStart": 569,
+      "playFrom": 568,
+      "end": 572,
+      "en": "We would rather quit than make AI slop.",
+      "jp": "私たちはAIスロップを作るよりも、むしろ辞めます。",
+      "vocab": [
+        {
+          "term": "would rather",
+          "meaning": "むしろ〜したい",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 97,
+      "speechStart": 572,
+      "playFrom": 571,
+      "end": 575,
+      "en": "But to go on, we need your support.",
+      "jp": "しかし、続けるためには、皆さんのサポートが必要です。",
+      "vocab": [
+        {
+          "term": "support",
+          "meaning": "サポート、支援",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 98,
+      "speechStart": 575,
+      "playFrom": 574,
+      "end": 580,
+      "en": "Kurzgesagt is almost 70 full-time people and a lot of freelancers on top.",
+      "jp": "Kurzgesagtは、約70人のフルタイムの従業員と、さらに多くのフリーランサーで成り立っています。",
+      "vocab": [
+        {
+          "term": "full-time people",
+          "meaning": "フルタイムの従業員",
+          "level": ""
+        },
+        {
+          "term": "freelancers",
+          "meaning": "フリーランサー",
+          "level": ""
+        },
+        {
+          "term": "on top",
+          "meaning": "さらに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 99,
+      "speechStart": 580,
+      "playFrom": 579,
+      "end": 588,
+      "en": "This is a lot of salaries, software licenses, laptops, rent, and coffee.",
+      "jp": "これは、多くの給与、ソフトウェアライセンス、ラップトップ、家賃、そしてコーヒーです。",
+      "vocab": [
+        {
+          "term": "salaries",
+          "meaning": "給与",
+          "level": ""
+        },
+        {
+          "term": "software licenses",
+          "meaning": "ソフトウェアライセンス",
+          "level": ""
+        },
+        {
+          "term": "rent",
+          "meaning": "家賃",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 100,
+      "speechStart": 588,
+      "playFrom": 587,
+      "end": 592,
+      "en": "There is a way you can help us keep this human-made project alive.",
+      "jp": "皆さんがこの人間が作ったプロジェクトを生かし続けるのを助ける方法があります。",
+      "vocab": [
+        {
+          "term": "keep alive",
+          "meaning": "生かし続ける",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 101,
+      "speechStart": 592,
+      "playFrom": 591,
+      "end": 600,
+      "en": "It's the 12,026 human era calendar, designed to fill your home with a year's worth of Kurzgesagt art.",
+      "jp": "それは紀元12,026年のカレンダーです。皆さんの家を1年分のKurzgesagtのアートで満たすようにデザインされています。",
+      "vocab": [
+        {
+          "term": "designed to",
+          "meaning": "〜するように設計された",
+          "level": ""
+        },
+        {
+          "term": "fill",
+          "meaning": "満たす",
+          "level": ""
+        },
+        {
+          "term": "worth of",
+          "meaning": "〜の価値がある",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 102,
+      "speechStart": 600,
+      "playFrom": 599,
+      "end": 601,
+      "en": "But it's much more than that.",
+      "jp": "しかし、それはそれ以上のものでもあります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 103,
+      "speechStart": 601,
+      "playFrom": 600,
+      "end": 607,
+      "en": "It's an ode to humanity and human ingenuity.",
+      "jp": "それは人類と人間の創意工夫への頌歌です。",
+      "vocab": [
+        {
+          "term": "ode to",
+          "meaning": "〜への頌歌",
+          "level": ""
+        },
+        {
+          "term": "ingenuity",
+          "meaning": "創意工夫",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 104,
+      "speechStart": 607,
+      "playFrom": 606,
+      "end": 616,
+      "en": "This calendar reframes time itself by starting not 2,000 but 12,000 years ago at the dawn of human civilization.",
+      "jp": "このカレンダーは、人類文明の夜明けである2,000年前ではなく、12,000年前に始めることで、時間そのものを再構築します。",
+      "vocab": [
+        {
+          "term": "reframes",
+          "meaning": "再構築する",
+          "level": ""
+        },
+        {
+          "term": "dawn of",
+          "meaning": "〜の夜明け",
+          "level": ""
+        },
+        {
+          "term": "civilization",
+          "meaning": "文明",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 105,
+      "speechStart": 616,
+      "playFrom": 615,
+      "end": 623,
+      "en": "This way, 10,000 more years of our shared past and incredible achievements of our ancestors become part of our timeline.",
+      "jp": "この方法で、私たちの共有された過去のさらに1万年と、私たちの祖先の信じられないほどの功績が、私たちのタイムラインの一部となります。",
+      "vocab": [
+        {
+          "term": "shared past",
+          "meaning": "共有された過去",
+          "level": ""
+        },
+        {
+          "term": "incredible",
+          "meaning": "信じられないほどの",
+          "level": ""
+        },
+        {
+          "term": "achievements",
+          "meaning": "功績",
+          "level": ""
+        },
+        {
+          "term": "ancestors",
+          "meaning": "祖先",
+          "level": ""
+        },
+        {
+          "term": "timeline",
+          "meaning": "タイムライン",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 106,
+      "speechStart": 623,
+      "playFrom": 622,
+      "end": 632,
+      "en": "You can use it just like a regular calendar, but it could change how you see your place in history and how far we've all come as a species.",
+      "jp": "皆さんはそれを普通(レギュラー)のカレンダーと同じように使うことができますが、それは歴史の中での自分の位置や、私たちが種としてどれだけ遠くまで来たかという見方を変える可能性があります。",
+      "vocab": [
+        {
+          "term": "regular",
+          "meaning": "普通の",
+          "level": ""
+        },
+        {
+          "term": "species",
+          "meaning": "種",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 107,
+      "speechStart": 632,
+      "playFrom": 631,
+      "end": 638,
+      "en": "This time, we've collected 12 inspiring stories about our special connection to the stars.",
+      "jp": "今回は、星々との私たちの特別なつながりについての、インスピレーションを与える12の物語を集めました。",
+      "vocab": [
+        {
+          "term": "collected",
+          "meaning": "集めた",
+          "level": ""
+        },
+        {
+          "term": "inspiring stories",
+          "meaning": "インスピレーションを与える物語",
+          "level": ""
+        },
+        {
+          "term": "connection to",
+          "meaning": "〜とのつながり",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 108,
+      "speechStart": 638,
+      "playFrom": 637,
+      "end": 647,
+      "en": "From the first creature to ever glance up at the night sky to ancient models of our cosmos weigh into humanity's future among the stars.",
+      "jp": "夜空を初めて見上げた最初の生き物から、私たちの宇宙の古代のモデル、そして星々の間の人類の未来へと続きます。",
+      "vocab": [
+        {
+          "term": "creature",
+          "meaning": "生き物",
+          "level": ""
+        },
+        {
+          "term": "glance up at",
+          "meaning": "〜を見上げる",
+          "level": ""
+        },
+        {
+          "term": "ancient models",
+          "meaning": "古代のモデル",
+          "level": ""
+        },
+        {
+          "term": "cosmos",
+          "meaning": "宇宙",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 109,
+      "speechStart": 647,
+      "playFrom": 646,
+      "end": 656,
+      "en": "Each vibrant illustration is printed on high-quality paper with plenty of space to plan your days or record your adventures in the year 12,026.",
+      "jp": "それぞれの鮮やかなイラストレーションは、質の高い紙に印刷されており、紀元12,026年のあなたの計画を立てたり、冒険を記録したりするための十分なスペースがあります。",
+      "vocab": [
+        {
+          "term": "vibrant",
+          "meaning": "鮮やかな",
+          "level": ""
+        },
+        {
+          "term": "illustration",
+          "meaning": "イラストレーション",
+          "level": ""
+        },
+        {
+          "term": "high-quality paper",
+          "meaning": "質の高い紙",
+          "level": ""
+        },
+        {
+          "term": "plenty of",
+          "meaning": "たくさんの",
+          "level": ""
+        },
+        {
+          "term": "record",
+          "meaning": "記録する",
+          "level": ""
+        },
+        {
+          "term": "adventures",
+          "meaning": "冒険",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 110,
+      "speechStart": 656,
+      "playFrom": 655,
+      "end": 659,
+      "en": "And because this is our 10-year calendar anniversary, we've gone all out.",
+      "jp": "そして、今年はカレンダー10周年なので、私たちは全力を尽くしました。",
+      "vocab": [
+        {
+          "term": "anniversary",
+          "meaning": "記念日",
+          "level": ""
+        },
+        {
+          "term": "gone all out",
+          "meaning": "全力を尽くした",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 111,
+      "speechStart": 659,
+      "playFrom": 658,
+      "end": 669,
+      "en": "We created the first ever Kurzgesagt art book, a vibrant jam-packed collection of every calendar illustration we've ever made.",
+      "jp": "私たちは、これまで作成したすべてのカレンダーイラストレーションを、鮮やかでぎっしり詰まったコレクションにした、史上初のKurzgesagtアートブックを作成しました。",
+      "vocab": [
+        {
+          "term": "art book",
+          "meaning": "アートブック",
+          "level": ""
+        },
+        {
+          "term": "jam-packed",
+          "meaning": "ぎっしり詰まった",
+          "level": ""
+        },
+        {
+          "term": "collection",
+          "meaning": "コレクション",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 112,
+      "speechStart": 669,
+      "playFrom": 668,
+      "end": 676,
+      "en": "That's 120 pages and 10 years of Kurzgesagt's art in one giant book.",
+      "jp": "それは120ページで、Kurzgesagtの10年間のアートが一冊の巨大な本に収められています。",
+      "vocab": [
+        {
+          "term": "giant book",
+          "meaning": "巨大な本",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 113,
+      "speechStart": 676,
+      "playFrom": 675,
+      "end": 682,
+      "en": "It's also packed with behind-the-scenes sketches, stories, and fun facts from the Kurzgesagt team.",
+      "jp": "また、Kurzgesagtチームによる舞台裏のスケッチ、物語、そして楽しい事実も満載です。",
+      "vocab": [
+        {
+          "term": "packed with",
+          "meaning": "〜で満載の",
+          "level": ""
+        },
+        {
+          "term": "behind-the-scenes",
+          "meaning": "舞台裏の",
+          "level": ""
+        },
+        {
+          "term": "sketches",
+          "meaning": "スケッチ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 114,
+      "speechStart": 682,
+      "playFrom": 681,
+      "end": 687,
+      "en": "Just like our videos, our products aren't churned out by a soulless algorithm.",
+      "jp": "私たちの動画と同じように、私たちの製品は魂のないアルゴリズムによって大量生産されているわけではありません。",
+      "vocab": [
+        {
+          "term": "churned out",
+          "meaning": "大量生産された",
+          "level": ""
+        },
+        {
+          "term": "soulless algorithm",
+          "meaning": "魂のないアルゴリズム",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 115,
+      "speechStart": 687,
+      "playFrom": 686,
+      "end": 697,
+      "en": "They're made with love by real humans who spend countless hours researching, illustrating, and designing things that we hope you'll love.",
+      "jp": "それらは、皆さんに気に入っていただけることを願って、数えきれないほどの時間を研究、イラストレーション、デザインに費やす本物の人間によって、愛を込めて作られています。",
+      "vocab": [
+        {
+          "term": "made with love",
+          "meaning": "愛を込めて作られた",
+          "level": ""
+        },
+        {
+          "term": "countless hours",
+          "meaning": "数えきれないほどの時間",
+          "level": ""
+        },
+        {
+          "term": "researching",
+          "meaning": "研究すること",
+          "level": ""
+        },
+        {
+          "term": "illustrating",
+          "meaning": "イラストレーションを描くこと",
+          "level": ""
+        },
+        {
+          "term": "designing",
+          "meaning": "デザインすること",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 116,
+      "speechStart": 697,
+      "playFrom": 696,
+      "end": 708,
+      "en": "So if you value real human-made content over AI slop, join us and our global community of BBs who get the calendar every year and help us keep Kurzgesagt afloat.",
+      "jp": "したがって、もし皆さんがAIスロップよりも本物の人間が作ったコンテンツを評価するなら、私たちと、毎年カレンダーを手に入れてKurzgesagtを存続させるのを助けてくれるBBたちのグローバルコミュニティに参加してください。",
+      "vocab": [
+        {
+          "term": "value",
+          "meaning": "評価する",
+          "level": ""
+        },
+        {
+          "term": "global community",
+          "meaning": "グローバルコミュニティ",
+          "level": ""
+        },
+        {
+          "term": "keep afloat",
+          "meaning": "存続させる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 117,
+      "speechStart": 708,
+      "playFrom": 707,
+      "end": 711,
+      "en": "Together, we'll ride out the slop wave.",
+      "jp": "一緒に、私たちはスロップの波を乗り越えましょう。",
+      "vocab": [
+        {
+          "term": "ride out",
+          "meaning": "乗り越える",
+          "level": ""
+        },
+        {
+          "term": "slop wave",
+          "meaning": "スロップの波",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 118,
+      "speechStart": 711,
+      "playFrom": 710,
+      "end": 718,
+      "en": "The calendar and art book are available now, only while supplies last.",
+      "jp": "カレンダーとアートブックは現在入手可能ですが、在庫があるうちに限ります。",
+      "vocab": [
+        {
+          "term": "available",
+          "meaning": "入手可能である",
+          "level": ""
+        },
+        {
+          "term": "while supplies last",
+          "meaning": "在庫があるうちに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    }
+  ]
+}

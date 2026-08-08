@@ -1,0 +1,1897 @@
+{
+  "schemaVersion": 1,
+  "id": "h6fcK_fRYaI",
+  "title": "The Egg - A Short Story",
+  "sourceUrl": "https://www.youtube.com/watch?v=h6fcK_fRYaI",
+  "generatedAt": null,
+  "transcriptSource": "legacy-import",
+  "sentences": [
+    {
+      "id": 1,
+      "speechStart": 3,
+      "playFrom": 2,
+      "end": 7,
+      "en": "You were on your way home when you died.",
+      "jp": "あなたは家に帰る途中で亡くなりました。",
+      "vocab": [
+        {
+          "term": "on your way home",
+          "meaning": "家に帰る途中で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 2,
+      "speechStart": 7,
+      "playFrom": 6,
+      "end": 14,
+      "en": "It was a car accident, nothing particularly remarkable, but fatal nonetheless.",
+      "jp": "それは交通事故でした。特に注目すべきことではないものの、それでも命取りになりました。",
+      "vocab": [
+        {
+          "term": "accident",
+          "meaning": "事故",
+          "level": ""
+        },
+        {
+          "term": "particularly",
+          "meaning": "特に",
+          "level": ""
+        },
+        {
+          "term": "remarkable",
+          "meaning": "注目すべき",
+          "level": ""
+        },
+        {
+          "term": "fatal",
+          "meaning": "命取りの",
+          "level": ""
+        },
+        {
+          "term": "nonetheless",
+          "meaning": "それにもかかわらず",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 3,
+      "speechStart": 14,
+      "playFrom": 13,
+      "end": 15,
+      "en": "It was a painless death.",
+      "jp": "それは痛みのない死でした。",
+      "vocab": [
+        {
+          "term": "painless",
+          "meaning": "痛みのない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 4,
+      "speechStart": 15,
+      "playFrom": 14,
+      "end": 19,
+      "en": "The Medics tried their best to save you, but to no avail.",
+      "jp": "救急隊員はあなたを救おうと最善を尽くしましたが、無駄でした。",
+      "vocab": [
+        {
+          "term": "Medics",
+          "meaning": "救急隊員",
+          "level": ""
+        },
+        {
+          "term": "to no avail",
+          "meaning": "無駄に、効果なく",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 5,
+      "speechStart": 19,
+      "playFrom": 18,
+      "end": 26,
+      "en": "Your body was so utterly shattered, you were better off, trust me.",
+      "jp": "あなたの体は完全に粉砕されており、その方がマシでした、信じてください。",
+      "vocab": [
+        {
+          "term": "utterly",
+          "meaning": "完全に",
+          "level": ""
+        },
+        {
+          "term": "shattered",
+          "meaning": "粉砕された",
+          "level": ""
+        },
+        {
+          "term": "better off",
+          "meaning": "～のほうがマシな",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 6,
+      "speechStart": 26,
+      "playFrom": 25,
+      "end": 28,
+      "en": "And that's when you met me.",
+      "jp": "そして、その時、あなたは私に会いました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 7,
+      "speechStart": 28,
+      "playFrom": 27,
+      "end": 30,
+      "en": "What happened?",
+      "jp": "何が起こったの？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 8,
+      "speechStart": 30,
+      "playFrom": 29,
+      "end": 32,
+      "en": "Where am I?",
+      "jp": "私はどこにいるの？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 9,
+      "speechStart": 32,
+      "playFrom": 31,
+      "end": 37,
+      "en": "You died, I said matter-of-factly, no point in mincing words.",
+      "jp": "「あなたは死にました」と私はあっさり言いました。言葉を濁しても意味がありません。",
+      "vocab": [
+        {
+          "term": "matter-of-factly",
+          "meaning": "あっさりと",
+          "level": ""
+        },
+        {
+          "term": "no point in",
+          "meaning": "～しても無駄だ",
+          "level": ""
+        },
+        {
+          "term": "mincing words",
+          "meaning": "言葉を濁す",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 10,
+      "speechStart": 37,
+      "playFrom": 36,
+      "end": 42,
+      "en": "There was... there was a truck and it was skidding.",
+      "jp": "トラックが…トラックがスリップしていた。",
+      "vocab": [
+        {
+          "term": "truck",
+          "meaning": "トラック",
+          "level": ""
+        },
+        {
+          "term": "skidding",
+          "meaning": "スリップしている",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 11,
+      "speechStart": 42,
+      "playFrom": 41,
+      "end": 44,
+      "en": "Yes, I... I died.",
+      "jp": "はい、私は…死んだんですね。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 12,
+      "speechStart": 44,
+      "playFrom": 43,
+      "end": 47,
+      "en": "Yes, but don't feel bad about it.",
+      "jp": "ええ、でも気に病まないでください。",
+      "vocab": [
+        {
+          "term": "feel bad about",
+          "meaning": "～を気に病む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 13,
+      "speechStart": 47,
+      "playFrom": 46,
+      "end": 49,
+      "en": "Everyone dies.",
+      "jp": "誰もが死ぬのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 14,
+      "speechStart": 49,
+      "playFrom": 48,
+      "end": 50,
+      "en": "You looked around.",
+      "jp": "あなたは周りを見渡しました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 15,
+      "speechStart": 50,
+      "playFrom": 49,
+      "end": 55,
+      "en": "There was nothingness, just you and me.",
+      "jp": "そこには虚無しかありませんでした。ただあなたと私だけです。",
+      "vocab": [
+        {
+          "term": "nothingness",
+          "meaning": "虚無",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 16,
+      "speechStart": 55,
+      "playFrom": 54,
+      "end": 57,
+      "en": "What is this place?",
+      "jp": "ここはどこですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 17,
+      "speechStart": 57,
+      "playFrom": 56,
+      "end": 59,
+      "en": "Is this the afterlife?",
+      "jp": "これが来世ですか？",
+      "vocab": [
+        {
+          "term": "afterlife",
+          "meaning": "来世",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 18,
+      "speechStart": 59,
+      "playFrom": 58,
+      "end": 61,
+      "en": "More or less.",
+      "jp": "まあ、そんなところです。",
+      "vocab": [
+        {
+          "term": "more or less",
+          "meaning": "だいたい、まあそんなところ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 19,
+      "speechStart": 61,
+      "playFrom": 60,
+      "end": 62,
+      "en": "Are you God?",
+      "jp": "あなたは神ですか？",
+      "vocab": [
+        {
+          "term": "God",
+          "meaning": "神",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 20,
+      "speechStart": 62,
+      "playFrom": 61,
+      "end": 66,
+      "en": "Yes.",
+      "jp": "そうです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 21,
+      "speechStart": 66,
+      "playFrom": 65,
+      "end": 68,
+      "en": "I'm God.",
+      "jp": "私が神です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 22,
+      "speechStart": 68,
+      "playFrom": 67,
+      "end": 71,
+      "en": "My kids, my wife, what about them?",
+      "jp": "私の子供たち、妻は？彼女たちはどうなるのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 23,
+      "speechStart": 71,
+      "playFrom": 70,
+      "end": 74,
+      "en": "Will they be all right?",
+      "jp": "大丈夫でしょうか？",
+      "vocab": [
+        {
+          "term": "be all right",
+          "meaning": "大丈夫である",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 24,
+      "speechStart": 74,
+      "playFrom": 73,
+      "end": 77,
+      "en": "That's what I like to see, I said.",
+      "jp": "「そういうところが好きですよ」と私は言いました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 25,
+      "speechStart": 77,
+      "playFrom": 76,
+      "end": 82,
+      "en": "You just died, and your main concern is for your family.",
+      "jp": "あなたはたった今亡くなったのに、一番の関心事は家族のことなのですね。",
+      "vocab": [
+        {
+          "term": "main concern",
+          "meaning": "一番の関心事",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 26,
+      "speechStart": 82,
+      "playFrom": 81,
+      "end": 85,
+      "en": "That's good stuff right there.",
+      "jp": "それは素晴らしいことです。",
+      "vocab": [
+        {
+          "term": "good stuff",
+          "meaning": "素晴らしいこと",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 27,
+      "speechStart": 85,
+      "playFrom": 84,
+      "end": 89,
+      "en": "You looked at me with fascination.",
+      "jp": "あなたは魅了されたように私を見ました。",
+      "vocab": [
+        {
+          "term": "fascination",
+          "meaning": "魅了、興味",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 28,
+      "speechStart": 89,
+      "playFrom": 88,
+      "end": 91,
+      "en": "To you, I didn't look like God.",
+      "jp": "あなたには、私は神のようには見えませんでした。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 29,
+      "speechStart": 91,
+      "playFrom": 90,
+      "end": 99,
+      "en": "I just looked like some man or possibly a woman, some vague authority figure, maybe.",
+      "jp": "ただの男性か、あるいは女性、ぼんやりとした権威者、そんな風に見えたのでしょう。",
+      "vocab": [
+        {
+          "term": "possibly",
+          "meaning": "もしかすると",
+          "level": ""
+        },
+        {
+          "term": "vague",
+          "meaning": "ぼんやりとした",
+          "level": ""
+        },
+        {
+          "term": "authority figure",
+          "meaning": "権威者",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 30,
+      "speechStart": 99,
+      "playFrom": 98,
+      "end": 102,
+      "en": "Don't worry, I said, they'll be fine.",
+      "jp": "「心配しないでください」と私は言いました。「大丈夫ですよ。」",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 31,
+      "speechStart": 102,
+      "playFrom": 101,
+      "end": 107,
+      "en": "Your kids will remember you as perfect in every way.",
+      "jp": "あなたの子供たちは、あらゆる点で完璧なあなたを覚えているでしょう。",
+      "vocab": [
+        {
+          "term": "in every way",
+          "meaning": "あらゆる点で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 32,
+      "speechStart": 107,
+      "playFrom": 106,
+      "end": 112,
+      "en": "They didn't have time to grow contemptuous of you.",
+      "jp": "彼らは、あなたを軽蔑するほどに成長する時間がありませんでした。",
+      "vocab": [
+        {
+          "term": "grow contemptuous of",
+          "meaning": "～を軽蔑するようになる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 33,
+      "speechStart": 112,
+      "playFrom": 111,
+      "end": 116,
+      "en": "Your wife will cry on the outside but will be secretly relieved.",
+      "jp": "あなたの妻は表面上は泣きますが、密かに安堵するでしょう。",
+      "vocab": [
+        {
+          "term": "secretly",
+          "meaning": "密かに",
+          "level": ""
+        },
+        {
+          "term": "relieved",
+          "meaning": "安心した",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 34,
+      "speechStart": 116,
+      "playFrom": 115,
+      "end": 120,
+      "en": "To be fair, your marriage was falling apart.",
+      "jp": "公平に言って、あなたの結婚生活は破綻しかけていました。",
+      "vocab": [
+        {
+          "term": "To be fair",
+          "meaning": "公平に言って",
+          "level": ""
+        },
+        {
+          "term": "falling apart",
+          "meaning": "崩壊しかけている",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 35,
+      "speechStart": 120,
+      "playFrom": 119,
+      "end": 128,
+      "en": "If it's any consolation, she'll feel very guilty for feeling relieved.",
+      "jp": "もし慰めになるなら、彼女は安堵したことに対して非常に罪悪感を覚えるでしょう。",
+      "vocab": [
+        {
+          "term": "consolation",
+          "meaning": "慰め",
+          "level": ""
+        },
+        {
+          "term": "guilty",
+          "meaning": "罪悪感のある",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 36,
+      "speechStart": 128,
+      "playFrom": 127,
+      "end": 131,
+      "en": "Oh, so what happens now?",
+      "jp": "ああ、ではこれからどうなるのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 37,
+      "speechStart": 131,
+      "playFrom": 130,
+      "end": 134,
+      "en": "Do I go to heaven or hell or something?",
+      "jp": "私は天国か地獄にでも行くのですか？",
+      "vocab": [
+        {
+          "term": "heaven",
+          "meaning": "天国",
+          "level": ""
+        },
+        {
+          "term": "hell",
+          "meaning": "地獄",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 38,
+      "speechStart": 134,
+      "playFrom": 133,
+      "end": 138,
+      "en": "Neither.",
+      "jp": "どちらでもありません。",
+      "vocab": [
+        {
+          "term": "neither",
+          "meaning": "どちらでもない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 39,
+      "speechStart": 138,
+      "playFrom": 137,
+      "end": 142,
+      "en": "You'll be reincarnated.",
+      "jp": "あなたは生まれ変わります。",
+      "vocab": [
+        {
+          "term": "reincarnated",
+          "meaning": "生まれ変わる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 40,
+      "speechStart": 142,
+      "playFrom": 141,
+      "end": 145,
+      "en": "Ah, so the Hindus were right.",
+      "jp": "ああ、ではヒンドゥー教徒が正しかったのですね。",
+      "vocab": [
+        {
+          "term": "Hindus",
+          "meaning": "ヒンドゥー教徒",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 41,
+      "speechStart": 145,
+      "playFrom": 144,
+      "end": 148,
+      "en": "All religions are right in their own way.",
+      "jp": "すべての宗教は、それぞれのやり方で正しいのです。",
+      "vocab": [
+        {
+          "term": "in their own way",
+          "meaning": "それぞれのやり方で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 42,
+      "speechStart": 148,
+      "playFrom": 147,
+      "end": 149,
+      "en": "Walk with me.",
+      "jp": "私と一緒に歩いてください。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 43,
+      "speechStart": 149,
+      "playFrom": 148,
+      "end": 155,
+      "en": "You followed along as we strode through the void.",
+      "jp": "私たちが虚空の中を大股で歩くと、あなたはついてきました。",
+      "vocab": [
+        {
+          "term": "followed along",
+          "meaning": "ついていく",
+          "level": ""
+        },
+        {
+          "term": "strode",
+          "meaning": "大股で歩いた",
+          "level": ""
+        },
+        {
+          "term": "void",
+          "meaning": "虚空",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 44,
+      "speechStart": 155,
+      "playFrom": 154,
+      "end": 157,
+      "en": "Where are we going?",
+      "jp": "私たちはどこへ行くのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 45,
+      "speechStart": 157,
+      "playFrom": 156,
+      "end": 158,
+      "en": "Nowhere in particular.",
+      "jp": "特にどこへというわけではありません。",
+      "vocab": [
+        {
+          "term": "Nowhere in particular",
+          "meaning": "特にどこへというわけではない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 46,
+      "speechStart": 158,
+      "playFrom": 157,
+      "end": 162,
+      "en": "It's just nice to walk while we talk.",
+      "jp": "話しながら歩くのはただ気持ちがいいのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 47,
+      "speechStart": 162,
+      "playFrom": 161,
+      "end": 164,
+      "en": "So what's the point then?",
+      "jp": "では、一体何の意味があるのですか？",
+      "vocab": [
+        {
+          "term": "what's the point",
+          "meaning": "何の意味がある",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 48,
+      "speechStart": 164,
+      "playFrom": 163,
+      "end": 170,
+      "en": "When I get reborn, I'll just be a blank slate, right?",
+      "jp": "私が生まれ変わるとき、私はただの白紙の状態になるのでしょう？",
+      "vocab": [
+        {
+          "term": "reborn",
+          "meaning": "生まれ変わる",
+          "level": ""
+        },
+        {
+          "term": "blank slate",
+          "meaning": "白紙の状態",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 49,
+      "speechStart": 170,
+      "playFrom": 169,
+      "end": 171,
+      "en": "A baby.",
+      "jp": "赤ちゃんに。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 50,
+      "speechStart": 171,
+      "playFrom": 170,
+      "end": 176,
+      "en": "So all my experiences and everything I did in this life won't matter.",
+      "jp": "だから、私の経験も、この人生でやったことも、すべて無意味になる。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 51,
+      "speechStart": 176,
+      "playFrom": 175,
+      "end": 177,
+      "en": "Not so.",
+      "jp": "そうではありません。",
+      "vocab": [
+        {
+          "term": "Not so",
+          "meaning": "そうではない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 52,
+      "speechStart": 177,
+      "playFrom": 176,
+      "end": 183,
+      "en": "You have within you all the knowledge and experiences of all your past lives.",
+      "jp": "あなたはあなたの中に、すべての過去世の知識と経験をすべて持っています。",
+      "vocab": [
+        {
+          "term": "knowledge",
+          "meaning": "知識",
+          "level": ""
+        },
+        {
+          "term": "past lives",
+          "meaning": "過去世",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 53,
+      "speechStart": 183,
+      "playFrom": 182,
+      "end": 185,
+      "en": "You just don't remember them right now.",
+      "jp": "ただ、今は覚えていないだけです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 54,
+      "speechStart": 185,
+      "playFrom": 184,
+      "end": 190,
+      "en": "I stopped walking and took you by the shoulders.",
+      "jp": "私は歩くのを止め、あなたの肩に手を置きました。",
+      "vocab": [
+        {
+          "term": "took you by the shoulders",
+          "meaning": "あなたの肩に手を置いた",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 55,
+      "speechStart": 190,
+      "playFrom": 189,
+      "end": 198,
+      "en": "Your soul is more magnificent, beautiful, and gigantic than you can possibly imagine.",
+      "jp": "あなたの魂は、あなたが想像できる以上に壮大で、美しく、巨大です。",
+      "vocab": [
+        {
+          "term": "soul",
+          "meaning": "魂",
+          "level": ""
+        },
+        {
+          "term": "magnificent",
+          "meaning": "壮大な",
+          "level": ""
+        },
+        {
+          "term": "gigantic",
+          "meaning": "巨大な",
+          "level": ""
+        },
+        {
+          "term": "possibly",
+          "meaning": "可能性として",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 56,
+      "speechStart": 198,
+      "playFrom": 197,
+      "end": 203,
+      "en": "A human mind can only contain a tiny fraction of what you are.",
+      "jp": "人間の心は、あなたという存在のほんの小さな断片しか含むことができません。",
+      "vocab": [
+        {
+          "term": "contain",
+          "meaning": "含む",
+          "level": ""
+        },
+        {
+          "term": "tiny fraction",
+          "meaning": "小さな断片",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 57,
+      "speechStart": 203,
+      "playFrom": 202,
+      "end": 208,
+      "en": "It's like sticking your finger in a glass of water to see if it's hot or cold.",
+      "jp": "それは、水が熱いか冷たいかを見るために、グラスに指を突っ込むようなものです。",
+      "vocab": [
+        {
+          "term": "sticking",
+          "meaning": "突っ込む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 58,
+      "speechStart": 208,
+      "playFrom": 207,
+      "end": 216,
+      "en": "You put a tiny part of yourself into the vessel and when you bring it back out, you've gained all the experiences it had.",
+      "jp": "あなたは自分自身の小さな一部をその器（体）に入れ、それを取り戻すとき、その器が持っていたすべての経験を獲得しています。",
+      "vocab": [
+        {
+          "term": "vessel",
+          "meaning": "器",
+          "level": ""
+        },
+        {
+          "term": "gained",
+          "meaning": "獲得した",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 59,
+      "speechStart": 216,
+      "playFrom": 215,
+      "end": 226,
+      "en": "You've been in a human for the last 48 years, so you haven't stretched out yet and felt the rest of your immense Consciousness.",
+      "jp": "あなたはこの48年間人間の中にいたので、まだ広がりきっておらず、あなたの広大な意識の残りの部分を感じていません。",
+      "vocab": [
+        {
+          "term": "stretched out",
+          "meaning": "広がる",
+          "level": ""
+        },
+        {
+          "term": "immense",
+          "meaning": "広大な",
+          "level": ""
+        },
+        {
+          "term": "Consciousness",
+          "meaning": "意識",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 60,
+      "speechStart": 226,
+      "playFrom": 225,
+      "end": 231,
+      "en": "If we hung out here for long enough, you'd start remembering everything.",
+      "jp": "ここで十分長く過ごせば、あなたはすべてを思い出し始めるでしょう。",
+      "vocab": [
+        {
+          "term": "hung out",
+          "meaning": "過ごす",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 61,
+      "speechStart": 231,
+      "playFrom": 230,
+      "end": 234,
+      "en": "But there's no point to doing that between each life.",
+      "jp": "しかし、人生の合間にそうしても意味がありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 62,
+      "speechStart": 234,
+      "playFrom": 233,
+      "end": 238,
+      "en": "How many times have I been reincarnated then?",
+      "jp": "では、私は今までに何回生まれ変わったのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 63,
+      "speechStart": 238,
+      "playFrom": 237,
+      "end": 243,
+      "en": "Oh, lots, lots and lots, and into lots of different lives.",
+      "jp": "ああ、たくさんです。たくさん、たくさん、そしてたくさんの異なる人生に。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 64,
+      "speechStart": 243,
+      "playFrom": 242,
+      "end": 250,
+      "en": "This time around, you'll be a Chinese peasant girl in 540 AD.",
+      "jp": "今回は、西暦540年の中国の農民の少女になります。",
+      "vocab": [
+        {
+          "term": "time around",
+          "meaning": "今回は",
+          "level": ""
+        },
+        {
+          "term": "peasant",
+          "meaning": "農民",
+          "level": ""
+        },
+        {
+          "term": "AD",
+          "meaning": "西暦",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 65,
+      "speechStart": 250,
+      "playFrom": 249,
+      "end": 251,
+      "en": "Wait, what?",
+      "jp": "待って、何？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 66,
+      "speechStart": 251,
+      "playFrom": 250,
+      "end": 253,
+      "en": "You're sending me back in time?",
+      "jp": "私を過去に送るのですか？",
+      "vocab": [
+        {
+          "term": "back in time",
+          "meaning": "時間を遡る",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 67,
+      "speechStart": 253,
+      "playFrom": 252,
+      "end": 262,
+      "en": "Well, I guess technically, time as you know it only exists in your Universe.",
+      "jp": "まあ、厳密に言えば、あなたが知っている時間というものは、あなたの宇宙にしか存在しません。",
+      "vocab": [
+        {
+          "term": "technically",
+          "meaning": "厳密に言えば",
+          "level": ""
+        },
+        {
+          "term": "exists",
+          "meaning": "存在する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 68,
+      "speechStart": 262,
+      "playFrom": 261,
+      "end": 264,
+      "en": "Things are different where I come from.",
+      "jp": "私が来た場所では、物事が異なります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 69,
+      "speechStart": 264,
+      "playFrom": 263,
+      "end": 267,
+      "en": "Where... where you come from?",
+      "jp": "どこ…あなたが来た場所って？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 70,
+      "speechStart": 267,
+      "playFrom": 266,
+      "end": 270,
+      "en": "Oh, sure, I come from somewhere, somewhere else.",
+      "jp": "ああ、もちろん、私はどこか別の場所から来ました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 71,
+      "speechStart": 270,
+      "playFrom": 269,
+      "end": 272,
+      "en": "And there are others like me.",
+      "jp": "そして、私のような存在は他にもいます。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 72,
+      "speechStart": 272,
+      "playFrom": 271,
+      "end": 280,
+      "en": "I know you'll want to know what it's like there, but honestly, you wouldn't understand.",
+      "jp": "あなたがそこがどんな場所か知りたいのは分かりますが、正直なところ、あなたには理解できません。",
+      "vocab": [
+        {
+          "term": "honestly",
+          "meaning": "正直なところ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 73,
+      "speechStart": 280,
+      "playFrom": 279,
+      "end": 283,
+      "en": "Oh, you said, a little let down.",
+      "jp": "「ああ」とあなたは少しがっかりしたように言いました。",
+      "vocab": [
+        {
+          "term": "let down",
+          "meaning": "がっかりした",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 74,
+      "speechStart": 283,
+      "playFrom": 282,
+      "end": 290,
+      "en": "But wait, if I get reincarnated to other places in time, I could have interacted with myself at some point.",
+      "jp": "でも待って、もし私が時間の他の場所に生まれ変わっているとしたら、ある時点で自分自身と交流した可能性がありますね。",
+      "vocab": [
+        {
+          "term": "interacted with",
+          "meaning": "～と交流した",
+          "level": ""
+        },
+        {
+          "term": "at some point",
+          "meaning": "ある時点で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 75,
+      "speechStart": 290,
+      "playFrom": 289,
+      "end": 293,
+      "en": "Sure, happens all the time.",
+      "jp": "もちろん、いつも起こっていますよ。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 76,
+      "speechStart": 293,
+      "playFrom": 292,
+      "end": 300,
+      "en": "And with both lives only aware of their own lifespan, you don't even know it's happening.",
+      "jp": "そして、両方の人生が自分自身の寿命しか意識していないので、あなたはそれが起こっていることさえ知りません。",
+      "vocab": [
+        {
+          "term": "aware of",
+          "meaning": "～を意識している",
+          "level": ""
+        },
+        {
+          "term": "lifespan",
+          "meaning": "寿命",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 77,
+      "speechStart": 300,
+      "playFrom": 299,
+      "end": 302,
+      "en": "So what's the point of it all?",
+      "jp": "では、これらすべてに何の意味があるのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 78,
+      "speechStart": 302,
+      "playFrom": 301,
+      "end": 304,
+      "en": "I looked you in the eye.",
+      "jp": "私はあなたの目を見ました。",
+      "vocab": [
+        {
+          "term": "looked you in the eye",
+          "meaning": "あなたの目を見た",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 79,
+      "speechStart": 304,
+      "playFrom": 303,
+      "end": 311,
+      "en": "The meaning of life, the reason I made this whole universe, is for you to mature.",
+      "jp": "人生の意味、私がこの全宇宙を作った理由は、あなたが成熟するためです。",
+      "vocab": [
+        {
+          "term": "meaning of life",
+          "meaning": "人生の意味",
+          "level": ""
+        },
+        {
+          "term": "mature",
+          "meaning": "成熟する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 80,
+      "speechStart": 311,
+      "playFrom": 310,
+      "end": 315,
+      "en": "You mean mankind? You want us to mature?",
+      "jp": "人類のことですか？私たちに成熟してほしいのですか？",
+      "vocab": [
+        {
+          "term": "mankind",
+          "meaning": "人類",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 81,
+      "speechStart": 315,
+      "playFrom": 314,
+      "end": 317,
+      "en": "No, just you.",
+      "jp": "いいえ、あなただけです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 82,
+      "speechStart": 317,
+      "playFrom": 316,
+      "end": 321,
+      "en": "I made this whole universe for you.",
+      "jp": "私はこの全宇宙をあなたのために作りました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 83,
+      "speechStart": 321,
+      "playFrom": 320,
+      "end": 328,
+      "en": "With each new life, you grow and mature and become a larger and greater intellect.",
+      "jp": "新しい人生ごとに、あなたは成長し、成熟し、より大きく、より偉大な知性になります。",
+      "vocab": [
+        {
+          "term": "intellect",
+          "meaning": "知性",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 84,
+      "speechStart": 328,
+      "playFrom": 327,
+      "end": 331,
+      "en": "Just me? What about everyone else?",
+      "jp": "私だけ？他の皆はどうなるのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 85,
+      "speechStart": 331,
+      "playFrom": 330,
+      "end": 333,
+      "en": "There is no one else in this universe.",
+      "jp": "この宇宙には、他に誰もいません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 86,
+      "speechStart": 333,
+      "playFrom": 332,
+      "end": 336,
+      "en": "There's just you and me.",
+      "jp": "いるのはあなたと私だけです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 87,
+      "speechStart": 336,
+      "playFrom": 335,
+      "end": 338,
+      "en": "You stared blankly at me.",
+      "jp": "あなたはぼんやりと私を見つめました。",
+      "vocab": [
+        {
+          "term": "stared blankly",
+          "meaning": "ぼんやりと見つめた",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 88,
+      "speechStart": 338,
+      "playFrom": 337,
+      "end": 344,
+      "en": "But all the people on Earth... all you different incarnations of you.",
+      "jp": "しかし、地球上のすべての人々は…皆、あなたの異なる転生（姿）なのですね。",
+      "vocab": [
+        {
+          "term": "incarnations",
+          "meaning": "転生、化身",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 89,
+      "speechStart": 344,
+      "playFrom": 343,
+      "end": 347,
+      "en": "Wait, I'm everyone?",
+      "jp": "待って、私がみんな？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 90,
+      "speechStart": 347,
+      "playFrom": 346,
+      "end": 349,
+      "en": "Now you're getting it.",
+      "jp": "ようやく理解しましたね。",
+      "vocab": [
+        {
+          "term": "getting it",
+          "meaning": "理解する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 91,
+      "speechStart": 349,
+      "playFrom": 348,
+      "end": 355,
+      "en": "I'm every human being who ever lived or who will ever live.",
+      "jp": "私は、これまでに生きた、あるいはこれから生きるであろうすべての人類です。",
+      "vocab": [
+        {
+          "term": "human being",
+          "meaning": "人間",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 92,
+      "speechStart": 355,
+      "playFrom": 354,
+      "end": 356,
+      "en": "Yes.",
+      "jp": "そうです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 93,
+      "speechStart": 356,
+      "playFrom": 355,
+      "end": 362,
+      "en": "I'm Abraham Lincoln, and you're John Wilkes Booth, too.",
+      "jp": "私はエイブラハム・リンカーンであり、あなたはジョン・ウィルクス・ブースでもあります。",
+      "vocab": [
+        {
+          "term": "Abraham Lincoln",
+          "meaning": "エイブラハム・リンカーン",
+          "level": ""
+        },
+        {
+          "term": "John Wilkes Booth",
+          "meaning": "ジョン・ウィルクス・ブース",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 94,
+      "speechStart": 362,
+      "playFrom": 361,
+      "end": 367,
+      "en": "I'm a Hitler, you said, appalled.",
+      "jp": "「私はヒトラーなの？」あなたは愕然として言いました。",
+      "vocab": [
+        {
+          "term": "Hitler",
+          "meaning": "ヒトラー",
+          "level": ""
+        },
+        {
+          "term": "appalled",
+          "meaning": "愕然として",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 95,
+      "speechStart": 367,
+      "playFrom": 366,
+      "end": 369,
+      "en": "And you're the millions he killed.",
+      "jp": "そして、あなたは彼が殺した何百万人でもあります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 96,
+      "speechStart": 369,
+      "playFrom": 368,
+      "end": 374,
+      "en": "I'm Jesus, and you're everyone who followed him.",
+      "jp": "私はイエスであり、あなたは彼に従ったすべての人でもあります。",
+      "vocab": [
+        {
+          "term": "Jesus",
+          "meaning": "イエス",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 97,
+      "speechStart": 374,
+      "playFrom": 373,
+      "end": 375,
+      "en": "You fell silent.",
+      "jp": "あなたは黙り込みました。",
+      "vocab": [
+        {
+          "term": "fell silent",
+          "meaning": "黙り込んだ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 98,
+      "speechStart": 375,
+      "playFrom": 374,
+      "end": 383,
+      "en": "Every time you victimized someone, you were victimizing yourself.",
+      "jp": "あなたが誰かを犠牲にするたびに、あなたは自分自身を犠牲にしていたのです。",
+      "vocab": [
+        {
+          "term": "victimized",
+          "meaning": "犠牲にした",
+          "level": ""
+        },
+        {
+          "term": "yourself",
+          "meaning": "あなた自身",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 99,
+      "speechStart": 383,
+      "playFrom": 382,
+      "end": 387,
+      "en": "Every act of kindness you've done, you've done to yourself.",
+      "jp": "あなたがしたすべての親切な行いは、あなた自身にしたことなのです。",
+      "vocab": [
+        {
+          "term": "act of kindness",
+          "meaning": "親切な行い",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 100,
+      "speechStart": 387,
+      "playFrom": 386,
+      "end": 394,
+      "en": "Every happy and sad moment ever experienced by any human was or will be experienced by you.",
+      "jp": "これまでに誰かの人間が経験したすべての幸せな瞬間、悲しい瞬間は、あなたが経験したか、これから経験するでしょう。",
+      "vocab": [
+        {
+          "term": "experienced by",
+          "meaning": "～によって経験された",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 101,
+      "speechStart": 394,
+      "playFrom": 393,
+      "end": 397,
+      "en": "You thought for a long time.",
+      "jp": "あなたは長い間考えました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 102,
+      "speechStart": 397,
+      "playFrom": 396,
+      "end": 399,
+      "en": "Why?",
+      "jp": "なぜ？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 103,
+      "speechStart": 399,
+      "playFrom": 398,
+      "end": 401,
+      "en": "Why do all this?",
+      "jp": "なぜこんなことをするのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 104,
+      "speechStart": 401,
+      "playFrom": 400,
+      "end": 405,
+      "en": "Because someday you will become like me.",
+      "jp": "なぜなら、いつかあなたは私と同じようになるからです。",
+      "vocab": [
+        {
+          "term": "someday",
+          "meaning": "いつか",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 105,
+      "speechStart": 405,
+      "playFrom": 404,
+      "end": 407,
+      "en": "Because that's what you are.",
+      "jp": "なぜなら、それがあなたの本質だからです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 106,
+      "speechStart": 407,
+      "playFrom": 406,
+      "end": 410,
+      "en": "You're one of my kind.",
+      "jp": "あなたは私と同じ種類（存在）なのです。",
+      "vocab": [
+        {
+          "term": "one of my kind",
+          "meaning": "私と同じ種類",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 107,
+      "speechStart": 410,
+      "playFrom": 409,
+      "end": 412,
+      "en": "You're my child.",
+      "jp": "あなたは私の子供です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 108,
+      "speechStart": 412,
+      "playFrom": 411,
+      "end": 415,
+      "en": "Wow, you said, incredulous.",
+      "jp": "「わあ」とあなたは信じられない様子で言いました。",
+      "vocab": [
+        {
+          "term": "incredulous",
+          "meaning": "信じられない様子で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 109,
+      "speechStart": 415,
+      "playFrom": 414,
+      "end": 417,
+      "en": "You mean, I'm a God?",
+      "jp": "つまり、私は神なのですか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 110,
+      "speechStart": 417,
+      "playFrom": 416,
+      "end": 418,
+      "en": "No, not yet.",
+      "jp": "いいえ、まだです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 111,
+      "speechStart": 418,
+      "playFrom": 417,
+      "end": 420,
+      "en": "You're a fetus.",
+      "jp": "あなたは胎児です。",
+      "vocab": [
+        {
+          "term": "fetus",
+          "meaning": "胎児",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 112,
+      "speechStart": 420,
+      "playFrom": 419,
+      "end": 422,
+      "en": "You're still growing.",
+      "jp": "あなたはまだ成長している途中です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 113,
+      "speechStart": 422,
+      "playFrom": 421,
+      "end": 431,
+      "en": "Once you've lived every human life throughout all time, you will have grown enough to be born.",
+      "jp": "あなたが全ての時間をかけてすべての人間の人生を生き終えたとき、あなたは生まれるのに十分なほど成長しているでしょう。",
+      "vocab": [
+        {
+          "term": "throughout all time",
+          "meaning": "全ての時間をかけて",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 114,
+      "speechStart": 431,
+      "playFrom": 430,
+      "end": 434,
+      "en": "So the whole universe, it's just an egg?",
+      "jp": "では、この全宇宙は、ただの卵なのですか？",
+      "vocab": [
+        {
+          "term": "egg",
+          "meaning": "卵",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 115,
+      "speechStart": 434,
+      "playFrom": 433,
+      "end": 436,
+      "en": "I answered.",
+      "jp": "私は答えました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 116,
+      "speechStart": 436,
+      "playFrom": 435,
+      "end": 440,
+      "en": "Now it's time for you to move on to your next life.",
+      "jp": "さあ、あなたは次の人生へ進む時間です。",
+      "vocab": [
+        {
+          "term": "move on to",
+          "meaning": "～へ進む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 117,
+      "speechStart": 440,
+      "playFrom": 439,
+      "end": 447,
+      "en": "And I sent you on your way.",
+      "jp": "そして、私はあなたを送り出しました。",
+      "vocab": [
+        {
+          "term": "sent you on your way",
+          "meaning": "あなたを送り出した",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    }
+  ]
+}

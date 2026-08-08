@@ -1,0 +1,5 @@
+# Only required when a video has no usable English YouTube captions.
+faster-whisper>=1.1,<2
+
+# Used locally to propose uncommon/high-school-level vocabulary candidates.
+wordfreq>=3.1,<4

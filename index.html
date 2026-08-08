@@ -1,108 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>練習用動画 一覧</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <style>
-    /* （既存のスタイルは省略） */
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    .wrap {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .card {
-        display: block;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        text-decoration: none;
-        color: inherit;
-        overflow: hidden;
-        transition: box-shadow 0.3s;
-    }
-    .card:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    .thumb {
-        margin: 0;
-        line-height: 0;
-    }
-    .thumb img {
-        width: 100%;
-        height: auto;
-    }
-    .card h2 {
-        padding: 10px;
-        font-size: 1.1em;
-        margin: 0;
-        text-align: center;
-        background-color: #f8f8f8;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shadowing Library</title>
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-  <header class="wrap">
-    <h1>練習用動画 一覧</h1>
-    <p>シャドーイングしたいサムネをタップ</p>
+  <header class="site-header wrap">
+    <div>
+      <p class="eyebrow">SHADOWING LIBRARY</p>
+      <h1>英語の映像で、耳と声を鍛える。</h1>
+      <p class="lead">動画を選び、文ごとのタイムスタンプから練習を始めましょう。</p>
+    </div>
+    <a class="admin-link" id="admin-link" href="./admin/" hidden>動画を追加</a>
   </header>
 
-  <main class="grid wrap">
-    
-    <script>
-        const videoList = [
-            // ファイル名からタイトルを抽出できるように、ファイル名の命名規則を厳密に守ってください。
-            { id: 'h6fcK_fRYaI', file: 'shadowing_The%20Egg%20-%20A%20Short%20Story.html' },
-            { id: '71eUes30gwc', file: 'shadowing_This%20Black%20Hole%20Could%20be%20Bigger%20Than%20The%20Universe.html' },
-            { id: '_zfN9wnPvU0', file: 'shadowing_AI Slop Is Destroying The Internet.html' },
-            { id: 'wwSzpaTHyS8', file: 'shadowing_Did The Future Already Happen.html' },
-            // 新しい動画を追加する際は、ここに { id: '動画ID', file: 'ファイル名.html' }, の形式で追加してください。
-        ];
-
-        const mainElement = document.querySelector('main.grid');
-        
-        // ファイル名からタイトルを抽出するヘルパー関数
-        function extractTitleFromFile(fileName) {
-            // 'shadowing_' と '.html' を取り除き、エンコードされた文字（%20など）をスペースに変換
-            let title = fileName.replace('shadowing_', '').replace('.html', '');
-            title = decodeURIComponent(title);
-            // ' - '（ハイフンとスペース）があれば、最初の部分をタイトルとして使用（または全て表示）
-            if (title.includes(' - ')) {
-                 return title.split(' - ')[0].trim();
-            }
-            // タイトルが長すぎる場合は、ファイル名全体を表示
-            return title;
-        }
-
-        // リストに基づいてカードを生成する
-        videoList.forEach(video => {
-            const displayTitle = extractTitleFromFile(video.file);
-
-            const cardHtml = `
-                <a class="card" href="./videos/${video.file}">
-                    <figure class="thumb">
-                        <img 
-                            src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg" 
-                            alt="${displayTitle} thumbnail" 
-                            loading="lazy" 
-                        />
-                    </figure>
-                    <h2>${displayTitle}</h2>
-                </a>
-            `;
-            mainElement.insertAdjacentHTML('beforeend', cardHtml);
-        });
-    </script>
-    
+  <main class="wrap">
+    <div id="video-grid" class="grid" aria-live="polite"></div>
+    <p id="empty-state" class="empty-state" hidden>動画はまだありません。</p>
   </main>
 
-  <footer class="wrap">
-    <small>&copy; 2025 cijb-7724</small>
-  </footer>
+  <footer class="wrap"><small>&copy; 2025 cijb-7724</small></footer>
+  <script src="./assets/index.js" defer></script>
 </body>
 </html>

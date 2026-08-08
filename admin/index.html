@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shadowing Admin</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <header class="admin-header wrap">
+    <div>
+      <a class="back-link" href="../">← 公開ページを見る</a>
+      <p class="eyebrow">LOCAL ADMIN</p>
+      <h1>動画を学習ページにする。</h1>
+      <p class="lead">この画面と生成処理はMac内だけで動きます。</p>
+    </div>
+  </header>
+
+  <main class="admin-layout wrap">
+    <section class="panel add-panel">
+      <h2>新しい動画</h2>
+      <form id="add-form">
+        <label for="video-url">YouTube URL</label>
+        <div class="input-row">
+          <input id="video-url" name="url" type="url" required placeholder="https://www.youtube.com/watch?v=...">
+          <button class="button" type="submit">追加する</button>
+        </div>
+      </form>
+      <div id="dependency-status" class="dependency-status" aria-live="polite"></div>
+    </section>
+
+    <section class="panel jobs-panel">
+      <div class="panel-heading"><h2>処理状況</h2><button id="refresh-jobs" class="text-button" type="button">更新</button></div>
+      <div id="jobs" class="jobs-list"><p class="muted">ジョブはまだありません。</p></div>
+    </section>
+
+    <section id="review-panel" class="panel review-panel" hidden>
+      <div class="panel-heading">
+        <div><p class="eyebrow">REVIEW</p><h2 id="review-title">生成結果</h2></div>
+        <div class="review-actions">
+          <button id="save-draft" class="button secondary" type="button">下書き保存</button>
+          <button id="publish" class="button" type="button">公開ファイルへ反映</button>
+        </div>
+      </div>
+      <p class="muted">英文・訳・時刻を修正できます。語彙は「単語 | 意味 | レベル | 補足」を1行ずつ入力します。</p>
+      <div id="review-summary" class="review-summary"></div>
+      <div id="sentence-editor" class="sentence-editor"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="./admin.js" defer></script>
+</body>
+</html>

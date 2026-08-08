@@ -1,0 +1,2114 @@
+{
+  "schemaVersion": 1,
+  "id": "71eUes30gwc",
+  "title": "This Black Hole Could be Bigger Than The Universe",
+  "sourceUrl": "https://www.youtube.com/watch?v=71eUes30gwc",
+  "generatedAt": null,
+  "transcriptSource": "legacy-import",
+  "sentences": [
+    {
+      "id": 1,
+      "speechStart": 1,
+      "playFrom": 0,
+      "end": 6,
+      "en": "We proudly present to you the Kurzgesagt guide to curiosity.",
+      "jp": "私たちは、皆さんにKurzgesagtの「好奇心へのガイド」を誇りを持ってご紹介します。",
+      "vocab": [
+        {
+          "term": "proudly",
+          "meaning": "誇りを持って",
+          "level": ""
+        },
+        {
+          "term": "present to",
+          "meaning": "～に紹介する",
+          "level": ""
+        },
+        {
+          "term": "curiosity",
+          "meaning": "好奇心",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 2,
+      "speechStart": 6,
+      "playFrom": 5,
+      "end": 15,
+      "en": "Join us on an interactive adventure across 160 thrilling pages that will change your perspective on the world forever.",
+      "jp": "160ページにわたるスリリングなインタラクティブな冒険に私たちと一緒に参加してください。それは世界に対するあなたの視点を永遠に変えるでしょう。",
+      "vocab": [
+        {
+          "term": "interactive",
+          "meaning": "双方向の",
+          "level": ""
+        },
+        {
+          "term": "thrilling",
+          "meaning": "スリル満点の",
+          "level": ""
+        },
+        {
+          "term": "perspective",
+          "meaning": "視点",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 3,
+      "speechStart": 15,
+      "playFrom": 14,
+      "end": 18,
+      "en": "Available now on the Kurzgesagt shop.",
+      "jp": "Kurzgesagtショップで今すぐ手に入ります。",
+      "vocab": [
+        {
+          "term": "available",
+          "meaning": "入手可能である",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 4,
+      "speechStart": 18,
+      "playFrom": 17,
+      "end": 25,
+      "en": "You might be inside a black hole that's inside a black hole that's inside a black hole.",
+      "jp": "あなたは、ブラックホールの中のブラックホールの中のブラックホールの中にいるかもしれません。",
+      "vocab": [
+        {
+          "term": "black hole",
+          "meaning": "ブラックホール",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 5,
+      "speechStart": 25,
+      "playFrom": 24,
+      "end": 29,
+      "en": "Everything in existence could be black holes all the way down.",
+      "jp": "存在する全てが、ずっと下までブラックホールである可能性があります。",
+      "vocab": [
+        {
+          "term": "in existence",
+          "meaning": "存在している",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 6,
+      "speechStart": 29,
+      "playFrom": 28,
+      "end": 36,
+      "en": "It turns out black holes are much weirder than you think and they break the universe much more than is usually explained, destroying time and space.",
+      "jp": "ブラックホールはあなたが思っているよりもずっと奇妙で、通常説明されているよりもはるかに宇宙を破壊し、時間と空間を破壊することがわかっています。",
+      "vocab": [
+        {
+          "term": "turn out",
+          "meaning": "判明する",
+          "level": ""
+        },
+        {
+          "term": "weirder",
+          "meaning": "より奇妙な",
+          "level": ""
+        },
+        {
+          "term": "destroy",
+          "meaning": "破壊する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 7,
+      "speechStart": 36,
+      "playFrom": 35,
+      "end": 42,
+      "en": "And they may actually create infinite universes in the process.",
+      "jp": "そして、その過程で実際に無限の宇宙を作り出しているかもしれません。",
+      "vocab": [
+        {
+          "term": "infinite",
+          "meaning": "無限の",
+          "level": ""
+        },
+        {
+          "term": "in the process",
+          "meaning": "その過程で",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 8,
+      "speechStart": 42,
+      "playFrom": 41,
+      "end": 48,
+      "en": "But before we can get to that let's first build a black hole out of air.",
+      "jp": "しかし、その話に入る前に、まず空気からブラックホールを作ってみましょう。",
+      "vocab": [
+        {
+          "term": "build a black hole out of air",
+          "meaning": "空気からブラックホールを作る",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 9,
+      "speechStart": 48,
+      "playFrom": 47,
+      "end": 54,
+      "en": "Everything can become a black hole if you squeeze it to a critical limit.",
+      "jp": "ある臨界点まで圧縮すれば、全てがブラックホールになることができます。",
+      "vocab": [
+        {
+          "term": "squeeze to",
+          "meaning": "～まで圧縮する",
+          "level": ""
+        },
+        {
+          "term": "critical limit",
+          "meaning": "臨界点",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 10,
+      "speechStart": 54,
+      "playFrom": 53,
+      "end": 60,
+      "en": "You'd need to squeeze Earth down to the size of a coin for it to turn into a black hole.",
+      "jp": "地球をブラックホールに変えるには、コインのサイズまで圧縮する必要があります。",
+      "vocab": [
+        {
+          "term": "squeeze down to",
+          "meaning": "～のサイズまで圧縮する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 11,
+      "speechStart": 60,
+      "playFrom": 59,
+      "end": 65,
+      "en": "The sun needs to be squeezed down to the size of a small City to become a black hole.",
+      "jp": "太陽は、ブラックホールになるために小さな都市のサイズまで圧縮される必要があります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 12,
+      "speechStart": 65,
+      "playFrom": 64,
+      "end": 71,
+      "en": "And if a lot of mass is concentrated in a really tiny space, you get something super dense.",
+      "jp": "そして、大量の質量が本当に小さな空間に集中すると、超高密度のものが生まれます。",
+      "vocab": [
+        {
+          "term": "mass",
+          "meaning": "質量",
+          "level": ""
+        },
+        {
+          "term": "concentrated",
+          "meaning": "集中した",
+          "level": ""
+        },
+        {
+          "term": "super dense",
+          "meaning": "超高密度の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 13,
+      "speechStart": 71,
+      "playFrom": 70,
+      "end": 79,
+      "en": "This is usually how black holes are explained: stuff becomes super dense and collapses into a black hole.",
+      "jp": "これが、通常ブラックホールが説明される方法です：物質が超高密度になり、ブラックホールに崩壊します。",
+      "vocab": [
+        {
+          "term": "collapses into",
+          "meaning": "～に崩壊する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 14,
+      "speechStart": 79,
+      "playFrom": 78,
+      "end": 82,
+      "en": "But actually, you don't need any ultra dense stuff to make them.",
+      "jp": "しかし実際には、それらを作るのに超高密度の物質は必要ありません。",
+      "vocab": [
+        {
+          "term": "ultra dense",
+          "meaning": "超高密度の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 15,
+      "speechStart": 82,
+      "playFrom": 81,
+      "end": 89,
+      "en": "We're ignoring some maths here, but all you really need to know is one thing: the larger black holes get, the less dense they are.",
+      "jp": "ここでは一部の数学的な話を無視しますが、本当に知っておく必要があるのは一つだけです：ブラックホールが大きくなるほど、密度は低くなります。",
+      "vocab": [
+        {
+          "term": "ignoring",
+          "meaning": "無視する",
+          "level": ""
+        },
+        {
+          "term": "less dense",
+          "meaning": "低密度の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 16,
+      "speechStart": 89,
+      "playFrom": 88,
+      "end": 92,
+      "en": "So really large black holes, they kind of thin.",
+      "jp": "つまり、本当に大きなブラックホールは、ある意味「薄い」のです。",
+      "vocab": [
+        {
+          "term": "kind of thin",
+          "meaning": "ある意味薄い",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 17,
+      "speechStart": 92,
+      "playFrom": 91,
+      "end": 101,
+      "en": "A sun Mass black hole is only about 6 km wide and has a density of about one Himalayan range per cubic meter.",
+      "jp": "太陽の質量を持つブラックホールは、幅がわずか約6kmで、密度は1立方メートルあたりヒマラヤ山脈1つ分です。",
+      "vocab": [
+        {
+          "term": "sun Mass",
+          "meaning": "太陽質量",
+          "level": ""
+        },
+        {
+          "term": "density",
+          "meaning": "密度",
+          "level": ""
+        },
+        {
+          "term": "cubic meter",
+          "meaning": "立方メートル",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 18,
+      "speechStart": 101,
+      "playFrom": 100,
+      "end": 111,
+      "en": "The super massive black hole at the center of the Milky Way has a massive 4 Million Suns, a diameter of 24 billion km and a density of six blue whales per cubic meter.",
+      "jp": "天の川銀河の中心にある超大質量ブラックホールは、太陽の400万倍の質量、直径240億kmで、密度は1立方メートルあたりシロナガスクジラ6頭分です。",
+      "vocab": [
+        {
+          "term": "super massive black hole",
+          "meaning": "超大質量ブラックホール",
+          "level": ""
+        },
+        {
+          "term": "Milky Way",
+          "meaning": "天の川銀河",
+          "level": ""
+        },
+        {
+          "term": "diameter",
+          "meaning": "直径",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 19,
+      "speechStart": 111,
+      "playFrom": 110,
+      "end": 122,
+      "en": "The ultramassive black hole Iris 21100-4156 has a mass of 3.8 billion Suns and is as wide as a solar system.",
+      "jp": "そして、超々大質量ブラックホールであるIris 21100-4156は、太陽の38億倍の質量があり、太陽系と同じくらいの幅があります。",
+      "vocab": [
+        {
+          "term": "ultramassive black hole",
+          "meaning": "超々大質量ブラックホール",
+          "level": ""
+        },
+        {
+          "term": "solar system",
+          "meaning": "太陽系",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 20,
+      "speechStart": 122,
+      "playFrom": 121,
+      "end": 126,
+      "en": "But because it's so large, it is only as dense as air.",
+      "jp": "しかし、非常に大きいため、密度は空気と同じくらいしかありません。",
+      "vocab": [
+        {
+          "term": "as dense as air",
+          "meaning": "空気と同じくらいの密度",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 21,
+      "speechStart": 126,
+      "playFrom": 125,
+      "end": 144,
+      "en": "This means, at least in theory, that if you take a gigantic balloon and fill it with unilli of tons of air, the moment it gets to the size of a solar system, an event horizon suddenly forms and it turns into a super massive black hole without violence or squeezing.",
+      "jp": "これは、少なくとも理論上は、巨大な風船に何兆トンもの空気を詰めて、それが太陽系ほどのサイズになった瞬間、事象の地平線が突然形成され、暴力的な圧縮なしに超大質量ブラックホールに変わることを意味します。",
+      "vocab": [
+        {
+          "term": "gigantic",
+          "meaning": "巨大な",
+          "level": ""
+        },
+        {
+          "term": "unilli of tons",
+          "meaning": "兆トン単位の",
+          "level": ""
+        },
+        {
+          "term": "event horizon",
+          "meaning": "事象の地平線",
+          "level": ""
+        },
+        {
+          "term": "without violence or squeezing",
+          "meaning": "暴力や圧縮なしに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 22,
+      "speechStart": 144,
+      "playFrom": 143,
+      "end": 151,
+      "en": "So now let's think big: what do we need to make a black hole the size of the universe?",
+      "jp": "では、大きく考えてみましょう：宇宙サイズのブラックホールを作るには何が必要でしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 23,
+      "speechStart": 151,
+      "playFrom": 150,
+      "end": 154,
+      "en": "A universe sized black hole.",
+      "jp": "宇宙サイズのブラックホールです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 24,
+      "speechStart": 154,
+      "playFrom": 153,
+      "end": 165,
+      "en": "The chunk of the universe that we can see from Earth is a sphere with a radius of 45 billion light years, filled with hundreds of billions of galaxies, lots of gas, and a bunch of other things.",
+      "jp": "地球から見ることのできる宇宙の塊は、半径450億光年の球体で、何千億もの銀河、大量のガス、そしてその他の多くのもので満たされています。",
+      "vocab": [
+        {
+          "term": "chunk",
+          "meaning": "塊",
+          "level": ""
+        },
+        {
+          "term": "radius",
+          "meaning": "半径",
+          "level": ""
+        },
+        {
+          "term": "light years",
+          "meaning": "光年",
+          "level": ""
+        },
+        {
+          "term": "bunch of other things",
+          "meaning": "その他の多くもの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 25,
+      "speechStart": 165,
+      "playFrom": 164,
+      "end": 175,
+      "en": "If you add them up, it has the mass of about a million billion billion Suns, which sounds a lot, but on average the universe is not very dense.",
+      "jp": "これらを合計すると、太陽の約$10^{24}$倍の質量になります。これは非常に多いように聞こえますが、平均的に見て、宇宙の密度はそれほど高くありません。",
+      "vocab": [
+        {
+          "term": "add them up",
+          "meaning": "合計する",
+          "level": ""
+        },
+        {
+          "term": "on average",
+          "meaning": "平均して",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 26,
+      "speechStart": 175,
+      "playFrom": 174,
+      "end": 186,
+      "en": "If we break up all the galaxies, stars, gas and energy and spread them equally inside the volume of the universe, we get an average density of about 5 hydrogen atoms per cubic meter.",
+      "jp": "全ての銀河、星、ガス、エネルギーを分解し、宇宙の体積全体に均等に広げた場合、平均密度は1立方メートルあたり水素原子約5個になります。",
+      "vocab": [
+        {
+          "term": "break up",
+          "meaning": "分解する",
+          "level": ""
+        },
+        {
+          "term": "spread them equally",
+          "meaning": "均等に広げる",
+          "level": ""
+        },
+        {
+          "term": "hydrogen atoms",
+          "meaning": "水素原子",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 27,
+      "speechStart": 186,
+      "playFrom": 185,
+      "end": 192,
+      "en": "You can imagine this as the sort of ultra thin Cosmic air that makes up the universe.",
+      "jp": "これは、宇宙を構成する超薄い宇宙の空気のようなものだと想像できます。",
+      "vocab": [
+        {
+          "term": "ultra thin",
+          "meaning": "超薄い",
+          "level": ""
+        },
+        {
+          "term": "Cosmic air",
+          "meaning": "宇宙の空気",
+          "level": ""
+        },
+        {
+          "term": "makes up",
+          "meaning": "構成する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 28,
+      "speechStart": 192,
+      "playFrom": 191,
+      "end": 198,
+      "en": "What would happen if we take a balloon as big as the observable universe and fill it with Cosmic air?",
+      "jp": "観測可能な宇宙と同じくらい大きな風船を取り、それに宇宙の空気を詰めたらどうなるでしょうか？",
+      "vocab": [
+        {
+          "term": "observable universe",
+          "meaning": "観測可能な宇宙",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 29,
+      "speechStart": 198,
+      "playFrom": 197,
+      "end": 204,
+      "en": "Well, it turns out that all the mass in the observable universe is more than enough to create a black hole.",
+      "jp": "なんと、観測可能な宇宙にある全ての質量は、ブラックホールを作るのに十分すぎるほどあることが判明しました。",
+      "vocab": [
+        {
+          "term": "more than enough",
+          "meaning": "十分すぎるほど",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 30,
+      "speechStart": 204,
+      "playFrom": 203,
+      "end": 209,
+      "en": "Actually, it's enough to make a black hole 10 times larger than the observable universe.",
+      "jp": "実際、観測可能な宇宙の10倍も大きいブラックホールを作るのに十分です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 31,
+      "speechStart": 209,
+      "playFrom": 208,
+      "end": 217,
+      "en": "But that can only mean one thing: we should be living deep inside a truly gargantuan Cosmic sized black hole.",
+      "jp": "しかし、それは一つのことしか意味しません：私たちは真に巨大な宇宙サイズのブラックホールの奥深くに住んでいるに違いないということです。",
+      "vocab": [
+        {
+          "term": "gargantuan",
+          "meaning": "巨大な",
+          "level": ""
+        },
+        {
+          "term": "Cosmic sized",
+          "meaning": "宇宙サイズの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 32,
+      "speechStart": 217,
+      "playFrom": 216,
+      "end": 221,
+      "en": "There's one catch though: we know that our universe is expanding.",
+      "jp": "ただし、一つ問題があります：私たちの宇宙が膨張していることを私たちは知っています。",
+      "vocab": [
+        {
+          "term": "one catch",
+          "meaning": "一つの落とし穴",
+          "level": ""
+        },
+        {
+          "term": "expanding",
+          "meaning": "膨張している",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 33,
+      "speechStart": 221,
+      "playFrom": 220,
+      "end": 226,
+      "en": "And an expanding universe is not what you'd expect to see if you were inside a black hole.",
+      "jp": "そして、膨張する宇宙は、ブラックホールの内部にいる場合に予想されるものではありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 34,
+      "speechStart": 226,
+      "playFrom": 225,
+      "end": 231,
+      "en": "So our universe can't be a black hole, at least not in the naive way we've just described.",
+      "jp": "したがって、私たちの宇宙はブラックホールであるはずがありません。少なくとも、私たちが今説明したような単純な方法では。",
+      "vocab": [
+        {
+          "term": "naive way",
+          "meaning": "単純な方法",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 35,
+      "speechStart": 231,
+      "playFrom": 230,
+      "end": 236,
+      "en": "Except there's a wild and mind-bending trick the universe could play on us.",
+      "jp": "ただ、宇宙が私たちに仕掛ける可能性のあるワイルドで、心を曲げるようなトリックがあります。",
+      "vocab": [
+        {
+          "term": "mind-bending trick",
+          "meaning": "心を曲げるようなトリック",
+          "level": ""
+        },
+        {
+          "term": "play on us",
+          "meaning": "私たちに仕掛ける",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 36,
+      "speechStart": 236,
+      "playFrom": 235,
+      "end": 241,
+      "en": "To find out how, let's jump into a black hole and die.",
+      "jp": "それを見つけるために、ブラックホールに飛び込み、死んでみましょう。",
+      "vocab": [
+        {
+          "term": "jump into",
+          "meaning": "～に飛び込む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 37,
+      "speechStart": 241,
+      "playFrom": 240,
+      "end": 245,
+      "en": "A whole universe born inside a black hole.",
+      "jp": "ブラックホールの内側で生まれる一つの宇宙。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 38,
+      "speechStart": 245,
+      "playFrom": 244,
+      "end": 255,
+      "en": "We usually imagine black holes as spheres with a singularity at their center, a point where all their mass is concentrated so much that our math breaks down.",
+      "jp": "私たちは通常、ブラックホールを、その質量の全てが集中し、私たちの数学が破綻する特異点が中心にある球体だと想像します。",
+      "vocab": [
+        {
+          "term": "spheres",
+          "meaning": "球体",
+          "level": ""
+        },
+        {
+          "term": "singularity",
+          "meaning": "特異点",
+          "level": ""
+        },
+        {
+          "term": "breaks down",
+          "meaning": "破綻する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 39,
+      "speechStart": 255,
+      "playFrom": 254,
+      "end": 256,
+      "en": "But this is a lie.",
+      "jp": "しかし、これは嘘です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 40,
+      "speechStart": 256,
+      "playFrom": 255,
+      "end": 259,
+      "en": "They are so much weirder.",
+      "jp": "それらはそれよりもはるかに奇妙です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 41,
+      "speechStart": 259,
+      "playFrom": 258,
+      "end": 267,
+      "en": "From the outside, a black hole looks like a normal black sphere, but the inside is where things stop making sense.",
+      "jp": "外側から見ると、ブラックホールは通常の黒い球体に見えますが、内側では物事が意味をなさなくなります。",
+      "vocab": [
+        {
+          "term": "normal black sphere",
+          "meaning": "通常の黒い球体",
+          "level": ""
+        },
+        {
+          "term": "stop making sense",
+          "meaning": "意味をなさなくなる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 42,
+      "speechStart": 267,
+      "playFrom": 266,
+      "end": 273,
+      "en": "Black holes warp the universe so much that at the Event Horizon, space and time switch their roles.",
+      "jp": "ブラックホールは宇宙を非常に歪ませ、事象の地平線では空間と時間がその役割を入れ替えます。",
+      "vocab": [
+        {
+          "term": "warp",
+          "meaning": "歪ませる",
+          "level": ""
+        },
+        {
+          "term": "switch their roles",
+          "meaning": "役割を入れ替える",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 43,
+      "speechStart": 273,
+      "playFrom": 272,
+      "end": 278,
+      "en": "Inside a normal sphere, space is finite but time goes on forever.",
+      "jp": "通常の球体の内部では、空間は有限ですが、時間は永遠に続きます。",
+      "vocab": [
+        {
+          "term": "finite",
+          "meaning": "有限の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 44,
+      "speechStart": 278,
+      "playFrom": 277,
+      "end": 285,
+      "en": "But inside a black hole it's the other way around: space goes on forever, but time is finite.",
+      "jp": "しかし、ブラックホールの内部では逆になります：空間は永遠に続きますが、時間は有限です。",
+      "vocab": [
+        {
+          "term": "the other way around",
+          "meaning": "逆",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 45,
+      "speechStart": 285,
+      "playFrom": 284,
+      "end": 289,
+      "en": "So once inside, you see an infinite Universe with no center.",
+      "jp": "そのため、一度中に入ると、中心のない無限の宇宙を見ることになります。",
+      "vocab": [
+        {
+          "term": "no center",
+          "meaning": "中心がない",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 46,
+      "speechStart": 289,
+      "playFrom": 288,
+      "end": 300,
+      "en": "The geometry is too complicated, so we're simplifying, but basically you could walk forever in one direction, or walk in another direction and arrive at the same place again.",
+      "jp": "幾何学は複雑すぎるため単純化していますが、基本的に、ある方向に永遠に歩き続けることもできますし、別の方向に歩いて再び同じ場所に戻ってくることもできます。",
+      "vocab": [
+        {
+          "term": "geometry",
+          "meaning": "幾何学",
+          "level": ""
+        },
+        {
+          "term": "simplifying",
+          "meaning": "単純化する",
+          "level": ""
+        },
+        {
+          "term": "arrive at",
+          "meaning": "～に到着する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 47,
+      "speechStart": 300,
+      "playFrom": 299,
+      "end": 301,
+      "en": "But not in that.",
+      "jp": "しかし、そうではありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 48,
+      "speechStart": 301,
+      "playFrom": 300,
+      "end": 305,
+      "en": "Inside a black hole, time is finite and it's now running out.",
+      "jp": "ブラックホールの内部では、時間は有限であり、刻々と尽きようとしています。",
+      "vocab": [
+        {
+          "term": "running out",
+          "meaning": "尽きようとしている",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 49,
+      "speechStart": 305,
+      "playFrom": 304,
+      "end": 309,
+      "en": "So after a while, you start to notice that space itself is slowly changing.",
+      "jp": "そのため、しばらくすると、空間そのものがゆっくりと変化していることに気づき始めます。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 50,
+      "speechStart": 309,
+      "playFrom": 308,
+      "end": 314,
+      "en": "In one direction, space is being stretched, while in all other directions, space is shrinking.",
+      "jp": "ある一方向では空間が引き伸ばされ、他の全ての方向では空間が縮んでいます。",
+      "vocab": [
+        {
+          "term": "stretched",
+          "meaning": "引き伸ばされる",
+          "level": ""
+        },
+        {
+          "term": "shrinking",
+          "meaning": "縮んでいる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 51,
+      "speechStart": 314,
+      "playFrom": 313,
+      "end": 319,
+      "en": "The whole universe is being squeezed, kind of turning into a collapsing spaghetti.",
+      "jp": "宇宙全体が押しつぶされ、一種の崩壊するスパゲッティに変わっていくのです。",
+      "vocab": [
+        {
+          "term": "squeezed",
+          "meaning": "押しつぶされる",
+          "level": ""
+        },
+        {
+          "term": "collapsing spaghetti",
+          "meaning": "崩壊するスパゲッティ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 52,
+      "speechStart": 319,
+      "playFrom": 318,
+      "end": 323,
+      "en": "Sooner or later, the whole black hole Universe collapses into itself.",
+      "jp": "遅かれ早かれ、ブラックホール宇宙全体が自己崩壊します。",
+      "vocab": [
+        {
+          "term": "sooner or later",
+          "meaning": "遅かれ早かれ",
+          "level": ""
+        },
+        {
+          "term": "collapses into itself",
+          "meaning": "自己崩壊する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 53,
+      "speechStart": 323,
+      "playFrom": 322,
+      "end": 328,
+      "en": "All of space, every single part of it, is turning into a singularity.",
+      "jp": "空間のあらゆる部分、その全てが特異点に変わりつつあります。",
+      "vocab": [
+        {
+          "term": "every single part",
+          "meaning": "あらゆる部分",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 54,
+      "speechStart": 328,
+      "playFrom": 327,
+      "end": 333,
+      "en": "So the singularity of a black hole is not at its center or in any direction at all.",
+      "jp": "したがって、ブラックホールの特異点は、その中心にあるわけでも、特定の方向にあるわけでもありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 55,
+      "speechStart": 333,
+      "playFrom": 332,
+      "end": 336,
+      "en": "It's in the future of whatever falls inside.",
+      "jp": "それは、内部に落ちてきたものの未来に起こる出来事なのです。",
+      "vocab": [
+        {
+          "term": "whatever falls inside",
+          "meaning": "内部に落ちてくるもの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 56,
+      "speechStart": 336,
+      "playFrom": 335,
+      "end": 340,
+      "en": "We made a whole video about this if you want to learn more.",
+      "jp": "もっと知りたい場合は、これについて私たちは全体のビデオを作成しました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 57,
+      "speechStart": 340,
+      "playFrom": 339,
+      "end": 342,
+      "en": "So the singularity is not a place where you can go.",
+      "jp": "つまり、特異点は行くことができる場所ではありません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 58,
+      "speechStart": 342,
+      "playFrom": 341,
+      "end": 346,
+      "en": "It's an event in time that happens once.",
+      "jp": "それは、時間の中の出来事であり、一度だけ起こります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 59,
+      "speechStart": 346,
+      "playFrom": 345,
+      "end": 356,
+      "en": "Once it happens, you and everything else that fell inside the black hole will be mercilessly crushed into an infinitely small region with infinite gravity and infinite energy.",
+      "jp": "それが起こると、あなたとブラックホールに落ちた他の全ては、無限に小さな領域に、無限の重力と無限のエネルギーで無慈悲に押しつぶされます。",
+      "vocab": [
+        {
+          "term": "mercilessly crushed",
+          "meaning": "無慈悲に押しつぶされる",
+          "level": ""
+        },
+        {
+          "term": "infinitely small region",
+          "meaning": "無限に小さな領域",
+          "level": ""
+        },
+        {
+          "term": "infinite gravity",
+          "meaning": "無限の重力",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 60,
+      "speechStart": 356,
+      "playFrom": 355,
+      "end": 362,
+      "en": "Time, space, none of it matters anymore; both kind of stop existing in ways that we would recognize.",
+      "jp": "時間も空間も、もう何も意味をなしません。どちらも、私たちが認識できる形では、ある意味存在しなくなります。",
+      "vocab": [
+        {
+          "term": "none of it matters",
+          "meaning": "何も意味をなさない",
+          "level": ""
+        },
+        {
+          "term": "recognize",
+          "meaning": "認識する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 61,
+      "speechStart": 362,
+      "playFrom": 361,
+      "end": 364,
+      "en": "And then, is this the end?",
+      "jp": "そして、これが終わりなのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 62,
+      "speechStart": 364,
+      "playFrom": 363,
+      "end": 367,
+      "en": "Well, maybe not.",
+      "jp": "さあ、そうではないかもしれません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 63,
+      "speechStart": 367,
+      "playFrom": 366,
+      "end": 374,
+      "en": "This collapse of the black whole universe into a singularity looks like one of the scenarios for the end of our universe: the Big Crunch.",
+      "jp": "ブラックホール宇宙が特異点に崩壊するこの様子は、私たちの宇宙の終焉シナリオの一つである「ビッグクランチ」に似ています。",
+      "vocab": [
+        {
+          "term": "Big Crunch",
+          "meaning": "ビッグクランチ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 64,
+      "speechStart": 374,
+      "playFrom": 373,
+      "end": 378,
+      "en": "Where long after the big bang, the whole universe collapses into a singularity again.",
+      "jp": "そこでは、ビッグバンからずっと後に、宇宙全体が再び特異点に崩壊します。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 65,
+      "speechStart": 378,
+      "playFrom": 377,
+      "end": 382,
+      "en": "But if there's a big crunch, there might be a big bounce.",
+      "jp": "しかし、ビッグクランチがあるなら、ビッグバウンスがあるかもしれません。",
+      "vocab": [
+        {
+          "term": "Big Bounce",
+          "meaning": "ビッグバウンス",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 66,
+      "speechStart": 382,
+      "playFrom": 381,
+      "end": 389,
+      "en": "Like a rubber ball that you've squeezed too much and that suddenly rebounds, space might expand again.",
+      "jp": "まるで、押しつぶしすぎたゴムボールが突然跳ね返るように、空間が再び膨張するかもしれません。",
+      "vocab": [
+        {
+          "term": "squeezed too much",
+          "meaning": "押しつぶしすぎる",
+          "level": ""
+        },
+        {
+          "term": "rebounds",
+          "meaning": "跳ね返る",
+          "level": ""
+        },
+        {
+          "term": "expand again",
+          "meaning": "再び膨張する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 67,
+      "speechStart": 389,
+      "playFrom": 388,
+      "end": 392,
+      "en": "So a new universe could be born inside a black hole.",
+      "jp": "つまり、ブラックホールの内部で新しい宇宙が生まれる可能性があるのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 68,
+      "speechStart": 392,
+      "playFrom": 391,
+      "end": 397,
+      "en": "The funny thing about this scenario is that nothing has changed in the slightest outside the black hole.",
+      "jp": "このシナリオの面白い点は、ブラックホールの外側では何一つ変わっていないことです。",
+      "vocab": [
+        {
+          "term": "funny thing",
+          "meaning": "面白い点",
+          "level": ""
+        },
+        {
+          "term": "in the slightest",
+          "meaning": "少しも",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 69,
+      "speechStart": 397,
+      "playFrom": 396,
+      "end": 401,
+      "en": "Watching from the outside, it's still a black sphere of nothingness.",
+      "jp": "外から見ていると、それは相変わらず何もない黒い球体です。",
+      "vocab": [
+        {
+          "term": "nothingness",
+          "meaning": "無",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 70,
+      "speechStart": 401,
+      "playFrom": 400,
+      "end": 405,
+      "en": "And yet, on the inside, a new universe has been born.",
+      "jp": "それなのに、内側では新しい宇宙が生まれているのです。",
+      "vocab": [
+        {
+          "term": "and yet",
+          "meaning": "それにもかかわらず",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 71,
+      "speechStart": 405,
+      "playFrom": 404,
+      "end": 411,
+      "en": "So maybe our universe was born like this, and we are all actually inside a black hole.",
+      "jp": "ひょっとすると、私たちの宇宙もこのようにして生まれたのかもしれず、私たちは皆、実際にはブラックホールの内部にいるのかもしれません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 72,
+      "speechStart": 411,
+      "playFrom": 410,
+      "end": 417,
+      "en": "But if our universe can also create black holes, they might give birth to new universes.",
+      "jp": "しかし、私たちの宇宙もブラックホールを作ることができるなら、それらのブラックホールが新しい宇宙を生み出すかもしれません。",
+      "vocab": [
+        {
+          "term": "give birth to",
+          "meaning": "～を生み出す",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 73,
+      "speechStart": 417,
+      "playFrom": 416,
+      "end": 424,
+      "en": "Is our black hole Universe also just part of a universe further up that's also black hole inside another universe?",
+      "jp": "私たちのブラックホール宇宙も、さらに上にある別の宇宙の一部であり、その別の宇宙の中のブラックホールなのでしょうか？",
+      "vocab": [
+        {
+          "term": "further up",
+          "meaning": "さらに上に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 74,
+      "speechStart": 424,
+      "playFrom": 423,
+      "end": 426,
+      "en": "Is there an end to it?",
+      "jp": "それに終わりはあるのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 75,
+      "speechStart": 426,
+      "playFrom": 425,
+      "end": 428,
+      "en": "Is there one original universe?",
+      "jp": "一つのオリジナルの宇宙が存在するのでしょうか？",
+      "vocab": [
+        {
+          "term": "original universe",
+          "meaning": "オリジナルの宇宙",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 76,
+      "speechStart": 428,
+      "playFrom": 427,
+      "end": 437,
+      "en": "Is the cosmos black holes inside black holes inside black holes: infinite black hole universes?",
+      "jp": "宇宙は、ブラックホールの内側のブラックホールの内側のブラックホールの内側にある、無限のブラックホール宇宙なのでしょうか？",
+      "vocab": [
+        {
+          "term": "cosmos",
+          "meaning": "宇宙",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 77,
+      "speechStart": 437,
+      "playFrom": 436,
+      "end": 448,
+      "en": "If the universe creates black holes that create universes that then create new black holes that create new universes, this Cosmic self-reproduction would be subject to Natural Selection.",
+      "jp": "もし宇宙が、宇宙を生み出すブラックホールを作り、その宇宙がさらに新しいブラックホールを作り、それが新しい宇宙を生み出すなら、この宇宙的な自己生殖は自然淘汰の対象となるでしょう。",
+      "vocab": [
+        {
+          "term": "self-reproduction",
+          "meaning": "自己生殖",
+          "level": ""
+        },
+        {
+          "term": "subject to",
+          "meaning": "～の対象となる",
+          "level": ""
+        },
+        {
+          "term": "Natural Selection",
+          "meaning": "自然淘汰",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 78,
+      "speechStart": 448,
+      "playFrom": 447,
+      "end": 456,
+      "en": "A big bang is a chaotic and messy event, so it's possible that the new daughter universes would not always be fully identical to their moms.",
+      "jp": "ビッグバンは混沌としていて乱雑な出来事なので、新しい娘宇宙が常に母親宇宙と完全に同一ではない可能性があります。",
+      "vocab": [
+        {
+          "term": "chaotic",
+          "meaning": "混沌とした",
+          "level": ""
+        },
+        {
+          "term": "messy event",
+          "meaning": "乱雑な出来事",
+          "level": ""
+        },
+        {
+          "term": "daughter universes",
+          "meaning": "娘宇宙",
+          "level": ""
+        },
+        {
+          "term": "fully identical to",
+          "meaning": "～と完全に同一の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 79,
+      "speechStart": 456,
+      "playFrom": 455,
+      "end": 461,
+      "en": "Sometimes physics may be slightly different, with some fundamental values higher or lower.",
+      "jp": "時として、物理法則がわずかに異なり、いくつかの基本的な値が高くなったり低くなったりするかもしれません。",
+      "vocab": [
+        {
+          "term": "slightly different",
+          "meaning": "わずかに異なる",
+          "level": ""
+        },
+        {
+          "term": "fundamental values",
+          "meaning": "基本的な値",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 80,
+      "speechStart": 461,
+      "playFrom": 460,
+      "end": 468,
+      "en": "And so some universes might be able to create loads of stars, planets, and black holes; others might not.",
+      "jp": "そのため、一部の宇宙は多くの星、惑星、ブラックホールを作ることができるかもしれませんが、他の宇宙はそうでないかもしれません。",
+      "vocab": [
+        {
+          "term": "loads of",
+          "meaning": "多くの",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 81,
+      "speechStart": 468,
+      "playFrom": 467,
+      "end": 474,
+      "en": "Maybe creating a uniform Cosmic soup where no stars, planets, and black holes form.",
+      "jp": "星、惑星、ブラックホールが形成されない均一な宇宙のスープを作るかもしれません。",
+      "vocab": [
+        {
+          "term": "uniform",
+          "meaning": "均一な",
+          "level": ""
+        },
+        {
+          "term": "Cosmic soup",
+          "meaning": "宇宙のスープ",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 82,
+      "speechStart": 474,
+      "playFrom": 473,
+      "end": 482,
+      "en": "But if all universes are born inside black holes, in the long run all universe lines that don't create loads of black holes would die out.",
+      "jp": "しかし、もし全ての宇宙がブラックホールの内部で生まれるなら、長期的には多くのブラックホールを作らない全ての宇宙の系統は消滅するでしょう。",
+      "vocab": [
+        {
+          "term": "in the long run",
+          "meaning": "長期的には",
+          "level": ""
+        },
+        {
+          "term": "die out",
+          "meaning": "消滅する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 83,
+      "speechStart": 482,
+      "playFrom": 481,
+      "end": 488,
+      "en": "The universes with the conditions for loads of black holes would become the most common and spawn the most daughter universes.",
+      "jp": "多くのブラックホールを作る条件を持つ宇宙が最も一般的になり、最も多くの娘宇宙を生み出すでしょう。",
+      "vocab": [
+        {
+          "term": "most common",
+          "meaning": "最も一般的",
+          "level": ""
+        },
+        {
+          "term": "spawn",
+          "meaning": "生み出す",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 84,
+      "speechStart": 488,
+      "playFrom": 487,
+      "end": 492,
+      "en": "Survival of the fittest, but with universes instead of organisms.",
+      "jp": "適者生存、ただし生物ではなく宇宙での話です。",
+      "vocab": [
+        {
+          "term": "survival of the fittest",
+          "meaning": "適者生存",
+          "level": ""
+        },
+        {
+          "term": "organisms",
+          "meaning": "生物",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 85,
+      "speechStart": 492,
+      "playFrom": 491,
+      "end": 498,
+      "en": "Our observable universe alone has created at least $10^{17}$ black holes so far.",
+      "jp": "私たちの観測可能な宇宙だけでも、これまでに少なくとも$10^{17}$個のブラックホールを生み出してきました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 86,
+      "speechStart": 498,
+      "playFrom": 497,
+      "end": 508,
+      "en": "So maybe our universe has the physics and laws it has because it was born after a long process of cosmological selection that favored the production of tons of black holes.",
+      "jp": "したがって、私たちの宇宙が持つ物理法則は、大量のブラックホールの生成を優遇するという長い宇宙論的淘汰の過程を経て生まれたのかもしれません。",
+      "vocab": [
+        {
+          "term": "cosmological selection",
+          "meaning": "宇宙論的淘汰",
+          "level": ""
+        },
+        {
+          "term": "favored",
+          "meaning": "優遇した",
+          "level": ""
+        },
+        {
+          "term": "production",
+          "meaning": "生成",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 87,
+      "speechStart": 508,
+      "playFrom": 507,
+      "end": 524,
+      "en": "And that would have a lovely side effect: if universes are optimized to create as many new black hole universes as possible, they're optimized to create loads of galaxies and stars, and thereby also by accident the conditions for life to emerge.",
+      "jp": "そして、それには素晴らしい副次的な効果があります：もし宇宙が可能な限り多くの新しいブラックホール宇宙を作るように最適化されているなら、それは大量の銀河と星を作り出すように最適化されていることになり、結果として偶然にも生命の条件も作り出すことになります。",
+      "vocab": [
+        {
+          "term": "lovely side effect",
+          "meaning": "素晴らしい副次的な効果",
+          "level": ""
+        },
+        {
+          "term": "optimized to",
+          "meaning": "～に最適化されている",
+          "level": ""
+        },
+        {
+          "term": "by accident",
+          "meaning": "偶然にも",
+          "level": ""
+        },
+        {
+          "term": "emerge",
+          "meaning": "出現する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 88,
+      "speechStart": 524,
+      "playFrom": 523,
+      "end": 530,
+      "en": "So universes that are the best at creating new universes are also the best at creating life.",
+      "jp": "つまり、新しい宇宙を作るのが最も得意な宇宙は、生命を生み出すのも最も得意なのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 89,
+      "speechStart": 530,
+      "playFrom": 529,
+      "end": 541,
+      "en": "If this scenario is true, who knows how many bazillions of black hole universes might be out there, all with stars and planets, potentially home to others like us.",
+      "jp": "もしこのシナリオが真実なら、星や惑星を持ち、私たちのような存在が住んでいる可能性のあるブラックホール宇宙が、一体どれほど無数に存在するのでしょうか？",
+      "vocab": [
+        {
+          "term": "bazillions",
+          "meaning": "無数の",
+          "level": ""
+        },
+        {
+          "term": "potentially home to",
+          "meaning": "～が住んでいる可能性のある",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 90,
+      "speechStart": 541,
+      "playFrom": 540,
+      "end": 544,
+      "en": "So is our universe like this?",
+      "jp": "では、私たちの宇宙はこのようなものなのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 91,
+      "speechStart": 544,
+      "playFrom": 543,
+      "end": 546,
+      "en": "The truth is, we don't know.",
+      "jp": "真実は、私たちには分かりません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 92,
+      "speechStart": 546,
+      "playFrom": 545,
+      "end": 552,
+      "en": "While these ideas are based on real science and work on paper, they're speculative and not testable.",
+      "jp": "これらのアイデアは実際の科学に基づいており、理論上は成り立っていますが、推測的であり、検証不可能です。",
+      "vocab": [
+        {
+          "term": "speculative",
+          "meaning": "推測的な",
+          "level": ""
+        },
+        {
+          "term": "not testable",
+          "meaning": "検証不可能な",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 93,
+      "speechStart": 552,
+      "playFrom": 551,
+      "end": 559,
+      "en": "Also, the cyclic universes don't actually explain why the universe exists in the first place or why it is the way it is.",
+      "jp": "また、循環する宇宙論は、そもそも宇宙がなぜ存在するのか、あるいはなぜ今のような形なのかを実際には説明していません。",
+      "vocab": [
+        {
+          "term": "cyclic universes",
+          "meaning": "循環する宇宙",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 94,
+      "speechStart": 559,
+      "playFrom": 558,
+      "end": 563,
+      "en": "Instead of providing answers, these are really just new questions in disguise.",
+      "jp": "これらは答えを提供する代わりに、姿を変えた新しい問いにすぎません。",
+      "vocab": [
+        {
+          "term": "in disguise",
+          "meaning": "姿を変えた",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 95,
+      "speechStart": 563,
+      "playFrom": 562,
+      "end": 566,
+      "en": "So keep that in mind before getting too excited.",
+      "jp": "したがって、あまり興奮しすぎる前にそのことを心に留めておいてください。",
+      "vocab": [
+        {
+          "term": "keep that in mind",
+          "meaning": "心に留めておく",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 96,
+      "speechStart": 566,
+      "playFrom": 565,
+      "end": 574,
+      "en": "But isn't it just wonderful and heartwarming that we're living in a universe where ideas as big as this one are even thinkable?",
+      "jp": "しかし、これほど壮大なアイデアさえも考えることができる宇宙に私たちが住んでいるというのは、本当に素晴らしく、心温まることではないでしょうか？",
+      "vocab": [
+        {
+          "term": "heartwarming",
+          "meaning": "心温まる",
+          "level": ""
+        },
+        {
+          "term": "even thinkable",
+          "meaning": "考えることさえ可能",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 97,
+      "speechStart": 574,
+      "playFrom": 573,
+      "end": 587,
+      "en": "There might be so much life, and if new universes are created constantly, maybe life will go on forever.",
+      "jp": "非常に多くの生命が存在するかもしれません。そして、新しい宇宙が絶えず作られているのなら、生命は永遠に続くかもしれません。",
+      "vocab": [
+        {
+          "term": "constantly",
+          "meaning": "絶えず",
+          "level": ""
+        },
+        {
+          "term": "go on forever",
+          "meaning": "永遠に続く",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 98,
+      "speechStart": 587,
+      "playFrom": 586,
+      "end": 598,
+      "en": "We've heard rumors of a Chosen One, a special bird who has the power to illuminate the vast darkness of the universe, uncovering the great Mysteries of the world.",
+      "jp": "私たちは、選ばれし者、広大な暗闇を照らす力を持つ特別な鳥の噂を聞きました。世界の大きな謎を解き明かす、",
+      "vocab": [
+        {
+          "term": "Chosen One",
+          "meaning": "選ばれし者",
+          "level": ""
+        },
+        {
+          "term": "illuminate",
+          "meaning": "照らす",
+          "level": ""
+        },
+        {
+          "term": "vast darkness",
+          "meaning": "広大な暗闇",
+          "level": ""
+        },
+        {
+          "term": "uncovering",
+          "meaning": "解き明かす",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 99,
+      "speechStart": 598,
+      "playFrom": 597,
+      "end": 604,
+      "en": "This special power is called curiosity, and the special BB could be you.",
+      "jp": "この特別な力は「好奇心（Curiosity）」と呼ばれ、その特別な鳥はあなたかもしれません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 100,
+      "speechStart": 604,
+      "playFrom": 603,
+      "end": 608,
+      "en": "Our guide to curiosity is now available on our shop.",
+      "jp": "好奇心への私たちのガイドは、今、私たちのショップで手に入ります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 101,
+      "speechStart": 608,
+      "playFrom": 607,
+      "end": 615,
+      "en": "It's an adventure that will help you to think like a Kurzgesagt BB and unlock your curiosity potential.",
+      "jp": "これは、あなたがKurzgesagtバードのように考え、あなたの好奇心の可能性を解き放つのを助ける冒険です。",
+      "vocab": [
+        {
+          "term": "unlock",
+          "meaning": "解き放つ",
+          "level": ""
+        },
+        {
+          "term": "potential",
+          "meaning": "可能性",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 102,
+      "speechStart": 615,
+      "playFrom": 614,
+      "end": 624,
+      "en": "Join us across 160 thrilling interactive pages designed to awaken your curiosity, changing your perspective on the world forever.",
+      "jp": "160ページにわたるスリリングでインタラクティブなページに参加し、あなたの好奇心を呼び覚まし、世界に対するあなたの視点を永遠に変えるように設計されています。",
+      "vocab": [
+        {
+          "term": "awaken",
+          "meaning": "呼び覚ます",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 103,
+      "speechStart": 624,
+      "playFrom": 623,
+      "end": 641,
+      "en": "But to be prepared, we will send you on Epic quests to find incredible creatures, challenge you to build unprecedented structures, ask you to cook up something surprising, and solve riddles to unveil Hidden Truths about the world.",
+      "jp": "しかし、準備のために、私たちはあなたを壮大な探求に送り出し、信じられないほどの生き物を見つけさせ、前例のない構造物を建てることに挑戦させ、驚くような料理を作るように頼み、世界についての隠された真実を明らかにするための謎を解かせます。",
+      "vocab": [
+        {
+          "term": "prepared",
+          "meaning": "準備ができた",
+          "level": ""
+        },
+        {
+          "term": "Epic quests",
+          "meaning": "壮大な探求",
+          "level": ""
+        },
+        {
+          "term": "incredible creatures",
+          "meaning": "信じられないほどの生き物",
+          "level": ""
+        },
+        {
+          "term": "unprecedented structures",
+          "meaning": "前例のない構造物",
+          "level": ""
+        },
+        {
+          "term": "cook up something surprising",
+          "meaning": "驚くような料理を作る",
+          "level": ""
+        },
+        {
+          "term": "unveil",
+          "meaning": "明らかにする",
+          "level": ""
+        },
+        {
+          "term": "Hidden Truths",
+          "meaning": "隠された真実",
+          "level": ""
+        },
+        {
+          "term": "riddles",
+          "meaning": "謎",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 104,
+      "speechStart": 641,
+      "playFrom": 640,
+      "end": 646,
+      "en": "But don't worry, the BBs will be with you every step of the way, and you can also bring a friend.",
+      "jp": "しかし、心配しないでください。バードたちがあなたの一歩一歩を共にします。そして、友達を連れてくることもできます。",
+      "vocab": [
+        {
+          "term": "every step of the way",
+          "meaning": "一歩一歩",
+          "level": ""
+        },
+        {
+          "term": "bring a friend",
+          "meaning": "友達を連れてくる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 105,
+      "speechStart": 646,
+      "playFrom": 645,
+      "end": 655,
+      "en": "The 18 curiosity quests were developed right here at the Kurzgesagt headquarters after hundreds and hundreds of hours of research and lots of trial and error.",
+      "jp": "この18の好奇心の探求は、ここKurzgesagt本社で、何百、何百時間もの研究と、多くの試行錯誤を経て開発されました。",
+      "vocab": [
+        {
+          "term": "headquarters",
+          "meaning": "本社",
+          "level": ""
+        },
+        {
+          "term": "trial and error",
+          "meaning": "試行錯誤",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 106,
+      "speechStart": 655,
+      "playFrom": 654,
+      "end": 658,
+      "en": "We created the ultimate curiosity Adventure.",
+      "jp": "私たちは究極の好奇心アドベンチャーを作成しました。",
+      "vocab": [
+        {
+          "term": "ultimate",
+          "meaning": "究極の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 107,
+      "speechStart": 658,
+      "playFrom": 657,
+      "end": 664,
+      "en": "It was the most fun we ever had making a product and we're so excited to finally share this experience with you.",
+      "jp": "これは、私たちが製品を作る上でこれまでに経験した中で最も楽しいことでした。そして、この体験を皆様と共有できることを大変嬉しく思っています。",
+      "vocab": [
+        {
+          "term": "excited to share",
+          "meaning": "共有できることに興奮している",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 108,
+      "speechStart": 664,
+      "playFrom": 663,
+      "end": 669,
+      "en": "So head over to the Kurzgesagt shop and find out if you are the chosen BB.",
+      "jp": "さあ、Kurzgesagtショップに向かい、あなたが選ばれし鳥であるかどうかを見つけてください。",
+      "vocab": [
+        {
+          "term": "head over to",
+          "meaning": "～に向かう",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 109,
+      "speechStart": 669,
+      "playFrom": 668,
+      "end": 679,
+      "en": "Every Kurzgesagt product you buy directly funds another moment we get to spend working on our videos, and you get a special piece of Kurzgesagt in return.",
+      "jp": "あなたが購入する全てのKurzgesagt製品は、私たちがビデオ制作に費やすことができる次の瞬間に直接資金を提供してくれます。そして、あなたは見返りにKurzgesagtの特別なピースを手に入れます。",
+      "vocab": [
+        {
+          "term": "directly funds",
+          "meaning": "直接資金を提供する",
+          "level": ""
+        },
+        {
+          "term": "in return",
+          "meaning": "見返りに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 110,
+      "speechStart": 679,
+      "playFrom": 678,
+      "end": 686,
+      "en": "Thank you so much for being a part of our story and making this channel possible.",
+      "jp": "私たちの物語の一部となっていただき、このチャンネルを可能にしてくださって、本当にありがとうございます。",
+      "vocab": [
+        {
+          "term": "being a part of",
+          "meaning": "～の一部である",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    }
+  ]
+}

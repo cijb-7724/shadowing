@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 1,
+  "id": "wwSzpaTHyS8",
+  "title": "Did The Future Already Happen? - The Paradox of Time",
+  "sourceUrl": "https://www.youtube.com/watch?v=wwSzpaTHyS8",
+  "generatedAt": null,
+  "transcriptSource": "legacy-import",
+  "sentences": [
+    {
+      "id": 1,
+      "speechStart": 2,
+      "playFrom": 1,
+      "end": 7,
+      "en": "Do your past, present, and future all exist right now?",
+      "jp": "あなたの過去、現在、未来はすべて今この瞬間に存在しているのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 2,
+      "speechStart": 7,
+      "playFrom": 6,
+      "end": 13,
+      "en": "Are you watching this video, being born, and lying on your deathbed at this very moment?",
+      "jp": "あなたはこの動画を見ていると同時に、生まれ、そして今この瞬間に死の床に伏しているのでしょうか？",
+      "vocab": [
+        {
+          "term": "deathbed",
+          "meaning": "死の床",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 3,
+      "speechStart": 13,
+      "playFrom": 12,
+      "end": 16,
+      "en": "Surprisingly, the answer could be yes, but how can that be?",
+      "jp": "驚くべきことに、その答えは「イエス」かもしれません。しかし、一体どうしてそんなことがあり得るのでしょうか？",
+      "vocab": [
+        {
+          "term": "surprisingly",
+          "meaning": "驚くべきことに",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 4,
+      "speechStart": 16,
+      "playFrom": 15,
+      "end": 18,
+      "en": "What does that even mean?",
+      "jp": "それは一体どういう意味なのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 5,
+      "speechStart": 18,
+      "playFrom": 17,
+      "end": 19,
+      "en": "How does time work?",
+      "jp": "時間はどのように機能しているのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 6,
+      "speechStart": 19,
+      "playFrom": 18,
+      "end": 22,
+      "en": "The Block Universe.",
+      "jp": "ブロック宇宙論。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 7,
+      "speechStart": 22,
+      "playFrom": 21,
+      "end": 27,
+      "en": "Imagine the universe like a child painting pictures on paper.",
+      "jp": "宇宙を、紙に絵を描いている子供のように想像してみてください。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 8,
+      "speechStart": 27,
+      "playFrom": 26,
+      "end": 32,
+      "en": "Each picture shows everything that's happening in the universe in a single moment.",
+      "jp": "それぞれの絵には、ある一瞬の宇宙で起きているすべてのことが描かれています。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 9,
+      "speechStart": 32,
+      "playFrom": 31,
+      "end": 36,
+      "en": "With each new moment, all kinds of things occur everywhere.",
+      "jp": "新しい瞬間が訪れるたびに、あらゆる出来事がいたるところで起こります。",
+      "vocab": [
+        {
+          "term": "occur",
+          "meaning": "起こる、生じる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 10,
+      "speechStart": 36,
+      "playFrom": 35,
+      "end": 43,
+      "en": "People are born and die, Galactic Civilizations expand, you miss the bus.",
+      "jp": "人々が生まれ、死に、銀河文明が拡大し、あなたがバスに乗り遅れる。",
+      "vocab": [
+        {
+          "term": "galactic",
+          "meaning": "銀河の",
+          "level": ""
+        },
+        {
+          "term": "civilization",
+          "meaning": "文明",
+          "level": ""
+        },
+        {
+          "term": "expand",
+          "meaning": "拡大する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 11,
+      "speechStart": 43,
+      "playFrom": 42,
+      "end": 47,
+      "en": "And our universe kid makes a new picture that replaces the old one.",
+      "jp": "そして宇宙の子供は、古い絵を置き換える新しい絵を描きます。",
+      "vocab": [
+        {
+          "term": "replace",
+          "meaning": "〜に取って代わる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 12,
+      "speechStart": 47,
+      "playFrom": 46,
+      "end": 50,
+      "en": "In this way, you get something like a movie.",
+      "jp": "このようにして、映画のようなものが出来上がります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 13,
+      "speechStart": 50,
+      "playFrom": 49,
+      "end": 53,
+      "en": "Only the moment we're in right now is real.",
+      "jp": "今この瞬間だけが現実なのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 14,
+      "speechStart": 53,
+      "playFrom": 52,
+      "end": 56,
+      "en": "The past is what happened before now—it's gone.",
+      "jp": "過去は今より前に起きたことで、もう過ぎ去ったものです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 15,
+      "speechStart": 56,
+      "playFrom": 55,
+      "end": 60,
+      "en": "The future is still to come and hasn't been drawn yet.",
+      "jp": "未来はこれから来るもので、まだ描かれていません。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 16,
+      "speechStart": 60,
+      "playFrom": 59,
+      "end": 63,
+      "en": "This is kind of how time feels, right?",
+      "jp": "これが、私たちが感じる時間の感覚ですよね？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 17,
+      "speechStart": 63,
+      "playFrom": 62,
+      "end": 66,
+      "en": "Each moment being replaced by the next one.",
+      "jp": "それぞれの瞬間が次の瞬間に置き換えられていく感覚です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 18,
+      "speechStart": 66,
+      "playFrom": 65,
+      "end": 71,
+      "en": "The past is far behind us, the future doesn't exist.",
+      "jp": "過去ははるか後ろにあり、未来は存在しない。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 19,
+      "speechStart": 71,
+      "playFrom": 70,
+      "end": 74,
+      "en": "But what if time is something else?",
+      "jp": "しかし、もし時間がそれ以外の何かだとしたらどうでしょう？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 20,
+      "speechStart": 74,
+      "playFrom": 73,
+      "end": 81,
+      "en": "What if the universe kid has already finished all its drawings and stacks them on top of each other?",
+      "jp": "もし宇宙の子供がすでにすべての絵を描き終えていて、それらを積み重ねているとしたら？",
+      "vocab": [
+        {
+          "term": "stack",
+          "meaning": "〜を積み重ねる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 21,
+      "speechStart": 81,
+      "playFrom": 80,
+      "end": 87,
+      "en": "This way we get a block—a block of time that contains the whole history of the universe.",
+      "jp": "こうして、宇宙の全歴史を含む「時間のブロック」が形成されます。",
+      "vocab": [
+        {
+          "term": "contain",
+          "meaning": "〜を含む",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 22,
+      "speechStart": 87,
+      "playFrom": 86,
+      "end": 91,
+      "en": "All moments that have ever existed or will ever exist.",
+      "jp": "これまで存在した、あるいはこれから存在するすべての瞬間です。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 23,
+      "speechStart": 91,
+      "playFrom": 90,
+      "end": 98,
+      "en": "But in this block, in this stack of moments, the past, the present, and the future are equally real and exist at the same time.",
+      "jp": "しかしこのブロック、この瞬間の積み重ねの中では、過去、現在、未来はすべて等しくリアルであり、同時に存在しているのです。",
+      "vocab": [
+        {
+          "term": "equally",
+          "meaning": "等しく",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 24,
+      "speechStart": 98,
+      "playFrom": 97,
+      "end": 100,
+      "en": "This feels wrong.",
+      "jp": "これは違和感があります。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 25,
+      "speechStart": 100,
+      "playFrom": 99,
+      "end": 104,
+      "en": "The only things that we perceive as real are those things happening now.",
+      "jp": "私たちが現実として認識できるのは、今起きていることだけです。",
+      "vocab": [
+        {
+          "term": "perceive",
+          "meaning": "〜を認識する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 26,
+      "speechStart": 104,
+      "playFrom": 103,
+      "end": 108,
+      "en": "How can the past and future be real right now?",
+      "jp": "どうして過去や未来が今、現実であり得るのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 27,
+      "speechStart": 108,
+      "playFrom": 107,
+      "end": 113,
+      "en": "The problem is that according to the theory of relativity, they kind of have to be.",
+      "jp": "問題は、相対性理論によれば、それらはそうあらざるを得ないということです。",
+      "vocab": [
+        {
+          "term": "theory of relativity",
+          "meaning": "相対性理論",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 28,
+      "speechStart": 113,
+      "playFrom": 112,
+      "end": 125,
+      "en": "Relativity says that time and space are not separated but one connected spacetime.",
+      "jp": "相対性理論は、時間と空間は分離されたものではなく、つながった一つの「時空」であると説いています。",
+      "vocab": [
+        {
+          "term": "spacetime",
+          "meaning": "時空",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 29,
+      "speechStart": 125,
+      "playFrom": 124,
+      "end": 133,
+      "en": "This means time passes differently for different people depending on how they move through space relative to each other.",
+      "jp": "これは、互いにどう移動するかによって、人によって時間の経過が異なることを意味します。",
+      "vocab": [
+        {
+          "term": "relative to",
+          "meaning": "〜に相対して、〜と比較して",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 30,
+      "speechStart": 133,
+      "playFrom": 132,
+      "end": 142,
+      "en": "And this also means that what someone perceives as \"now\" is a certain cut along the block.",
+      "jp": "そしてこれは、誰かが「今」と認識するものが、ブロックに沿った特定の切り口であることを意味します。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 31,
+      "speechStart": 142,
+      "playFrom": 141,
+      "end": 147,
+      "en": "So what you think is \"now\" is really only your now.",
+      "jp": "つまり、あなたが「今」だと思っているのは、実はあなただけの「今」に過ぎないのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 32,
+      "speechStart": 147,
+      "playFrom": 146,
+      "end": 151,
+      "en": "There are many different \"nows\" in the universe, and all of them are equally real.",
+      "jp": "宇宙には多くの異なる「今」が存在し、それらすべてが等しく現実なのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 33,
+      "speechStart": 151,
+      "playFrom": 150,
+      "end": 158,
+      "en": "This also means there's no universal past or future.",
+      "jp": "これはまた、全宇宙共通の過去や未来というものは存在しないことを意味します。",
+      "vocab": [
+        {
+          "term": "universal",
+          "meaning": "普遍的な、共通の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 34,
+      "speechStart": 158,
+      "playFrom": 157,
+      "end": 166,
+      "en": "Imagine three alien spaceships a million light years away.",
+      "jp": "100万光年先にある3つのエイリアンの宇宙船を想像してください。",
+      "vocab": [
+        {
+          "term": "light year",
+          "meaning": "光年",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 35,
+      "speechStart": 166,
+      "playFrom": 165,
+      "end": 192,
+      "en": "If you had a magical instantaneous internet connection, you could do a video call right now and chat about alien things.",
+      "jp": "もし魔法のような瞬時のインターネット接続があれば、今すぐビデオ通話ができるでしょう。",
+      "vocab": [
+        {
+          "term": "instantaneous",
+          "meaning": "即時の、瞬時の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 36,
+      "speechStart": 192,
+      "playFrom": 191,
+      "end": 209,
+      "en": "The aliens can talk to your ancestors in 1924, when Humanity was discovering the first galaxies outside the Milky Way.",
+      "jp": "エイリアンは、人類が天の川銀河の外に最初の銀河を発見していた1924年にいるあなたの先祖と話すことができます。",
+      "vocab": [
+        {
+          "term": "ancestor",
+          "meaning": "先祖",
+          "level": ""
+        },
+        {
+          "term": "Milky Way",
+          "meaning": "天の川銀河",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 37,
+      "speechStart": 209,
+      "playFrom": 208,
+      "end": 226,
+      "en": "The aliens can talk to your descendants in the year 2124, when Humanity has already built cities on Mars and Venus.",
+      "jp": "エイリアンは、人類がすでに火星や金星に都市を建設している2124年にいるあなたの末裔と話すことができます。",
+      "vocab": [
+        {
+          "term": "descendant",
+          "meaning": "子孫",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 38,
+      "speechStart": 226,
+      "playFrom": 225,
+      "end": 246,
+      "en": "Relativity is based on one powerful principle: Cosmic Democracy.",
+      "jp": "相対性理論は、一つの強力な原則「宇宙の民主主義」に基づいています。",
+      "vocab": [
+        {
+          "term": "principle",
+          "meaning": "原則",
+          "level": ""
+        },
+        {
+          "term": "democracy",
+          "meaning": "民主主義",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 39,
+      "speechStart": 246,
+      "playFrom": 245,
+      "end": 260,
+      "en": "This means that the distinction between the past, the present, and the future is an illusion.",
+      "jp": "これは、過去、現在、未来の区別は幻想であることを意味します。",
+      "vocab": [
+        {
+          "term": "distinction",
+          "meaning": "区別",
+          "level": ""
+        },
+        {
+          "term": "illusion",
+          "meaning": "幻想",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 40,
+      "speechStart": 260,
+      "playFrom": 259,
+      "end": 291,
+      "en": "The universe is not a bunch of things evolving through time like in a movie, but a static block.",
+      "jp": "宇宙は映画のように時を経て進化するものの集まりではなく、静止したブロックなのです。",
+      "vocab": [
+        {
+          "term": "evolving",
+          "meaning": "進化する",
+          "level": ""
+        },
+        {
+          "term": "static",
+          "meaning": "静止した",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 41,
+      "speechStart": 291,
+      "playFrom": 290,
+      "end": 299,
+      "en": "The universe just is, like a frozen block of dead cosmic ice.",
+      "jp": "宇宙はただ、凍りついた宇宙の氷のブロックのように存在しているだけなのです。",
+      "vocab": [
+        {
+          "term": "cosmic",
+          "meaning": "宇宙の",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 42,
+      "speechStart": 299,
+      "playFrom": 298,
+      "end": 307,
+      "en": "Is the future already written?",
+      "jp": "未来はすでに決まっているのでしょうか？",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 43,
+      "speechStart": 307,
+      "playFrom": 306,
+      "end": 314,
+      "en": "If all times coexist and are equally real, then the future has to be already written.",
+      "jp": "もしすべての時間が共存し、等しくリアルなら、未来はすでに書かれているはずです。",
+      "vocab": [
+        {
+          "term": "coexist",
+          "meaning": "共存する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 44,
+      "speechStart": 314,
+      "playFrom": 313,
+      "end": 329,
+      "en": "It feels like you can mold your future with your decisions.",
+      "jp": "自分の決断で未来を形作ることができると感じられますよね。",
+      "vocab": [
+        {
+          "term": "mold",
+          "meaning": "〜を形作る",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 45,
+      "speechStart": 329,
+      "playFrom": 328,
+      "end": 333,
+      "en": "Maybe your free will is a mirage.",
+      "jp": "おそらく、あなたの自由意志は蜃気楼のようなものかもしれません。",
+      "vocab": [
+        {
+          "term": "mirage",
+          "meaning": "蜃気楼",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 46,
+      "speechStart": 333,
+      "playFrom": 332,
+      "end": 344,
+      "en": "Maybe you missing the bus was already predetermined at the Big Bang.",
+      "jp": "あなたがバスに乗り遅れることも、ビッグバンの時点で既に決められていたのかもしれません。",
+      "vocab": [
+        {
+          "term": "predetermined",
+          "meaning": "あらかじめ決定された",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 47,
+      "speechStart": 344,
+      "playFrom": 343,
+      "end": 354,
+      "en": "Except quantum stuff is ruining everything again.",
+      "jp": "ただし、量子の世界がまたすべてを台無しにしています。",
+      "vocab": [
+        {
+          "term": "quantum",
+          "meaning": "量子の",
+          "level": ""
+        },
+        {
+          "term": "ruin",
+          "meaning": "台無しにする",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 48,
+      "speechStart": 354,
+      "playFrom": 353,
+      "end": 398,
+      "en": "According to quantum physics, quantum particles are intrinsically random.",
+      "jp": "量子力学によれば、量子粒子は本質的にランダムなのです。",
+      "vocab": [
+        {
+          "term": "intrinsically",
+          "meaning": "本質的に",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 49,
+      "speechStart": 398,
+      "playFrom": 397,
+      "end": 466,
+      "en": "If quantum stuff is really uncertain, the future can't be set in stone.",
+      "jp": "量子の世界が本当に不確実なら、未来は確定していないことになります。",
+      "vocab": [
+        {
+          "term": "uncertain",
+          "meaning": "不確実な",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 50,
+      "speechStart": 466,
+      "playFrom": 465,
+      "end": 486,
+      "en": "Maybe the block is just the past and a thin layer on the surface is the present.",
+      "jp": "おそらくブロックは過去だけであり、表面の薄い層が現在なのです。",
+      "vocab": [
+        {
+          "term": "surface",
+          "meaning": "表面",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 51,
+      "speechStart": 486,
+      "playFrom": 485,
+      "end": 518,
+      "en": "As new things happen and uncertain things become certain, the border moves upwards.",
+      "jp": "新しいことが起こり、不確実なことが確実になるにつれ、境界は上へと移動します。",
+      "vocab": [
+        {
+          "term": "border",
+          "meaning": "境界",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 52,
+      "speechStart": 518,
+      "playFrom": 517,
+      "end": 548,
+      "en": "Let's recap.",
+      "jp": "まとめましょう。",
+      "vocab": [
+        {
+          "term": "recap",
+          "meaning": "要約する、まとめる",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 53,
+      "speechStart": 548,
+      "playFrom": 547,
+      "end": 575,
+      "en": "To be honest, no one knows.",
+      "jp": "正直に言うと、誰にもわからないのです。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 54,
+      "speechStart": 575,
+      "playFrom": 574,
+      "end": 584,
+      "en": "Time itself doesn't even exist... the whole concept is an illusion of our human mind.",
+      "jp": "時間そのものが存在せず、その概念全体が人間の心の幻想であると考える人もいます。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 55,
+      "speechStart": 584,
+      "playFrom": 583,
+      "end": 606,
+      "en": "Time may be something that emerges from a deeper level of reality.",
+      "jp": "時間は、現実のより深いレベルから現れる（創発する）ものかもしれません。",
+      "vocab": [
+        {
+          "term": "emerge",
+          "meaning": "現れる、創発する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 56,
+      "speechStart": 606,
+      "playFrom": 605,
+      "end": 615,
+      "en": "The concept of time is abstract and elusive, possibly beyond complete human comprehension.",
+      "jp": "時間の概念は抽象的で捉えどころがなく、おそらく人間の完全な理解を超えています。",
+      "vocab": [
+        {
+          "term": "abstract",
+          "meaning": "抽象的な",
+          "level": ""
+        },
+        {
+          "term": "elusive",
+          "meaning": "捉えどころのない",
+          "level": ""
+        },
+        {
+          "term": "comprehension",
+          "meaning": "理解",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 57,
+      "speechStart": 615,
+      "playFrom": 614,
+      "end": 643,
+      "en": "Fortunately, there's a vast world of things we do understand about the universe.",
+      "jp": "幸いなことに、私たちが宇宙について理解している広大な世界が存在します。",
+      "vocab": [
+        {
+          "term": "vast",
+          "meaning": "広大な",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 58,
+      "speechStart": 643,
+      "playFrom": 642,
+      "end": 694,
+      "en": "Explore how past outcomes may not reliably forecast future events in the ever-evolving tapestry of time.",
+      "jp": "進化し続ける時間のタペストリーの中で、過去の結果がいかに将来の出来事を確実に予測できないかを探求しましょう。",
+      "vocab": [
+        {
+          "term": "outcome",
+          "meaning": "結果",
+          "level": ""
+        },
+        {
+          "term": "forecast",
+          "meaning": "予測する",
+          "level": ""
+        },
+        {
+          "term": "tapestry",
+          "meaning": "タペストリー",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 59,
+      "speechStart": 694,
+      "playFrom": 693,
+      "end": 736,
+      "en": "Our shop has grown so much over the years, thanks to all of you.",
+      "jp": "皆さんのおかげで、私たちのショップは長年で大きく成長しました。",
+      "vocab": [],
+      "confidence": null,
+      "needsReview": false
+    },
+    {
+      "id": 60,
+      "speechStart": 736,
+      "playFrom": 735,
+      "end": 743,
+      "en": "The birds really appreciate your help.",
+      "jp": "鳥たちはあなたの助けに本当に感謝しています。",
+      "vocab": [
+        {
+          "term": "appreciate",
+          "meaning": "感謝する",
+          "level": ""
+        }
+      ],
+      "confidence": null,
+      "needsReview": false
+    }
+  ]
+}
